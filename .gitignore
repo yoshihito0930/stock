@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# 株価キャッシュ（毎回取り直せる。約140MB）
+data/cache/

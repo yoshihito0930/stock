@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>売買ルールブック</title>
+<style>
+:root{
+  color-scheme:light;
+  --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781;
+  --grid:#e1e0d9; --axis:#c3c2b7; --border:rgba(11,11,11,.10);
+  --pos:#2a78d6; --neg:#e34948; --series:#2a78d6;
+  --good:#006300; --good-bg:#e4f3e4; --warn:#7a5200; --warn-bg:#fdf0cf; --bad:#a32222; --bad-bg:#fbe3e3;
+  --wash:rgba(11,11,11,.04);
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    color-scheme:dark;
+    --page:#0d0d0d; --surface:#1a1a19; --ink:#f0efec; --ink2:#c3c2b7; --muted:#898781;
+    --grid:#2c2c2a; --axis:#383835; --border:rgba(255,255,255,.10);
+    --pos:#3987e5; --neg:#e66767; --series:#3987e5;
+    --good:#0ca30c; --good-bg:#12301a; --warn:#fab219; --warn-bg:#3a2d0c; --bad:#e66767; --bad-bg:#3a1717;
+    --wash:rgba(255,255,255,.05);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--page);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;
+  padding:0 0 calc(72px + env(safe-area-inset-bottom))}
+main{max-width:760px;margin:0 auto;padding:12px 16px 24px}
+header.top{max-width:760px;margin:0 auto;padding:18px 16px 4px}
+header.top h1{font-size:20px;margin:0;letter-spacing:.01em}
+header.top p{margin:2px 0 0;color:var(--muted);font-size:12.5px}
+h2{font-size:17px;margin:26px 0 10px}
+h3{font-size:15px;margin:18px 0 6px}
+p{margin:8px 0}
+small,.small{font-size:12.5px;color:var(--ink2)}
+.muted{color:var(--muted)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 14px;margin:10px 0}
+.card h3:first-child{margin-top:0}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:10px 12px}
+.tile .k{font-size:12px;color:var(--ink2)}
+.tile .v{font-size:21px;font-weight:650;font-variant-numeric:tabular-nums;line-height:1.3}
+.tile .s{font-size:11.5px;color:var(--muted)}
+.hero{font-size:34px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.15}
+.meter{height:10px;border-radius:5px;background:var(--wash);overflow:hidden;margin:10px 0 4px;border:1px solid var(--border)}
+.meter i{display:block;height:100%;background:var(--series);border-radius:5px 0 0 5px;min-width:2px}
+.badge{display:inline-block;font-size:11.5px;font-weight:650;padding:1px 8px;border-radius:999px;vertical-align:middle;white-space:nowrap}
+.b-active{background:var(--good-bg);color:var(--good)}
+.b-watch{background:var(--warn-bg);color:var(--warn)}
+.b-suspended,.b-reject{background:var(--bad-bg);color:var(--bad)}
+.b-plain{background:var(--wash);color:var(--ink2)}
+ul,ol{margin:6px 0;padding-left:1.25em}
+li{margin:3px 0}
+.note{border-left:3px solid var(--axis);padding:4px 0 4px 10px;color:var(--ink2);font-size:14px;margin:10px 0}
+.note.warn{border-color:var(--warn)}
+.order{display:grid;grid-template-columns:1fr auto;gap:2px 10px;align-items:baseline}
+.order .nm{font-weight:650}
+.order .px{font-size:18px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.order .sub{grid-column:1/-1;font-size:13px;color:var(--ink2)}
+.tbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.tbl th,.tbl td{padding:5px 6px;border-bottom:1px solid var(--grid);text-align:right;white-space:nowrap}
+.tbl th:first-child,.tbl td:first-child{text-align:left;white-space:normal;min-width:6.5em}
+.tbl.wide th:first-child,.tbl.wide td:first-child{min-width:12em}
+.tbl td.l{text-align:left;white-space:normal;min-width:7em}
+.tbl th{font-weight:600;color:var(--ink2);font-size:12px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.ok{color:var(--good);font-weight:700}.ng{color:var(--bad);font-weight:700}
+details{margin:8px 0}
+summary{cursor:pointer;color:var(--ink2);font-size:14px;padding:4px 0}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--border);
+  display:flex;justify-content:center;padding-bottom:env(safe-area-inset-bottom);z-index:10}
+nav.tabs button{flex:1;max-width:152px;border:0;background:none;color:var(--muted);font:inherit;font-size:12px;padding:9px 2px 8px;cursor:pointer;line-height:1.3}
+nav.tabs button b{display:block;font-size:17px;font-weight:400}
+nav.tabs button[aria-selected=true]{color:var(--ink);font-weight:650}
+nav.tabs button[aria-selected=true] b{font-weight:400}
+section.tab{display:none}section.tab.on{display:block}
+.chart{position:relative;margin:6px 0 2px}
+.chart svg{display:block;width:100%;height:auto;touch-action:pan-y}
+.chart text{font:10px system-ui,sans-serif;fill:var(--muted)}
+.tip{position:absolute;pointer-events:none;background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  padding:5px 9px;font-size:12.5px;box-shadow:0 2px 10px rgba(0,0,0,.14);white-space:nowrap;display:none;z-index:5;font-variant-numeric:tabular-nums}
+.tip b{display:block;font-size:14px}
+.legend{font-size:12px;color:var(--ink2);display:flex;gap:14px;flex-wrap:wrap;margin:2px 0 0}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.step{counter-increment:st}
+a{color:inherit}
+</style>
+</head>
+<body>
+<header class="top"><h1>売買ルールブック</h1><p id="meta"></p></header>
+<main>
+  <section class="tab on" id="t-today"></section>
+  <section class="tab" id="t-rules"></section>
+  <section class="tab" id="t-test"></section>
+  <section class="tab" id="t-trades"></section>
+  <section class="tab" id="t-log"></section>
+</main>
+<nav class="tabs" role="tablist">
+  <button role="tab" data-t="today" aria-selected="true"><b>◎</b>今日</button>
+  <button role="tab" data-t="rules"><b>☰</b>ルール</button>
+  <button role="tab" data-t="test"><b>∿</b>検証</button>
+  <button role="tab" data-t="trades"><b>¥</b>実績</button>
+  <button role="tab" data-t="log"><b>↻</b>履歴</button>
+</nav>
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function(){
+"use strict";
+var D = JSON.parse(document.getElementById("data").textContent);
+var $ = function(id){ return document.getElementById(id); };
+function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); }
+function rich(s){ return esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/`(.+?)`/g, "<code>$1</code>"); }
+function man(x, sign){ if (x == null) return "-"; var v = x / 10000; var t = Math.abs(v).toLocaleString("ja-JP", {minimumFractionDigits:1, maximumFractionDigits:1}); return (v < 0 ? "−" : (sign === false ? "" : "+")) + t + "万円"; }
+function pct(x, d){ return x == null ? "-" : (x * 100).toFixed(d || 0) + "%"; }
+function num(x){ return x == null ? "-" : Math.round(x).toLocaleString("ja-JP"); }
+var BADGE = {active:["b-active","採用"], watch:["b-watch","観察中"], suspended:["b-suspended","一時停止"]};
+function badge(st){ var b = BADGE[st] || ["b-plain", st]; return '<span class="badge ' + b[0] + '">' + b[1] + "</span>"; }
+function list(items, ordered){ var t = ordered ? "ol" : "ul"; return "<" + t + ">" + items.map(function(x){ return "<li>" + rich(x) + "</li>"; }).join("") + "</" + t + ">"; }
+
+/* ---------- charts ---------- */
+function niceStep(range, n){ var raw = range / n, p = Math.pow(10, Math.floor(Math.log10(raw))), f = raw / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p; }
+function yAxis(min, max){
+  if (min === max){ max = min + 1; }
+  var step = niceStep(max - min, 4), lo = Math.floor(min / step) * step, hi = Math.ceil(max / step) * step, ticks = [];
+  for (var v = lo; v <= hi + step / 2; v += step) ticks.push(Math.round(v * 1e6) / 1e6);
+  return {lo: lo, hi: hi, ticks: ticks};
+}
+function tipAt(box, tip, px, py, html){
+  tip.innerHTML = html; tip.style.display = "block";
+  var w = tip.offsetWidth, bw = box.clientWidth, x = px + 12;
+  if (x + w > bw) x = Math.max(0, px - w - 12);
+  tip.style.left = x + "px"; tip.style.top = Math.max(0, py - 44) + "px";
+}
+function lineChart(el, pts, opt){
+  // pts: [{date, value}] 累積損益（円）
+  var W = 360, H = 220, m = {l: 34, r: 8, t: 16, b: 22}, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  var vals = pts.map(function(p){ return p.value / 10000; });
+  var ax = yAxis(Math.min(0, Math.min.apply(null, vals)), Math.max.apply(null, vals));
+  var X = function(i){ return m.l + iw * i / Math.max(1, pts.length - 1); };
+  var Y = function(v){ return m.t + ih * (1 - (v - ax.lo) / (ax.hi - ax.lo)); };
+  var s = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(opt.label) + '">';
+  ax.ticks.forEach(function(t){
+    s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + Y(t) + '" y2="' + Y(t) + '" stroke="var(' + (t === 0 ? "--axis" : "--grid") + ')" stroke-width="1"/>';
+    s += '<text x="' + (m.l - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end">' + t.toLocaleString("ja-JP") + "</text>";
+  });
+  var lastYear = "";
+  pts.forEach(function(p, i){
+    var y = p.date.slice(0, 4);
+    if (y !== lastYear){ if (lastYear !== "" && (+y % 3 === 0)) s += '<text x="' + X(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + y + "</text>"; lastYear = y; }
+  });
+  s += '<path d="' + pts.map(function(p, i){ return (i ? "L" : "M") + X(i).toFixed(1) + " " + Y(vals[i]).toFixed(1); }).join("") + '" fill="none" stroke="var(--series)" stroke-width="2" stroke-linejoin="round"/>';
+  s += '<line class="xh" y1="' + m.t + '" y2="' + (m.t + ih) + '" stroke="var(--axis)" stroke-width="1" style="display:none"/>';
+  s += '<circle class="dot" r="4" fill="var(--series)" stroke="var(--surface)" stroke-width="2" style="display:none"/>';
+  s += '<text x="' + (m.l - 6) + '" y="9" text-anchor="end">万円</text></svg><div class="tip"></div>';
+  el.innerHTML = s;
+  var svg = el.querySelector("svg"), tip = el.querySelector(".tip"), xh = el.querySelector(".xh"), dot = el.querySelector(".dot");
+  function move(ev){
+    var r = svg.getBoundingClientRect(), cx = (ev.touches ? ev.touches[0].clientX : ev.clientX) - r.left;
+    var i = Math.round((cx / r.width * W - m.l) / iw * (pts.length - 1)); i = Math.max(0, Math.min(pts.length - 1, i));
+    xh.setAttribute("x1", X(i)); xh.setAttribute("x2", X(i)); xh.style.display = "";
+    dot.setAttribute("cx", X(i)); dot.setAttribute("cy", Y(vals[i])); dot.style.display = "";
+    tipAt(el, tip, X(i) / W * r.width, Y(vals[i]) / H * r.height, "<b>" + man(pts[i].value) + "</b>" + esc(pts[i].date));
+  }
+  function leave(){ tip.style.display = "none"; xh.style.display = "none"; dot.style.display = "none"; }
+  svg.addEventListener("pointermove", move); svg.addEventListener("pointerdown", move); svg.addEventListener("pointerleave", leave);
+}
+function barChart(el, rows, opt){
+  // rows: [{month, pnl}]
+  var W = 360, H = 200, m = {l: 34, r: 8, t: 16, b: 22}, iw = W - m.l - m.r, ih = H - m.t - m.b;
+  var vals = rows.map(function(r){ return r.pnl / 10000; });
+  var ax = yAxis(Math.min(0, Math.min.apply(null, vals)), Math.max(0, Math.max.apply(null, vals)));
+  var bw = iw / rows.length, gap = Math.min(2, bw * 0.25), Y = function(v){ return m.t + ih * (1 - (v - ax.lo) / (ax.hi - ax.lo)); };
+  var s = '<svg viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="' + esc(opt.label) + '">';
+  ax.ticks.forEach(function(t){
+    s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + Y(t) + '" y2="' + Y(t) + '" stroke="var(--grid)" stroke-width="1"/>';
+    s += '<text x="' + (m.l - 6) + '" y="' + (Y(t) + 4) + '" text-anchor="end">' + t.toLocaleString("ja-JP") + "</text>";
+  });
+  rows.forEach(function(r, i){
+    var v = vals[i], x = m.l + bw * i + gap / 2, w = Math.max(1, bw - gap), y0 = Y(0), y1 = Y(v), h = Math.max(v === 0 ? 0 : 1.5, Math.abs(y1 - y0)), rad = Math.min(4, w / 2, h);
+    var top = v >= 0 ? y0 - h : y0;
+    // 基線側は角を落とさず、先端だけ丸める
+    var d = v >= 0
+      ? "M" + x + " " + y0 + "V" + (top + rad) + "Q" + x + " " + top + " " + (x + rad) + " " + top + "H" + (x + w - rad) + "Q" + (x + w) + " " + top + " " + (x + w) + " " + (top + rad) + "V" + y0 + "Z"
+      : "M" + x + " " + y0 + "V" + (y0 + h - rad) + "Q" + x + " " + (y0 + h) + " " + (x + rad) + " " + (y0 + h) + "H" + (x + w - rad) + "Q" + (x + w) + " " + (y0 + h) + " " + (x + w) + " " + (y0 + h - rad) + "V" + y0 + "Z";
+    if (v !== 0) s += '<path d="' + d + '" fill="var(' + (v >= 0 ? "--pos" : "--neg") + ')"/>';
+    if (r.month.slice(5) === "01") s += '<text x="' + (x + w / 2) + '" y="' + (H - 6) + '" text-anchor="middle">' + r.month.slice(0, 4) + "</text>";
+    s += '<rect data-i="' + i + '" x="' + (m.l + bw * i) + '" y="' + m.t + '" width="' + bw + '" height="' + ih + '" fill="transparent"/>';
+  });
+  s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + Y(0) + '" y2="' + Y(0) + '" stroke="var(--axis)" stroke-width="1"/>';
+  s += '<text x="' + (m.l - 6) + '" y="9" text-anchor="end">万円</text></svg><div class="tip"></div>';
+  el.innerHTML = s;
+  var svg = el.querySelector("svg"), tip = el.querySelector(".tip");
+  function move(ev){
+    var t = ev.target; if (!t.dataset || t.dataset.i == null) return;
+    var i = +t.dataset.i, r = svg.getBoundingClientRect();
+    tipAt(el, tip, (m.l + bw * (i + 0.5)) / W * r.width, Y(Math.max(0, vals[i])) / H * r.height, "<b>" + man(rows[i].pnl) + "</b>" + esc(rows[i].month));
+  }
+  svg.addEventListener("pointermove", move); svg.addEventListener("pointerdown", move);
+  svg.addEventListener("pointerleave", function(){ tip.style.display = "none"; });
+}
+var CHARTS = [];
+function chartSlot(kind, data, label){ var id = "c" + CHARTS.length; CHARTS.push({id: id, kind: kind, data: data, label: label}); return '<div class="chart" id="' + id + '"></div>'; }
+function drawCharts(){ CHARTS.forEach(function(c){ var el = $(c.id); if (!el || el.dataset.done || !el.offsetParent) return; el.dataset.done = "1"; (c.kind === "line" ? lineChart : barChart)(el, c.data, {label: c.label}); }); }
+var PNL_LEGEND = '<div class="legend"><span><i style="background:var(--pos)"></i>プラスの月</span><span><i style="background:var(--neg)"></i>マイナスの月</span></div>';
+
+/* ---------- 今日 ---------- */
+function orderCard(o){
+  var px = o.order === "指値" ? "指値 " + num(o.limit_price) + "円" : "成行（寄付）";
+  var sub = [o.shares.toLocaleString("ja-JP") + "株（約" + (o.amount / 10000).toFixed(0) + "万円）", "前日終値 " + o.ref_close.toLocaleString("ja-JP") + "円"];
+  var ex = [];
+  if (o.stop_pct) ex.push("約定したら逆指値: 約定値から" + pct(o.stop_pct) + "（目安 " + num(o.stop_price_est) + "円）");
+  ex.push(o.max_hold === 0 ? "約定したら当日の引けで決済（引成）" : "期限: 約定から" + o.max_hold + "営業日目の引け");
+  return '<div class="card"><div class="order"><div class="nm">' + esc(o.code) + " " + esc(o.name) + ' <span class="badge b-plain">' + esc(o.side) + '</span></div><div class="px">' + px + '</div>' +
+    '<div class="sub">' + esc(sub.join("・")) + '</div><div class="sub">' + esc(ex.join("／")) + '</div><div class="sub muted">' + esc(o.rule_name) + "</div></div></div>";
+}
+function posCard(p){
+  var act = p.exit_next_open ? "<b>次の営業日の寄付で成行決済</b>（決済シグナル点灯）" : (p.days_left <= 1 ? "<b>次の営業日の引けで時間切れ決済</b>（引成）" : "保有継続（時間切れまであと " + p.days_left + " 営業日）");
+  return '<div class="card"><div class="order"><div class="nm">' + esc(p.code) + " " + esc(p.name) + ' <span class="badge b-plain">' + esc(p.side) + '</span></div><div class="px">' + man(p.unrealized) + '</div>' +
+    '<div class="sub">' + p.shares.toLocaleString("ja-JP") + "株 @ " + num(p.entry_price) + "円（" + esc(p.entry_date) + "・" + p.days_held + "日目）" + (p.stop_price ? "／逆指値 " + num(p.stop_price) + "円" : "") + '</div><div class="sub">→ ' + act + '</div><div class="sub muted">' + esc(p.rule_name) + "</div></div></div>";
+}
+function sigBlock(title, sig, nRules, note){
+  var h = "<h2>" + title + "</h2>";
+  if (note && (sig.orders.length || sig.positions.length)) h += '<p class="note warn">' + esc(note) + "</p>";
+  h += "<h3>次の営業日に出す注文</h3>";
+  h += sig.orders.length ? sig.orders.map(orderCard).join("") : '<p class="muted">' + (nRules ? "今日は条件に合う銘柄がありません。何もしない日です。" : "該当するルールがありません。") + "</p>";
+  h += "<h3>保有中の建玉の扱い <small>（ルール通りに売買していた場合）</small></h3>";
+  h += sig.positions.length ? sig.positions.map(posCard).join("") : '<p class="muted">保有なし。</p>';
+  return h;
+}
+function renderToday(){
+  var g = D.goal, h = "";
+  if (D.meta.stale) h += '<p class="note warn"><b>株価データが ' + esc(D.meta.data_through) + " で止まっています。</b>この一覧で発注しないでください。</p>";
+  h += '<div class="card"><div class="small">目標 月' + (g.target / 10000).toFixed(0) + "万円に対する、検証済みルールの期待値（過去検証の月平均）</div>";
+  if (g.expected != null){
+    h += '<div class="hero">' + man(g.expected) + '</div><div class="meter"><i style="width:' + Math.max(0, Math.min(100, g.expected / g.target * 100)).toFixed(1) + '%"></i></div><div class="small">目標の ' + pct(g.expected / g.target) + "（採用ルール " + g.n_active + " 本）</div>";
+  } else {
+    h += '<div class="hero">採用ルールなし</div><div class="meter"><i style="width:0"></i></div><div class="small">すべての採用基準を通ったルールがまだありません。';
+    if (g.watch_expected != null) h += "観察中 " + g.n_watch + " 本を仮に運用した場合の月平均は " + man(g.watch_expected) + "（目標の " + pct(g.watch_expected / g.target) + "）。";
+    h += "</div>";
+  }
+  h += "</div>";
+  h += '<p class="small">' + esc(D.meta.data_through) + " の終値で判定。注文日は次の営業日（" + esc(D.meta.next_day) + "。祝日ならその次）。</p>";
+  h += sigBlock("採用ルール — 実際に発注する " + badge("active"), D.signals.active, g.n_active, null);
+  h += sigBlock("観察中ルール — 仮想売買 " + badge("watch"), D.signals.watch, g.n_watch, "統計面の基準は通過、リスク面の基準が未達のルールです。実際の資金は入れず、結果だけ追います。");
+  if (D.suspended.length) h += "<h2>一時停止中 " + badge("suspended") + "</h2>" + list(D.suspended);
+  h += "<h2>毎日の手順</h2><div class=\"card\">" + list(D.routine, true) + "</div>";
+  $("t-today").innerHTML = h;
+}
+
+/* ---------- ルール ---------- */
+function statTable(rows){
+  return '<div class="scroll"><table class="tbl"><tr><th>期間</th><th>取引</th><th>勝率</th><th>PF</th><th>1回平均</th><th>月平均</th><th>最大DD</th></tr>' +
+    rows.map(function(r){ return "<tr><td>" + esc(r.label) + "</td><td>" + r.trades + "</td><td>" + pct(r.win_rate) + "</td><td>" + r.profit_factor.toFixed(2) + "</td><td>" + (r.avg_ret * 100).toFixed(2) + "%</td><td>" + man(r.monthly_mean) + "</td><td>" + man(r.max_drawdown, false) + "</td></tr>"; }).join("") + "</table></div>";
+}
+function gateTable(gs){
+  return '<div class="scroll"><table class="tbl wide"><tr><th>採用基準</th><th>結果</th><th>必要</th><th>判定</th></tr>' +
+    gs.map(function(g){ return "<tr><td>" + esc(g.name) + "</td><td>" + esc(g.value) + "</td><td>" + esc(g.need) + '</td><td class="' + (g.ok ? "ok" : "ng") + '">' + (g.ok ? "○" : "×") + "</td></tr>"; }).join("") + "</table></div>";
+}
+function yearTable(ys){
+  return '<div class="scroll"><table class="tbl"><tr><th>年</th><th>損益</th><th>取引</th><th>勝率</th><th>プラスの月</th></tr>' +
+    ys.map(function(y){ return "<tr><td>" + y.year + "</td><td>" + man(y.pnl) + "</td><td>" + y.trades + "</td><td>" + pct(y.win_rate) + "</td><td>" + y.positive_months + "/" + y.months + "</td></tr>"; }).join("") + "</table></div>";
+}
+function renderRules(){
+  var h = "<h2>共通ルール <small>（すべてのルールに優先）</small></h2><div class=\"card\">" + list(D.common) + "</div>";
+  if (!D.rules.length) h += '<p class="muted">現在、台帳に載っているルールはありません。</p>';
+  D.rules.forEach(function(r, n){
+    h += "<h2>ルール" + (n + 1) + ": " + esc(r.name) + " " + badge(r.status) + '</h2><p class="small">' + esc(r.style) + "・v" + r.version + "・" + esc(r.adopted_on) + " から現在の内容</p>";
+    h += '<div class="card"><p><b>' + esc(r.summary) + '</b></p><p class="small">なぜ効くと考えるか: ' + esc(r.idea) + "</p>";
+    if (r.status === "watch") h += '<p class="note warn">観察中: 統計的な優位性の基準は通過。未達の基準があるため、仮想売買で様子を見る段階です。</p>';
+    if (r.status === "suspended") h += '<p class="note warn">一時停止中: ' + esc(r.health.join(" / ")) + "</p>";
+    h += "<h3>① 銘柄を選ぶ条件</h3>" + list(r.screen.concat([r.pick]));
+    h += "<h3>② " + (r.side > 0 ? "買い方" : "売り方") + "</h3>" + list(r.entry);
+    h += "<h3>③ 手仕舞い <small>（上から順に、先に当てはまったもの）</small></h3>" + list(r.exit, true);
+    h += "<h3>④ 金額</h3>" + list(r.sizing) + "</div>";
+    h += '<div class="card"><h3>検証結果 <small>（コスト差引後）</small></h3>' + statTable(r.table);
+    if (r.wf) h += '<p class="small">' + esc(r.wf) + "</p>";
+    h += gateTable(r.gates) + "<details><summary>年ごとの成績</summary>" + yearTable(r.yearly) + "</details></div>";
+  });
+  $("t-rules").innerHTML = h;
+}
+
+/* ---------- 検証 ---------- */
+function renderTest(){
+  var h = "<h2>いまの結論</h2><div class=\"card\">" + list(D.headline) + "</div>";
+  D.portfolios.forEach(function(p){
+    var s = p.summary;
+    h += "<h2>" + esc(p.title) + '</h2><p class="small">' + esc(p.note) + "</p>";
+    h += '<div class="tiles">' +
+      '<div class="tile"><div class="k">月平均</div><div class="v">' + man(s.monthly_mean) + '</div><div class="s">目標比 ' + pct(Math.max(0, s.target_ratio)) + "</div></div>" +
+      '<div class="tile"><div class="k">プラスの月</div><div class="v">' + pct(s.positive_months) + '</div><div class="s">' + s.months + " か月中</div></div>" +
+      '<div class="tile"><div class="k">最悪の月</div><div class="v">' + man(s.monthly_worst) + '</div><div class="s">最良 ' + man(s.monthly_best) + "</div></div>" +
+      '<div class="tile"><div class="k">最大ドローダウン</div><div class="v">' + man(s.max_drawdown, false) + '</div><div class="s">資金の ' + pct(s.max_drawdown_pct) + "</div></div>" +
+      '<div class="tile"><div class="k">取引・勝率</div><div class="v">' + s.trades + '回</div><div class="s">勝率 ' + pct(s.win_rate) + "・PF " + s.profit_factor.toFixed(2) + "</div></div>" +
+      '<div class="tile"><div class="k">直近12か月の月平均</div><div class="v">' + man(p.last12) + '</div><div class="s">資金稼働日 ' + pct(p.days_invested) + "</div></div></div>";
+    h += '<div class="card"><h3>累積損益</h3>' + chartSlot("line", p.equity, p.title + " の累積損益（万円）") + "</div>";
+    h += '<div class="card"><h3>月ごとの損益 <small>（直近 5 年）</small></h3>' + chartSlot("bar", p.monthly.slice(-60), p.title + " の月次損益（万円）") + PNL_LEGEND + "</div>";
+    h += '<div class="card"><h3>年ごとの成績</h3>' + yearTable(p.yearly) + "</div>";
+  });
+  if (D.rejected.length){
+    h += "<h2>不採用になった型 " + '<span class="badge b-reject">不採用</span></h2><p class="small">検証して基準に届かなかった型です。毎週、最新データで再検証されます。</p>';
+    D.rejected.forEach(function(r){
+      h += '<div class="card"><b>' + esc(r.name) + '</b> <small>' + r.combos + " 通りを検証・最良候補の PF " + esc(r.pf) + '</small><p class="small">未達: ' + esc(r.failed) + "</p></div>";
+    });
+  }
+  h += "<h2>検証方法と、その限界</h2><div class=\"card\">" + list(D.method) + "</div>";
+  $("t-test").innerHTML = h;
+}
+
+/* ---------- 実績 ---------- */
+function renderTrades(){
+  var a = D.trades, h = "";
+  if (!a){
+    h = "<h2>実トレード分析</h2><div class=\"card\"><p>" + (D.trades_hidden ? "このページでは実トレードの表示をオフにしています（config.yaml の site.include_real_trades）。リポジトリの trades/REPORT.md を見てください。" : "まだ取引履歴が取り込まれていません。") + "</p>" + list(D.import_howto, true) + "</div>";
+    $("t-trades").innerHTML = h; return;
+  }
+  var o = a.overall;
+  h += "<h2>実トレード分析</h2><p class=\"small\">" + esc(a.period.from) + " 〜 " + esc(a.period.to) + "・決済済み " + o.trades + " 取引</p>";
+  h += '<div class="tiles">' +
+    '<div class="tile"><div class="k">月平均の実現損益</div><div class="v">' + man(a.monthly_mean) + '</div><div class="s">目標比 ' + pct(Math.max(0, a.monthly_mean) / a.target) + "</div></div>" +
+    '<div class="tile"><div class="k">勝率・PF</div><div class="v">' + pct(o.win_rate) + '</div><div class="s">PF ' + o.profit_factor.toFixed(2) + "</div></div>" +
+    '<div class="tile"><div class="k">平均利益 / 平均損失</div><div class="v">' + o.payoff.toFixed(2) + '</div><div class="s">' + man(o.avg_win) + " / " + man(o.avg_loss) + "</div></div>" +
+    '<div class="tile"><div class="k">ルール通りの取引</div><div class="v">' + a.by_rule.on.trades + "/" + o.trades + '</div><div class="s">ルール外の損益 ' + man(a.by_rule.off.total_pnl) + "</div></div></div>";
+  h += '<div class="card"><h3>気づき</h3>' + (a.insights.length ? list(a.insights) : '<p class="muted">10 取引以上で分析コメントが出ます。</p>') + "</div>";
+  if (a.monthly.length) h += '<div class="card"><h3>月ごとの実現損益</h3>' + chartSlot("bar", a.monthly.slice(-60), "実トレードの月次損益（万円）") + PNL_LEGEND + "</div>";
+  var rows = [["全体", o], ["ルール通り", a.by_rule.on], ["ルール外", a.by_rule.off], ["買い", a.by_direction.long], ["空売り", a.by_direction.short]];
+  Object.keys(a.by_holding).forEach(function(k){ rows.push([k, a.by_holding[k]]); });
+  h += '<div class="card"><h3>成績の内訳</h3><div class="scroll"><table class="tbl"><tr><th>区分</th><th>取引</th><th>勝率</th><th>PF</th><th>損益</th></tr>' +
+    rows.map(function(r){ return "<tr><td>" + esc(r[0]) + "</td><td>" + r[1].trades + "</td><td>" + pct(r[1].win_rate) + "</td><td>" + r[1].profit_factor.toFixed(2) + "</td><td>" + man(r[1].total_pnl) + "</td></tr>"; }).join("") + "</table></div></div>";
+  h += '<div class="card"><h3>直近の取引</h3><div class="scroll"><table class="tbl wide"><tr><th>銘柄</th><th>決済日</th><th>損益</th><th>日数</th><th>ルール</th></tr>' +
+    a.recent.map(function(t){ return "<tr><td>" + esc(t.code) + " " + esc(t.name) + "（" + (t.direction === "long" ? "買い" : "空売り") + "）</td><td>" + esc(t.exit_date) + "</td><td>" + man(t.pnl) + "</td><td>" + t.days + '</td><td class="l">' + esc(t.rule_name) + "</td></tr>"; }).join("") + "</table></div></div>";
+  $("t-trades").innerHTML = h;
+}
+
+/* ---------- 履歴 ---------- */
+function renderLog(){
+  var h = "<h2>ルール更新履歴</h2>";
+  if (!D.history.length) h += '<p class="muted">まだ更新履歴はありません。</p>';
+  D.history.forEach(function(e){
+    h += '<div class="card"><div class="small">' + esc(e.date) + ' <span class="badge b-plain">' + esc(e.type) + "</span></div><b>" + esc(e.title) + "</b>" + (e.details && e.details.length ? list(e.details) : "") + "</div>";
+  });
+  $("t-log").innerHTML = h;
+}
+
+$("meta").textContent = "更新 " + D.meta.updated_at + "・株価 " + D.meta.data_through + " まで・前回のルール探索 " + (D.meta.last_research || "-");
+renderToday(); renderRules(); renderTest(); renderTrades(); renderLog();
+var btns = document.querySelectorAll("nav.tabs button");
+function show(t){
+  btns.forEach(function(b){ b.setAttribute("aria-selected", b.dataset.t === t ? "true" : "false"); });
+  document.querySelectorAll("section.tab").forEach(function(s){ s.classList.toggle("on", s.id === "t-" + t); });
+  drawCharts(); window.scrollTo(0, 0);
+  try { history.replaceState(null, "", "#" + t); } catch (e) {}
+}
+btns.forEach(function(b){ b.addEventListener("click", function(){ show(b.dataset.t); }); });
+var start = (location.hash || "").slice(1);
+if (["today", "rules", "test", "trades", "log"].indexOf(start) >= 0) show(start); else drawCharts();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+name: 週次（ルールの再探索・再検証）
+
+on:
+  schedule:
+    - cron: "0 21 * * 5"   # 土曜 06:00 JST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kabu-write
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 全ルールを最新データで探索・検証し直し、台帳を更新
+        run: python -m kabu research --force
+      - name: 結果をコミット
+        run: |
+          git config user.name "kabu-bot"
+          git config user.email "kabu-bot@users.noreply.github.com"
+          git add RULES.md SIGNALS.md docs rules trades data/universe.csv
+          git diff --cached --quiet || git commit -m "週次更新: ルールの再検証"
+          git pull --rebase --autostash
+          git push

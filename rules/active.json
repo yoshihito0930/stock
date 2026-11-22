@@ -1,0 +1,6588 @@
+{
+ "schema": 1,
+ "updated_at": "2026-11-22",
+ "data_through": "2026-11-20",
+ "rules": [
+  {
+   "id": "dip_swing",
+   "family": "dip_swing",
+   "version": 1,
+   "status": "watch",
+   "tier": "watch",
+   "since": "2026-11-22",
+   "adopted_on": "2026-11-22",
+   "params": {
+    "trend": 200,
+    "mom": 0.2,
+    "rsi_n": 3,
+    "rsi_th": 5,
+    "limit_pct": 0.03,
+    "max_hold": 10,
+    "stop_pct": null,
+    "market": "none"
+   },
+   "evidence": {
+    "family": "dip_swing",
+    "params": {
+     "trend": 200,
+     "mom": 0.2,
+     "rsi_n": 3,
+     "rsi_th": 5,
+     "limit_pct": 0.03,
+     "max_hold": 10,
+     "stop_pct": null,
+     "market": "none"
+    },
+    "forward": null,
+    "is": {
+     "trades": 141,
+     "win_rate": 0.730496,
+     "profit_factor": 2.162404,
+     "avg_pnl": 9107.981534,
+     "avg_ret": 0.017863,
+     "avg_win": 23194.432409,
+     "avg_loss": -29073.714259,
+     "avg_days": 4.702128,
+     "total_pnl": 1284225.396291,
+     "months": 96,
+     "monthly_mean": 13377.347878,
+     "monthly_median": 1559.903336,
+     "monthly_std": 58040.087613,
+     "monthly_worst": -447738.33477,
+     "monthly_best": 171022.373667,
+     "positive_months": 0.53125,
+     "active_months": 61,
+     "positive_active_months": 0.836066,
+     "target_months": 0.0,
+     "tstat": 2.258279,
+     "max_drawdown": 623881.610768,
+     "max_drawdown_pct": 0.207961,
+     "annual_return_pct": 0.053509,
+     "target_ratio": 0.066887
+    },
+    "oos": {
+     "trades": 87,
+     "win_rate": 0.632184,
+     "profit_factor": 1.853893,
+     "avg_pnl": 6204.794064,
+     "avg_ret": 0.014917,
+     "avg_win": 21309.097655,
+     "avg_loss": -19755.727735,
+     "avg_days": 5.034483,
+     "total_pnl": 539817.083533,
+     "months": 59,
+     "monthly_mean": 8891.984467,
+     "monthly_median": 5246.778366,
+     "monthly_std": 40851.004961,
+     "monthly_worst": -185897.262963,
+     "monthly_best": 144267.40538,
+     "positive_months": 0.576271,
+     "active_months": 45,
+     "positive_active_months": 0.755556,
+     "target_months": 0.0,
+     "tstat": 1.671945,
+     "max_drawdown": 391600.030362,
+     "max_drawdown_pct": 0.130533,
+     "annual_return_pct": 0.035568,
+     "target_ratio": 0.04446
+    },
+    "full": {
+     "trades": 228,
+     "win_rate": 0.692982,
+     "profit_factor": 2.05012,
+     "avg_pnl": 8000.186315,
+     "avg_ret": 0.016739,
+     "avg_win": 22538.144995,
+     "avg_loss": -24814.063277,
+     "avg_days": 4.828947,
+     "total_pnl": 1824042.479824,
+     "months": 155,
+     "monthly_mean": 11670.015999,
+     "monthly_median": 4413.946756,
+     "monthly_std": 52070.615995,
+     "monthly_worst": -447738.33477,
+     "monthly_best": 171022.373667,
+     "positive_months": 0.548387,
+     "active_months": 106,
+     "positive_active_months": 0.801887,
+     "target_months": 0.0,
+     "tstat": 2.790259,
+     "max_drawdown": 623881.610768,
+     "max_drawdown_pct": 0.207961,
+     "annual_return_pct": 0.04668,
+     "target_ratio": 0.05835
+    },
+    "recent": {
+     "trades": 20,
+     "win_rate": 0.6,
+     "profit_factor": 1.604029,
+     "avg_pnl": 7818.701031,
+     "avg_ret": 0.022163,
+     "avg_win": 34604.930858,
+     "avg_loss": -32360.64371,
+     "avg_days": 5.1,
+     "total_pnl": 156374.02062,
+     "months": 6,
+     "monthly_mean": 23530.670103,
+     "monthly_median": 10382.262747,
+     "monthly_std": 72716.550133,
+     "monthly_worst": -80102.05097,
+     "monthly_best": 144267.40538,
+     "positive_months": 0.833333,
+     "active_months": 6,
+     "positive_active_months": 0.833333,
+     "target_months": 0.0,
+     "tstat": 0.792641,
+     "max_drawdown": 187474.522542,
+     "max_drawdown_pct": 0.062492,
+     "annual_return_pct": 0.094123,
+     "target_ratio": 0.117653
+    },
+    "yearly": [
+     {
+      "year": 2014,
+      "pnl": 370479.344828,
+      "monthly_mean": 30873.278736,
+      "positive_months": 7,
+      "months": 12,
+      "trades": 18,
+      "win_rate": 0.888889,
+      "profit_factor": 19.028519
+     },
+     {
+      "year": 2015,
+      "pnl": 261867.576672,
+      "monthly_mean": 21822.298056,
+      "positive_months": 7,
+      "months": 12,
+      "trades": 17,
+      "win_rate": 0.823529,
+      "profit_factor": 6.315162
+     },
+     {
+      "year": 2016,
+      "pnl": 147234.410745,
+      "monthly_mean": 12269.534229,
+      "positive_months": 4,
+      "months": 12,
+      "trades": 7,
+      "win_rate": 0.857143,
+      "profit_factor": 8.746748
+     },
+     {
+      "year": 2017,
+      "pnl": 257178.926081,
+      "monthly_mean": 21431.577173,
+      "positive_months": 10,
+      "months": 12,
+      "trades": 24,
+      "win_rate": 0.708333,
+      "profit_factor": 3.287774
+     },
+     {
+      "year": 2018,
+      "pnl": 181420.350033,
+      "monthly_mean": 15118.362503,
+      "positive_months": 8,
+      "months": 12,
+      "trades": 26,
+      "win_rate": 0.692308,
+      "profit_factor": 1.903095
+     },
+     {
+      "year": 2019,
+      "pnl": -1674.843829,
+      "monthly_mean": -139.570319,
+      "positive_months": 2,
+      "months": 12,
+      "trades": 4,
+      "win_rate": 0.5,
+      "profit_factor": 0.80171
+     },
+     {
+      "year": 2020,
+      "pnl": -311241.644797,
+      "monthly_mean": -25936.803733,
+      "positive_months": 5,
+      "months": 12,
+      "trades": 20,
+      "win_rate": 0.55,
+      "profit_factor": 0.487875
+     },
+     {
+      "year": 2021,
+      "pnl": 378961.276558,
+      "monthly_mean": 31580.10638,
+      "positive_months": 8,
+      "months": 12,
+      "trades": 25,
+      "win_rate": 0.76,
+      "profit_factor": 3.656122
+     },
+     {
+      "year": 2022,
+      "pnl": 84013.073253,
+      "monthly_mean": 7001.089438,
+      "positive_months": 6,
+      "months": 12,
+      "trades": 11,
+      "win_rate": 0.818182,
+      "profit_factor": 3.794449
+     },
+     {
+      "year": 2023,
+      "pnl": 88073.690549,
+      "monthly_mean": 7339.474212,
+      "positive_months": 7,
+      "months": 12,
+      "trades": 10,
+      "win_rate": 0.6,
+      "profit_factor": 3.353538
+     },
+     {
+      "year": 2024,
+      "pnl": 208807.707359,
+      "monthly_mean": 17400.64228,
+      "positive_months": 7,
+      "months": 12,
+      "trades": 18,
+      "win_rate": 0.722222,
+      "profit_factor": 5.243792
+     },
+     {
+      "year": 2025,
+      "pnl": -89692.66741,
+      "monthly_mean": -7474.388951,
+      "positive_months": 6,
+      "months": 12,
+      "trades": 17,
+      "win_rate": 0.470588,
+      "profit_factor": 0.618724
+     },
+     {
+      "year": 2026,
+      "pnl": 233425.279781,
+      "monthly_mean": 21220.47998,
+      "positive_months": 8,
+      "months": 11,
+      "trades": 31,
+      "win_rate": 0.612903,
+      "profit_factor": 1.885371
+     }
+    ],
+    "monthly": [
+     {
+      "month": "2014-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-02",
+      "pnl": 57563.439974
+     },
+     {
+      "month": "2014-03",
+      "pnl": 43151.997365
+     },
+     {
+      "month": "2014-04",
+      "pnl": 25305.103013
+     },
+     {
+      "month": "2014-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-07",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-09",
+      "pnl": 56685.280573
+     },
+     {
+      "month": "2014-10",
+      "pnl": 64684.708708
+     },
+     {
+      "month": "2014-11",
+      "pnl": 17830.258598
+     },
+     {
+      "month": "2014-12",
+      "pnl": 105258.556597
+     },
+     {
+      "month": "2015-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-03",
+      "pnl": 7775.015962
+     },
+     {
+      "month": "2015-04",
+      "pnl": 24618.61297
+     },
+     {
+      "month": "2015-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-07",
+      "pnl": 171022.373667
+     },
+     {
+      "month": "2015-08",
+      "pnl": 365.848077
+     },
+     {
+      "month": "2015-09",
+      "pnl": 7934.995822
+     },
+     {
+      "month": "2015-10",
+      "pnl": 522.178619
+     },
+     {
+      "month": "2015-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-12",
+      "pnl": 49628.551555
+     },
+     {
+      "month": "2016-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-03",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-04",
+      "pnl": 51572.201646
+     },
+     {
+      "month": "2016-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-07",
+      "pnl": 17423.759726
+     },
+     {
+      "month": "2016-08",
+      "pnl": 5262.477822
+     },
+     {
+      "month": "2016-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-10",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-12",
+      "pnl": 72975.971552
+     },
+     {
+      "month": "2017-01",
+      "pnl": 17871.223832
+     },
+     {
+      "month": "2017-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-03",
+      "pnl": 8081.244673
+     },
+     {
+      "month": "2017-04",
+      "pnl": -38464.454294
+     },
+     {
+      "month": "2017-05",
+      "pnl": 55444.460418
+     },
+     {
+      "month": "2017-06",
+      "pnl": 16908.102397
+     },
+     {
+      "month": "2017-07",
+      "pnl": 620.980251
+     },
+     {
+      "month": "2017-08",
+      "pnl": 15277.621011
+     },
+     {
+      "month": "2017-09",
+      "pnl": 18738.922677
+     },
+     {
+      "month": "2017-10",
+      "pnl": 8034.094855
+     },
+     {
+      "month": "2017-11",
+      "pnl": 120371.86292
+     },
+     {
+      "month": "2017-12",
+      "pnl": 34294.867341
+     },
+     {
+      "month": "2018-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2018-02",
+      "pnl": -70197.656862
+     },
+     {
+      "month": "2018-03",
+      "pnl": 67743.940965
+     },
+     {
+      "month": "2018-04",
+      "pnl": -2841.966107
+     },
+     {
+      "month": "2018-05",
+      "pnl": 13710.716205
+     },
+     {
+      "month": "2018-06",
+      "pnl": 14725.584742
+     },
+     {
+      "month": "2018-07",
+      "pnl": 10820.065591
+     },
+     {
+      "month": "2018-08",
+      "pnl": 23713.601428
+     },
+     {
+      "month": "2018-09",
+      "pnl": 36671.871083
+     },
+     {
+      "month": "2018-10",
+      "pnl": 55856.69148
+     },
+     {
+      "month": "2018-11",
+      "pnl": -21715.287037
+     },
+     {
+      "month": "2018-12",
+      "pnl": 52932.788543
+     },
+     {
+      "month": "2019-01",
+      "pnl": -24918.002311
+     },
+     {
+      "month": "2019-02",
+      "pnl": 29190.758646
+     },
+     {
+      "month": "2019-03",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-06",
+      "pnl": 2498.82642
+     },
+     {
+      "month": "2019-07",
+      "pnl": -8013.814624
+     },
+     {
+      "month": "2019-08",
+      "pnl": -432.61196
+     },
+     {
+      "month": "2019-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-10",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2020-01",
+      "pnl": -2812.943719
+     },
+     {
+      "month": "2020-02",
+      "pnl": 45907.899412
+     },
+     {
+      "month": "2020-03",
+      "pnl": -447738.33477
+     },
+     {
+      "month": "2020-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2020-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2020-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2020-07",
+      "pnl": -1028.223781
+     },
+     {
+      "month": "2020-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2020-09",
+      "pnl": 5099.106163
+     },
+     {
+      "month": "2020-10",
+      "pnl": 28112.322968
+     },
+     {
+      "month": "2020-11",
+      "pnl": 57618.52529
+     },
+     {
+      "month": "2020-12",
+      "pnl": 3600.003639
+     },
+     {
+      "month": "2021-01",
+      "pnl": 47026.946703
+     },
+     {
+      "month": "2021-02",
+      "pnl": 92374.517869
+     },
+     {
+      "month": "2021-03",
+      "pnl": 11325.44778
+     },
+     {
+      "month": "2021-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-05",
+      "pnl": 57911.266007
+     },
+     {
+      "month": "2021-06",
+      "pnl": 63958.181696
+     },
+     {
+      "month": "2021-07",
+      "pnl": 42804.849775
+     },
+     {
+      "month": "2021-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-10",
+      "pnl": 59146.119973
+     },
+     {
+      "month": "2021-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-12",
+      "pnl": 4413.946756
+     },
+     {
+      "month": "2022-01",
+      "pnl": 4680.047972
+     },
+     {
+      "month": "2022-02",
+      "pnl": 17323.046776
+     },
+     {
+      "month": "2022-03",
+      "pnl": 0.0
+     },
+     {
+      "month": "2022-04",
+      "pnl": 14444.469002
+     },
+     {
+      "month": "2022-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2022-06",
+      "pnl": 9876.129074
+     },
+     {
+      "month": "2022-07",
+      "pnl": 0.0
+     },
+     {
+      "month": "2022-08",
+      "pnl": -24247.410508
+     },
+     {
+      "month": "2022-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2022-10",
+      "pnl": 0.0
+     },
+     {
+      "month": "2022-11",
+      "pnl": 7522.963641
+     },
+     {
+      "month": "2022-12",
+      "pnl": 54413.827296
+     },
+     {
+      "month": "2023-01",
+      "pnl": 8247.210466
+     },
+     {
+      "month": "2023-02",
+      "pnl": 6710.0
+     },
+     {
+      "month": "2023-03",
+      "pnl": -8544.017425
+     },
+     {
+      "month": "2023-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2023-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2023-06",
+      "pnl": 14609.493505
+     },
+     {
+      "month": "2023-07",
+      "pnl": 12967.593649
+     },
+     {
+      "month": "2023-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2023-09",
+      "pnl": -22322.243899
+     },
+     {
+      "month": "2023-10",
+      "pnl": 69060.417287
+     },
+     {
+      "month": "2023-11",
+      "pnl": 2098.4586
+     },
+     {
+      "month": "2023-12",
+      "pnl": 5246.778366
+     },
+     {
+      "month": "2024-01",
+      "pnl": 7146.104999
+     },
+     {
+      "month": "2024-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2024-03",
+      "pnl": 38171.711342
+     },
+     {
+      "month": "2024-04",
+      "pnl": 122019.625696
+     },
+     {
+      "month": "2024-05",
+      "pnl": -963.293527
+     },
+     {
+      "month": "2024-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2024-07",
+      "pnl": -6066.742376
+     },
+     {
+      "month": "2024-08",
+      "pnl": 5105.099647
+     },
+     {
+      "month": "2024-09",
+      "pnl": 22414.769876
+     },
+     {
+      "month": "2024-10",
+      "pnl": 26486.064394
+     },
+     {
+      "month": "2024-11",
+      "pnl": -9693.980631
+     },
+     {
+      "month": "2024-12",
+      "pnl": 4188.347939
+     },
+     {
+      "month": "2025-01",
+      "pnl": 49061.100539
+     },
+     {
+      "month": "2025-02",
+      "pnl": 7795.10235
+     },
+     {
+      "month": "2025-03",
+      "pnl": 27647.08365
+     },
+     {
+      "month": "2025-04",
+      "pnl": -185897.262963
+     },
+     {
+      "month": "2025-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-07",
+      "pnl": 5440.571203
+     },
+     {
+      "month": "2025-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-09",
+      "pnl": -9777.99753
+     },
+     {
+      "month": "2025-10",
+      "pnl": 7924.089154
+     },
+     {
+      "month": "2025-11",
+      "pnl": 8114.646187
+     },
+     {
+      "month": "2025-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2026-01",
+      "pnl": -2104.945751
+     },
+     {
+      "month": "2026-02",
+      "pnl": 10739.919976
+     },
+     {
+      "month": "2026-03",
+      "pnl": -18863.423465
+     },
+     {
+      "month": "2026-04",
+      "pnl": 46301.181181
+     },
+     {
+      "month": "2026-05",
+      "pnl": 56168.527221
+     },
+     {
+      "month": "2026-06",
+      "pnl": 8989.939227
+     },
+     {
+      "month": "2026-07",
+      "pnl": 144267.40538
+     },
+     {
+      "month": "2026-08",
+      "pnl": 11056.278918
+     },
+     {
+      "month": "2026-09",
+      "pnl": 47264.201489
+     },
+     {
+      "month": "2026-10",
+      "pnl": -80102.05097
+     },
+     {
+      "month": "2026-11",
+      "pnl": 9708.246575
+     }
+    ],
+    "exit_reasons": {
+     "決済シグナル": 216,
+     "期限(引け)": 12
+    }
+   },
+   "gates": [
+    {
+     "core": true,
+     "name": "未使用データでの取引回数",
+     "value": 87,
+     "threshold": 80,
+     "ok": true,
+     "fmt": "int"
+    },
+    {
+     "core": true,
+     "name": "未使用データのプロフィットファクター",
+     "value": 1.853893,
+     "threshold": 1.25,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "未使用データでプラスだった月の割合（取引があった月のうち）",
+     "value": 0.755556,
+     "threshold": 0.55,
+     "ok": true,
+     "fmt": "pct"
+    },
+    {
+     "core": true,
+     "name": "月次損益の t値（全期間）",
+     "value": 2.790259,
+     "threshold": 2.0,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "最大ドローダウンが平均年間利益の何年分か",
+     "value": 4.455018,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x",
+     "upper": true
+    },
+    {
+     "core": true,
+     "name": "ウォークフォワード通算のプロフィットファクター",
+     "value": 1.414187,
+     "threshold": 1.15,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": true,
+     "name": "近傍パラメータが学習期間で黒字だった割合",
+     "value": 0.875,
+     "threshold": 0.6,
+     "ok": true,
+     "fmt": "pct"
+    }
+   ],
+   "walk_forward": {
+    "months": 107,
+    "trades": 183,
+    "monthly_mean": 6628.233032,
+    "profit_factor": 1.414187,
+    "positive_months": 0.514019,
+    "tstat": 1.057403,
+    "positive_years": 6,
+    "years": 9,
+    "folds": [
+     {
+      "year": 2018,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.03,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": 181420.350033,
+      "trades": 26,
+      "pf": 1.903095
+     },
+     {
+      "year": 2019,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.03,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": -1674.843829,
+      "trades": 4,
+      "pf": 0.80171
+     },
+     {
+      "year": 2020,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.03,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": -311241.644797,
+      "trades": 20,
+      "pf": 0.487875
+     },
+     {
+      "year": 2021,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.03,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": 378961.276558,
+      "trades": 25,
+      "pf": 3.656122
+     },
+     {
+      "year": 2022,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.03,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": 84013.073253,
+      "trades": 11,
+      "pf": 3.794449
+     },
+     {
+      "year": 2023,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.03,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": 88073.690549,
+      "trades": 10,
+      "pf": 3.353538
+     },
+     {
+      "year": 2024,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.03,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": 208807.707359,
+      "trades": 18,
+      "pf": 5.243792
+     },
+     {
+      "year": 2025,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.03,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": -89692.66741,
+      "trades": 17,
+      "pf": 0.618724
+     },
+     {
+      "year": 2026,
+      "params": {
+       "trend": 200,
+       "mom": 0.2,
+       "rsi_n": 3,
+       "rsi_th": 5,
+       "limit_pct": 0.015,
+       "max_hold": 10,
+       "stop_pct": null,
+       "market": "none"
+      },
+      "pnl": 170553.992697,
+      "trades": 52,
+      "pf": 1.376837
+     }
+    ]
+   },
+   "neighbor_pass": 0.875,
+   "health": {
+    "ok": true,
+    "reasons": []
+   }
+  },
+  {
+   "id": "panic_dip",
+   "family": "panic_dip",
+   "version": 1,
+   "status": "watch",
+   "tier": "watch",
+   "since": "2026-11-22",
+   "adopted_on": "2026-11-22",
+   "params": {
+    "index_rsi": 10,
+    "rsi_th": 20,
+    "trend": 200,
+    "limit_pct": 0.03,
+    "max_hold": 10
+   },
+   "evidence": {
+    "family": "panic_dip",
+    "params": {
+     "index_rsi": 10,
+     "rsi_th": 20,
+     "trend": 200,
+     "limit_pct": 0.03,
+     "max_hold": 10
+    },
+    "forward": null,
+    "is": {
+     "trades": 144,
+     "win_rate": 0.6875,
+     "profit_factor": 1.319022,
+     "avg_pnl": 3171.155591,
+     "avg_ret": 0.007984,
+     "avg_win": 19071.136037,
+     "avg_loss": -31808.801388,
+     "avg_days": 4.75,
+     "total_pnl": 456646.405161,
+     "months": 96,
+     "monthly_mean": 4756.733387,
+     "monthly_median": 0.0,
+     "monthly_std": 48339.77851,
+     "monthly_worst": -200925.980326,
+     "monthly_best": 147696.351,
+     "positive_months": 0.40625,
+     "active_months": 53,
+     "positive_active_months": 0.735849,
+     "target_months": 0.0,
+     "tstat": 0.964139,
+     "max_drawdown": 582458.87977,
+     "max_drawdown_pct": 0.194153,
+     "annual_return_pct": 0.019027,
+     "target_ratio": 0.023784
+    },
+    "oos": {
+     "trades": 94,
+     "win_rate": 0.691489,
+     "profit_factor": 2.328463,
+     "avg_pnl": 9220.248516,
+     "avg_ret": 0.020485,
+     "avg_win": 23370.982494,
+     "avg_loss": -22496.913851,
+     "avg_days": 4.989362,
+     "total_pnl": 866703.360464,
+     "months": 59,
+     "monthly_mean": 14689.887465,
+     "monthly_median": 0.0,
+     "monthly_std": 59404.483807,
+     "monthly_worst": -199190.523566,
+     "monthly_best": 180513.281096,
+     "positive_months": 0.40678,
+     "active_months": 36,
+     "positive_active_months": 0.666667,
+     "target_months": 0.0,
+     "tstat": 1.899439,
+     "max_drawdown": 511124.315119,
+     "max_drawdown_pct": 0.170375,
+     "annual_return_pct": 0.05876,
+     "target_ratio": 0.073449
+    },
+    "full": {
+     "trades": 238,
+     "win_rate": 0.689076,
+     "profit_factor": 1.635064,
+     "avg_pnl": 5560.293133,
+     "avg_ret": 0.012921,
+     "avg_win": 20775.343474,
+     "avg_loss": -28159.548164,
+     "avg_days": 4.844538,
+     "total_pnl": 1323349.765625,
+     "months": 155,
+     "monthly_mean": 8537.740423,
+     "monthly_median": 0.0,
+     "monthly_std": 52857.995706,
+     "monthly_worst": -200925.980326,
+     "monthly_best": 180513.281096,
+     "positive_months": 0.406452,
+     "active_months": 89,
+     "positive_active_months": 0.707865,
+     "target_months": 0.0,
+     "tstat": 2.010935,
+     "max_drawdown": 582458.87977,
+     "max_drawdown_pct": 0.194153,
+     "annual_return_pct": 0.034151,
+     "target_ratio": 0.042689
+    },
+    "recent": {
+     "trades": 18,
+     "win_rate": 0.722222,
+     "profit_factor": 3.783581,
+     "avg_pnl": 18319.261208,
+     "avg_ret": 0.041351,
+     "avg_win": 34477.540281,
+     "avg_loss": -23692.264381,
+     "avg_days": 5.111111,
+     "total_pnl": 329746.701749,
+     "months": 6,
+     "monthly_mean": 54957.783625,
+     "monthly_median": 46032.614213,
+     "monthly_std": 113675.438354,
+     "monthly_worst": -117917.124581,
+     "monthly_best": 180513.281096,
+     "positive_months": 0.666667,
+     "active_months": 6,
+     "positive_active_months": 0.666667,
+     "target_months": 0.0,
+     "tstat": 1.184236,
+     "max_drawdown": 199000.0,
+     "max_drawdown_pct": 0.066333,
+     "annual_return_pct": 0.219831,
+     "target_ratio": 0.274789
+    },
+    "yearly": [
+     {
+      "year": 2014,
+      "pnl": 117423.622736,
+      "monthly_mean": 9785.301895,
+      "positive_months": 6,
+      "months": 12,
+      "trades": 17,
+      "win_rate": 0.705882,
+      "profit_factor": 2.211114
+     },
+     {
+      "year": 2015,
+      "pnl": -18238.499889,
+      "monthly_mean": -1519.874991,
+      "positive_months": 5,
+      "months": 12,
+      "trades": 12,
+      "win_rate": 0.5,
+      "profit_factor": 0.763382
+     },
+     {
+      "year": 2016,
+      "pnl": -59927.36511,
+      "monthly_mean": -4993.947093,
+      "positive_months": 4,
+      "months": 12,
+      "trades": 26,
+      "win_rate": 0.653846,
+      "profit_factor": 0.841504
+     },
+     {
+      "year": 2017,
+      "pnl": 76772.730279,
+      "monthly_mean": 6397.727523,
+      "positive_months": 2,
+      "months": 12,
+      "trades": 7,
+      "win_rate": 0.857143,
+      "profit_factor": 14.093669
+     },
+     {
+      "year": 2018,
+      "pnl": -104828.70264,
+      "monthly_mean": -8735.72522,
+      "positive_months": 6,
+      "months": 12,
+      "trades": 21,
+      "win_rate": 0.666667,
+      "profit_factor": 0.710927
+     },
+     {
+      "year": 2019,
+      "pnl": 28703.24283,
+      "monthly_mean": 2391.936903,
+      "positive_months": 3,
+      "months": 12,
+      "trades": 12,
+      "win_rate": 0.5,
+      "profit_factor": 1.664138
+     },
+     {
+      "year": 2020,
+      "pnl": 4412.186873,
+      "monthly_mean": 367.682239,
+      "positive_months": 6,
+      "months": 12,
+      "trades": 24,
+      "win_rate": 0.666667,
+      "profit_factor": 1.012298
+     },
+     {
+      "year": 2021,
+      "pnl": 412329.190082,
+      "monthly_mean": 34360.76584,
+      "positive_months": 7,
+      "months": 12,
+      "trades": 25,
+      "win_rate": 0.88,
+      "profit_factor": 14.285143
+     },
+     {
+      "year": 2022,
+      "pnl": -40088.661905,
+      "monthly_mean": -3340.721825,
+      "positive_months": 4,
+      "months": 12,
+      "trades": 24,
+      "win_rate": 0.625,
+      "profit_factor": 0.806804
+     },
+     {
+      "year": 2023,
+      "pnl": 97646.977276,
+      "monthly_mean": 8137.248106,
+      "positive_months": 4,
+      "months": 12,
+      "trades": 11,
+      "win_rate": 0.636364,
+      "profit_factor": 3.465107
+     },
+     {
+      "year": 2024,
+      "pnl": 442532.209558,
+      "monthly_mean": 36877.68413,
+      "positive_months": 6,
+      "months": 12,
+      "trades": 21,
+      "win_rate": 0.857143,
+      "profit_factor": 28.58194
+     },
+     {
+      "year": 2025,
+      "pnl": -111639.261686,
+      "monthly_mean": -9303.271807,
+      "positive_months": 4,
+      "months": 12,
+      "trades": 11,
+      "win_rate": 0.545455,
+      "profit_factor": 0.546538
+     },
+     {
+      "year": 2026,
+      "pnl": 478252.097221,
+      "monthly_mean": 43477.463384,
+      "positive_months": 6,
+      "months": 11,
+      "trades": 27,
+      "win_rate": 0.703704,
+      "profit_factor": 4.343057
+     }
+    ],
+    "monthly": [
+     {
+      "month": "2014-01",
+      "pnl": 27313.048124
+     },
+     {
+      "month": "2014-02",
+      "pnl": -26118.985498
+     },
+     {
+      "month": "2014-03",
+      "pnl": 6403.160107
+     },
+     {
+      "month": "2014-04",
+      "pnl": 31157.111265
+     },
+     {
+      "month": "2014-05",
+      "pnl": 56614.517652
+     },
+     {
+      "month": "2014-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-07",
+      "pnl": 13955.89706
+     },
+     {
+      "month": "2014-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-10",
+      "pnl": 8098.874026
+     },
+     {
+      "month": "2014-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2014-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-01",
+      "pnl": -37813.708309
+     },
+     {
+      "month": "2015-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-03",
+      "pnl": 7775.015962
+     },
+     {
+      "month": "2015-04",
+      "pnl": 993.123922
+     },
+     {
+      "month": "2015-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-07",
+      "pnl": -9900.052708
+     },
+     {
+      "month": "2015-08",
+      "pnl": 12249.946803
+     },
+     {
+      "month": "2015-09",
+      "pnl": 7934.995822
+     },
+     {
+      "month": "2015-10",
+      "pnl": 522.178619
+     },
+     {
+      "month": "2015-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2015-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-01",
+      "pnl": -167239.726987
+     },
+     {
+      "month": "2016-02",
+      "pnl": 52631.528931
+     },
+     {
+      "month": "2016-03",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-04",
+      "pnl": 42001.487112
+     },
+     {
+      "month": "2016-05",
+      "pnl": 106078.796054
+     },
+     {
+      "month": "2016-06",
+      "pnl": 27811.455779
+     },
+     {
+      "month": "2016-07",
+      "pnl": -59244.563695
+     },
+     {
+      "month": "2016-08",
+      "pnl": -61906.197812
+     },
+     {
+      "month": "2016-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-10",
+      "pnl": 0.0
+     },
+     {
+      "month": "2016-11",
+      "pnl": -60.144493
+     },
+     {
+      "month": "2016-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-03",
+      "pnl": 15486.578783
+     },
+     {
+      "month": "2017-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-07",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-10",
+      "pnl": 0.0
+     },
+     {
+      "month": "2017-11",
+      "pnl": 61286.151496
+     },
+     {
+      "month": "2017-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2018-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2018-02",
+      "pnl": -134671.144829
+     },
+     {
+      "month": "2018-03",
+      "pnl": 28562.975357
+     },
+     {
+      "month": "2018-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2018-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2018-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2018-07",
+      "pnl": 22016.596667
+     },
+     {
+      "month": "2018-08",
+      "pnl": 25844.329541
+     },
+     {
+      "month": "2018-09",
+      "pnl": 29417.282195
+     },
+     {
+      "month": "2018-10",
+      "pnl": 76306.703025
+     },
+     {
+      "month": "2018-11",
+      "pnl": -200925.980326
+     },
+     {
+      "month": "2018-12",
+      "pnl": 48620.53573
+     },
+     {
+      "month": "2019-01",
+      "pnl": -15653.695972
+     },
+     {
+      "month": "2019-02",
+      "pnl": 35165.124263
+     },
+     {
+      "month": "2019-03",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-05",
+      "pnl": -14334.579333
+     },
+     {
+      "month": "2019-06",
+      "pnl": 22680.369261
+     },
+     {
+      "month": "2019-07",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-08",
+      "pnl": 846.024612
+     },
+     {
+      "month": "2019-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-10",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2019-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2020-01",
+      "pnl": 2755.011803
+     },
+     {
+      "month": "2020-02",
+      "pnl": -2055.685637
+     },
+     {
+      "month": "2020-03",
+      "pnl": -189848.565292
+     },
+     {
+      "month": "2020-04",
+      "pnl": 40230.803374
+     },
+     {
+      "month": "2020-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2020-06",
+      "pnl": 66916.163267
+     },
+     {
+      "month": "2020-07",
+      "pnl": 65.956813
+     },
+     {
+      "month": "2020-08",
+      "pnl": 49828.297879
+     },
+     {
+      "month": "2020-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2020-10",
+      "pnl": -35129.971017
+     },
+     {
+      "month": "2020-11",
+      "pnl": 71650.175685
+     },
+     {
+      "month": "2020-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-03",
+      "pnl": 93895.519525
+     },
+     {
+      "month": "2021-04",
+      "pnl": 42843.579836
+     },
+     {
+      "month": "2021-05",
+      "pnl": 48289.67966
+     },
+     {
+      "month": "2021-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-07",
+      "pnl": 147696.351
+     },
+     {
+      "month": "2021-08",
+      "pnl": 2926.143775
+     },
+     {
+      "month": "2021-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-10",
+      "pnl": 45690.46088
+     },
+     {
+      "month": "2021-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2021-12",
+      "pnl": 30987.455406
+     },
+     {
+      "month": "2022-01",
+      "pnl": 1538.150011
+     },
+     {
+      "month": "2022-02",
+      "pnl": 46523.36626
+     },
+     {
+      "month": "2022-03",
+      "pnl": -88508.52684
+     },
+     {
+      "month": "2022-04",
+      "pnl": 59301.835232
+     },
+     {
+      "month": "2022-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2022-06",
+      "pnl": -8532.773643
+     },
+     {
+      "month": "2022-07",
+      "pnl": 0.0
+     },
+     {
+      "month": "2022-08",
+      "pnl": -20110.012807
+     },
+     {
+      "month": "2022-09",
+      "pnl": -39620.346423
+     },
+     {
+      "month": "2022-10",
+      "pnl": 37538.567123
+     },
+     {
+      "month": "2022-11",
+      "pnl": 0.0
+     },
+     {
+      "month": "2022-12",
+      "pnl": -28218.920818
+     },
+     {
+      "month": "2023-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2023-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2023-03",
+      "pnl": 47998.7989
+     },
+     {
+      "month": "2023-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2023-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2023-06",
+      "pnl": -58261.093958
+     },
+     {
+      "month": "2023-07",
+      "pnl": 43651.015665
+     },
+     {
+      "month": "2023-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2023-09",
+      "pnl": -1181.229231
+     },
+     {
+      "month": "2023-10",
+      "pnl": 63341.027299
+     },
+     {
+      "month": "2023-11",
+      "pnl": 2098.4586
+     },
+     {
+      "month": "2023-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2024-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2024-02",
+      "pnl": 0.0
+     },
+     {
+      "month": "2024-03",
+      "pnl": 38876.479577
+     },
+     {
+      "month": "2024-04",
+      "pnl": 166795.032782
+     },
+     {
+      "month": "2024-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2024-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2024-07",
+      "pnl": 45348.549433
+     },
+     {
+      "month": "2024-08",
+      "pnl": 82645.691629
+     },
+     {
+      "month": "2024-09",
+      "pnl": 75083.548305
+     },
+     {
+      "month": "2024-10",
+      "pnl": 0.0
+     },
+     {
+      "month": "2024-11",
+      "pnl": 33782.907833
+     },
+     {
+      "month": "2024-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-01",
+      "pnl": 56227.007005
+     },
+     {
+      "month": "2025-02",
+      "pnl": 7795.10235
+     },
+     {
+      "month": "2025-03",
+      "pnl": -6446.882607
+     },
+     {
+      "month": "2025-04",
+      "pnl": -199190.523566
+     },
+     {
+      "month": "2025-05",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-06",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-07",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-08",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-09",
+      "pnl": 0.0
+     },
+     {
+      "month": "2025-10",
+      "pnl": 21094.465032
+     },
+     {
+      "month": "2025-11",
+      "pnl": 8881.570099
+     },
+     {
+      "month": "2025-12",
+      "pnl": 0.0
+     },
+     {
+      "month": "2026-01",
+      "pnl": 0.0
+     },
+     {
+      "month": "2026-02",
+      "pnl": 35820.795244
+     },
+     {
+      "month": "2026-03",
+      "pnl": -11442.237654
+     },
+     {
+      "month": "2026-04",
+      "pnl": 0.0
+     },
+     {
+      "month": "2026-05",
+      "pnl": 124126.837883
+     },
+     {
+      "month": "2026-06",
+      "pnl": 42789.154546
+     },
+     {
+      "month": "2026-07",
+      "pnl": 178802.463642
+     },
+     {
+      "month": "2026-08",
+      "pnl": -3717.146834
+     },
+     {
+      "month": "2026-09",
+      "pnl": 49276.07388
+     },
+     {
+      "month": "2026-10",
+      "pnl": -117917.124581
+     },
+     {
+      "month": "2026-11",
+      "pnl": 180513.281096
+     }
+    ],
+    "exit_reasons": {
+     "決済シグナル": 221,
+     "期限(引け)": 17
+    }
+   },
+   "gates": [
+    {
+     "core": true,
+     "name": "未使用データでの取引回数",
+     "value": 94,
+     "threshold": 80,
+     "ok": true,
+     "fmt": "int"
+    },
+    {
+     "core": true,
+     "name": "未使用データのプロフィットファクター",
+     "value": 2.328463,
+     "threshold": 1.25,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "未使用データでプラスだった月の割合（取引があった月のうち）",
+     "value": 0.666667,
+     "threshold": 0.55,
+     "ok": true,
+     "fmt": "pct"
+    },
+    {
+     "core": true,
+     "name": "月次損益の t値（全期間）",
+     "value": 2.010935,
+     "threshold": 2.0,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "最大ドローダウンが平均年間利益の何年分か",
+     "value": 5.685139,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x",
+     "upper": true
+    },
+    {
+     "core": true,
+     "name": "ウォークフォワード通算のプロフィットファクター",
+     "value": 1.216442,
+     "threshold": 1.15,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": true,
+     "name": "近傍パラメータが学習期間で黒字だった割合",
+     "value": 0.833333,
+     "threshold": 0.6,
+     "ok": true,
+     "fmt": "pct"
+    }
+   ],
+   "walk_forward": {
+    "months": 107,
+    "trades": 292,
+    "monthly_mean": 5216.373948,
+    "profit_factor": 1.216442,
+    "positive_months": 0.457944,
+    "tstat": 0.655495,
+    "positive_years": 5,
+    "years": 9,
+    "folds": [
+     {
+      "year": 2018,
+      "params": {
+       "index_rsi": 20,
+       "rsi_th": 5,
+       "trend": 0,
+       "limit_pct": 0.015,
+       "max_hold": 5
+      },
+      "pnl": -232855.677924,
+      "trades": 79,
+      "pf": 0.6963
+     },
+     {
+      "year": 2019,
+      "params": {
+       "index_rsi": 20,
+       "rsi_th": 20,
+       "trend": 200,
+       "limit_pct": 0.015,
+       "max_hold": 10
+      },
+      "pnl": 97283.113256,
+      "trades": 35,
+      "pf": 1.557574
+     },
+     {
+      "year": 2020,
+      "params": {
+       "index_rsi": 20,
+       "rsi_th": 5,
+       "trend": 200,
+       "limit_pct": 0.015,
+       "max_hold": 5
+      },
+      "pnl": -453226.558248,
+      "trades": 51,
+      "pf": 0.511801
+     },
+     {
+      "year": 2021,
+      "params": {
+       "index_rsi": 10,
+       "rsi_th": 20,
+       "trend": 0,
+       "limit_pct": 0.015,
+       "max_hold": 10
+      },
+      "pnl": 344136.177565,
+      "trades": 36,
+      "pf": 3.784165
+     },
+     {
+      "year": 2022,
+      "params": {
+       "index_rsi": 10,
+       "rsi_th": 20,
+       "trend": 200,
+       "limit_pct": 0.03,
+       "max_hold": 10
+      },
+      "pnl": -40088.661905,
+      "trades": 24,
+      "pf": 0.806804
+     },
+     {
+      "year": 2023,
+      "params": {
+       "index_rsi": 10,
+       "rsi_th": 20,
+       "trend": 0,
+       "limit_pct": 0.03,
+       "max_hold": 10
+      },
+      "pnl": 233217.874249,
+      "trades": 12,
+      "pf": 37.264788
+     },
+     {
+      "year": 2024,
+      "params": {
+       "index_rsi": 10,
+       "rsi_th": 20,
+       "trend": 0,
+       "limit_pct": 0.03,
+       "max_hold": 10
+      },
+      "pnl": 551276.859002,
+      "trades": 22,
+      "pf": 53.607649
+     },
+     {
+      "year": 2025,
+      "params": {
+       "index_rsi": 10,
+       "rsi_th": 20,
+       "trend": 0,
+       "limit_pct": 0.03,
+       "max_hold": 10
+      },
+      "pnl": -273579.109206,
+      "trades": 10,
+      "pf": 0.236571
+     },
+     {
+      "year": 2026,
+      "params": {
+       "index_rsi": 10,
+       "rsi_th": 20,
+       "trend": 0,
+       "limit_pct": 0.03,
+       "max_hold": 10
+      },
+      "pnl": 331987.995619,
+      "trades": 23,
+      "pf": 4.289556
+     }
+    ]
+   },
+   "neighbor_pass": 0.833333,
+   "health": {
+    "ok": true,
+    "reasons": []
+   }
+  }
+ ],
+ "rejected": [
+  {
+   "family": "dip_day",
+   "combos_tested": 128,
+   "params": {
+    "trend": 200,
+    "rsi_n": 2,
+    "rsi_th": 35,
+    "limit_pct": 0.07,
+    "market": "none"
+   },
+   "gates": [
+    {
+     "core": true,
+     "name": "未使用データでの取引回数",
+     "value": 88,
+     "threshold": 80,
+     "ok": true,
+     "fmt": "int"
+    },
+    {
+     "core": true,
+     "name": "未使用データのプロフィットファクター",
+     "value": 1.077915,
+     "threshold": 1.25,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "未使用データでプラスだった月の割合（取引があった月のうち）",
+     "value": 0.548387,
+     "threshold": 0.55,
+     "ok": false,
+     "fmt": "pct"
+    },
+    {
+     "core": true,
+     "name": "月次損益の t値（全期間）",
+     "value": 1.662485,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "最大ドローダウンが平均年間利益の何年分か",
+     "value": 6.990224,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x",
+     "upper": true
+    },
+    {
+     "core": true,
+     "name": "ウォークフォワード通算のプロフィットファクター",
+     "value": 1.138915,
+     "threshold": 1.15,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": true,
+     "name": "近傍パラメータが学習期間で黒字だった割合",
+     "value": 0.833333,
+     "threshold": 0.6,
+     "ok": true,
+     "fmt": "pct"
+    }
+   ],
+   "evidence": {
+    "is": {
+     "trades": 135,
+     "win_rate": 0.555556,
+     "profit_factor": 1.656184,
+     "avg_pnl": 2649.844378,
+     "avg_ret": 0.006189,
+     "avg_win": 12038.595648,
+     "avg_loss": -9086.094709,
+     "avg_days": 0.0,
+     "total_pnl": 357728.991028,
+     "months": 96,
+     "monthly_mean": 3726.343657,
+     "monthly_median": 0.0,
+     "monthly_std": 14698.316869,
+     "monthly_worst": -31390.978432,
+     "monthly_best": 72290.354431,
+     "positive_months": 0.395833,
+     "active_months": 62,
+     "positive_active_months": 0.612903,
+     "target_months": 0.0,
+     "tstat": 2.483996,
+     "max_drawdown": 63869.003797,
+     "max_drawdown_pct": 0.02129,
+     "annual_return_pct": 0.014905,
+     "target_ratio": 0.018632
+    },
+    "oos": {
+     "trades": 88,
+     "win_rate": 0.488636,
+     "profit_factor": 1.077915,
+     "avg_pnl": 355.387537,
+     "avg_ret": 0.001419,
+     "avg_win": 10061.925564,
+     "avg_loss": -8919.748801,
+     "avg_days": 0.0,
+     "total_pnl": 31274.103226,
+     "months": 59,
+     "monthly_mean": 530.069546,
+     "monthly_median": 0.0,
+     "monthly_std": 24033.176885,
+     "monthly_worst": -137173.04211,
+     "monthly_best": 90297.964068,
+     "positive_months": 0.288136,
+     "active_months": 31,
+     "positive_active_months": 0.548387,
+     "target_months": 0.0,
+     "tstat": 0.169413,
+     "max_drawdown": 210520.172692,
+     "max_drawdown_pct": 0.070173,
+     "annual_return_pct": 0.00212,
+     "target_ratio": 0.00265
+    },
+    "full": {
+     "trades": 223,
+     "win_rate": 0.529148,
+     "profit_factor": 1.410968,
+     "avg_pnl": 1744.408494,
+     "avg_ret": 0.004307,
+     "avg_win": 11318.283668,
+     "avg_loss": -9014.803606,
+     "avg_days": 0.0,
+     "total_pnl": 389003.094255,
+     "months": 155,
+     "monthly_mean": 2509.697382,
+     "monthly_median": 0.0,
+     "monthly_std": 18794.44449,
+     "monthly_worst": -137173.04211,
+     "monthly_best": 90297.964068,
+     "positive_months": 0.354839,
+     "active_months": 93,
+     "positive_active_months": 0.591398,
+     "target_months": 0.0,
+     "tstat": 1.662485,
+     "max_drawdown": 210520.172692,
+     "max_drawdown_pct": 0.070173,
+     "annual_return_pct": 0.010039,
+     "target_ratio": 0.012548
+    }
+   },
+   "walk_forward": {
+    "months": 107,
+    "trades": 265,
+    "monthly_mean": 1424.175604,
+    "profit_factor": 1.138915,
+    "positive_months": 0.336449,
+    "tstat": 0.586702,
+    "positive_years": 4,
+    "years": 9
+   },
+   "note": null
+  },
+  {
+   "family": "rip_short",
+   "combos_tested": 288,
+   "params": {
+    "rsi_th": 95,
+    "surge": 0.1,
+    "trend": 1,
+    "limit_pct": 0.04,
+    "max_hold": 2,
+    "stop_pct": 0.07,
+    "market": "none"
+   },
+   "gates": [
+    {
+     "core": true,
+     "name": "未使用データでの取引回数",
+     "value": 79,
+     "threshold": 80,
+     "ok": false,
+     "fmt": "int"
+    },
+    {
+     "core": true,
+     "name": "未使用データのプロフィットファクター",
+     "value": 1.544312,
+     "threshold": 1.25,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "未使用データでプラスだった月の割合（取引があった月のうち）",
+     "value": 0.625,
+     "threshold": 0.55,
+     "ok": true,
+     "fmt": "pct"
+    },
+    {
+     "core": true,
+     "name": "月次損益の t値（全期間）",
+     "value": 2.606709,
+     "threshold": 2.0,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "最大ドローダウンが平均年間利益の何年分か",
+     "value": 2.521239,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x",
+     "upper": true
+    },
+    {
+     "core": true,
+     "name": "ウォークフォワード通算のプロフィットファクター",
+     "value": 1.045194,
+     "threshold": 1.15,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": true,
+     "name": "近傍パラメータが学習期間で黒字だった割合",
+     "value": 0.625,
+     "threshold": 0.6,
+     "ok": true,
+     "fmt": "pct"
+    }
+   ],
+   "evidence": {
+    "is": {
+     "trades": 139,
+     "win_rate": 0.589928,
+     "profit_factor": 1.816256,
+     "avg_pnl": 6107.211647,
+     "avg_ret": 0.011544,
+     "avg_win": 23035.339561,
+     "avg_loss": -18245.533772,
+     "avg_days": 1.892086,
+     "total_pnl": 848902.418985,
+     "months": 96,
+     "monthly_mean": 8842.733531,
+     "monthly_median": 0.0,
+     "monthly_std": 42468.256188,
+     "monthly_worst": -66154.362053,
+     "monthly_best": 252385.257518,
+     "positive_months": 0.239583,
+     "active_months": 46,
+     "positive_active_months": 0.5,
+     "target_months": 0.010417,
+     "tstat": 2.040129,
+     "max_drawdown": 189463.217075,
+     "max_drawdown_pct": 0.063154,
+     "annual_return_pct": 0.035371,
+     "target_ratio": 0.044214
+    },
+    "oos": {
+     "trades": 79,
+     "win_rate": 0.544304,
+     "profit_factor": 1.544312,
+     "avg_pnl": 4410.103708,
+     "avg_ret": 0.010248,
+     "avg_win": 22987.641686,
+     "avg_loss": -17779.733321,
+     "avg_days": 1.848101,
+     "total_pnl": 348398.192939,
+     "months": 59,
+     "monthly_mean": 5905.054118,
+     "monthly_median": 0.0,
+     "monthly_std": 25581.598953,
+     "monthly_worst": -66119.325808,
+     "monthly_best": 73666.225938,
+     "positive_months": 0.338983,
+     "active_months": 32,
+     "positive_active_months": 0.625,
+     "target_months": 0.0,
+     "tstat": 1.773055,
+     "max_drawdown": 233704.330899,
+     "max_drawdown_pct": 0.077901,
+     "annual_return_pct": 0.02362,
+     "target_ratio": 0.029525
+    },
+    "full": {
+     "trades": 218,
+     "win_rate": 0.573394,
+     "profit_factor": 1.712651,
+     "avg_pnl": 5492.204642,
+     "avg_ret": 0.011074,
+     "avg_win": 23018.931492,
+     "avg_loss": -18065.22392,
+     "avg_days": 1.876147,
+     "total_pnl": 1197300.611923,
+     "months": 155,
+     "monthly_mean": 7724.520077,
+     "monthly_median": 0.0,
+     "monthly_std": 36893.064652,
+     "monthly_worst": -66154.362053,
+     "monthly_best": 252385.257518,
+     "positive_months": 0.277419,
+     "active_months": 78,
+     "positive_active_months": 0.551282,
+     "target_months": 0.006452,
+     "tstat": 2.606709,
+     "max_drawdown": 233704.330899,
+     "max_drawdown_pct": 0.077901,
+     "annual_return_pct": 0.030898,
+     "target_ratio": 0.038623
+    }
+   },
+   "walk_forward": {
+    "months": 107,
+    "trades": 221,
+    "monthly_mean": 816.650097,
+    "profit_factor": 1.045194,
+    "positive_months": 0.280374,
+    "tstat": 0.268233,
+    "positive_years": 6,
+    "years": 9
+   },
+   "note": null
+  },
+  {
+   "family": "breakout_long",
+   "combos_tested": 324,
+   "params": {
+    "lookback": 250,
+    "vol_ratio": 2.0,
+    "exit_sma": 20,
+    "max_hold": 20,
+    "stop_pct": null,
+    "market": "up200"
+   },
+   "gates": [
+    {
+     "core": true,
+     "name": "未使用データでの取引回数",
+     "value": 304,
+     "threshold": 80,
+     "ok": true,
+     "fmt": "int"
+    },
+    {
+     "core": true,
+     "name": "未使用データのプロフィットファクター",
+     "value": 1.393521,
+     "threshold": 1.25,
+     "ok": true,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "未使用データでプラスだった月の割合（取引があった月のうち）",
+     "value": 0.592593,
+     "threshold": 0.55,
+     "ok": true,
+     "fmt": "pct"
+    },
+    {
+     "core": true,
+     "name": "月次損益の t値（全期間）",
+     "value": 1.774785,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "最大ドローダウンが平均年間利益の何年分か",
+     "value": 4.608465,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x",
+     "upper": true
+    },
+    {
+     "core": true,
+     "name": "ウォークフォワード通算のプロフィットファクター",
+     "value": 1.125479,
+     "threshold": 1.15,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": true,
+     "name": "近傍パラメータが学習期間で黒字だった割合",
+     "value": 0.857143,
+     "threshold": 0.6,
+     "ok": true,
+     "fmt": "pct"
+    }
+   ],
+   "evidence": {
+    "is": {
+     "trades": 452,
+     "win_rate": 0.418142,
+     "profit_factor": 1.164813,
+     "avg_pnl": 2500.64166,
+     "avg_ret": 0.004482,
+     "avg_win": 42266.149126,
+     "avg_loss": -26076.091841,
+     "avg_days": 14.369469,
+     "total_pnl": 1130290.030518,
+     "months": 96,
+     "monthly_mean": 12363.527997,
+     "monthly_median": 0.0,
+     "monthly_std": 116796.073569,
+     "monthly_worst": -324191.432178,
+     "monthly_best": 364240.875575,
+     "positive_months": 0.489583,
+     "active_months": 82,
+     "positive_active_months": 0.573171,
+     "target_months": 0.072917,
+     "tstat": 1.03717,
+     "max_drawdown": 1080900.889924,
+     "max_drawdown_pct": 0.3603,
+     "annual_return_pct": 0.049454,
+     "target_ratio": 0.061818
+    },
+    "oos": {
+     "trades": 304,
+     "win_rate": 0.444079,
+     "profit_factor": 1.393521,
+     "avg_pnl": 6800.488885,
+     "avg_ret": 0.013168,
+     "avg_win": 54228.210409,
+     "avg_loss": -31085.560853,
+     "avg_days": 14.592105,
+     "total_pnl": 2067348.620933,
+     "months": 59,
+     "monthly_mean": 33831.265487,
+     "monthly_median": 26426.620493,
+     "monthly_std": 180175.00593,
+     "monthly_worst": -341382.761798,
+     "monthly_best": 483160.24902,
+     "positive_months": 0.542373,
+     "active_months": 54,
+     "positive_active_months": 0.592593,
+     "target_months": 0.186441,
+     "tstat": 1.44228,
+     "max_drawdown": 774868.878653,
+     "max_drawdown_pct": 0.25829,
+     "annual_return_pct": 0.135325,
+     "target_ratio": 0.169156
+    },
+    "full": {
+     "trades": 756,
+     "win_rate": 0.428571,
+     "profit_factor": 1.264017,
+     "avg_pnl": 4229.680756,
+     "avg_ret": 0.007975,
+     "avg_win": 47250.341327,
+     "avg_loss": -28035.814672,
+     "avg_days": 14.458995,
+     "total_pnl": 3197638.65145,
+     "months": 155,
+     "monthly_mean": 20535.118396,
+     "monthly_median": 6912.637726,
+     "monthly_std": 144051.362138,
+     "monthly_worst": -341382.761798,
+     "monthly_best": 483160.24902,
+     "positive_months": 0.509677,
+     "active_months": 136,
+     "positive_active_months": 0.580882,
+     "target_months": 0.116129,
+     "tstat": 1.774785,
+     "max_drawdown": 1135624.565537,
+     "max_drawdown_pct": 0.378542,
+     "annual_return_pct": 0.08214,
+     "target_ratio": 0.102676
+    }
+   },
+   "walk_forward": {
+    "months": 107,
+    "trades": 750,
+    "monthly_mean": 11673.912546,
+    "profit_factor": 1.125479,
+    "positive_months": 0.542056,
+    "tstat": 0.901186,
+    "positive_years": 6,
+    "years": 9
+   },
+   "note": null
+  },
+  {
+   "family": "news_long",
+   "combos_tested": 144,
+   "params": {
+    "jump": 0.08,
+    "vol_ratio": 2.0,
+    "trend": 200,
+    "max_hold": 3,
+    "stop_pct": null,
+    "market": "up200"
+   },
+   "gates": [
+    {
+     "core": true,
+     "name": "未使用データでの取引回数",
+     "value": 678,
+     "threshold": 80,
+     "ok": true,
+     "fmt": "int"
+    },
+    {
+     "core": true,
+     "name": "未使用データのプロフィットファクター",
+     "value": 0.998317,
+     "threshold": 1.25,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "未使用データでプラスだった月の割合（取引があった月のうち）",
+     "value": 0.45283,
+     "threshold": 0.55,
+     "ok": false,
+     "fmt": "pct"
+    },
+    {
+     "core": true,
+     "name": "月次損益の t値（全期間）",
+     "value": 0.576948,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "最大ドローダウンが平均年間利益の何年分か",
+     "value": 18.340775,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x",
+     "upper": true
+    },
+    {
+     "core": true,
+     "name": "ウォークフォワード通算のプロフィットファクター",
+     "value": 0.874444,
+     "threshold": 1.15,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": true,
+     "name": "近傍パラメータが学習期間で黒字だった割合",
+     "value": 0.714286,
+     "threshold": 0.6,
+     "ok": true,
+     "fmt": "pct"
+    }
+   ],
+   "evidence": {
+    "is": {
+     "trades": 673,
+     "win_rate": 0.502229,
+     "profit_factor": 1.1175,
+     "avg_pnl": 1448.44696,
+     "avg_ret": 0.002617,
+     "avg_win": 27429.03547,
+     "avg_loss": -24764.803536,
+     "avg_days": 3.014859,
+     "total_pnl": 974804.804158,
+     "months": 96,
+     "monthly_mean": 10154.21671,
+     "monthly_median": 0.0,
+     "monthly_std": 119089.077358,
+     "monthly_worst": -266380.86877,
+     "monthly_best": 341276.461513,
+     "positive_months": 0.40625,
+     "active_months": 77,
+     "positive_active_months": 0.506494,
+     "target_months": 0.072917,
+     "tstat": 0.83543,
+     "max_drawdown": 1363790.047306,
+     "max_drawdown_pct": 0.454597,
+     "annual_return_pct": 0.040617,
+     "target_ratio": 0.050771
+    },
+    "oos": {
+     "trades": 678,
+     "win_rate": 0.454277,
+     "profit_factor": 0.998317,
+     "avg_pnl": -21.154287,
+     "avg_ret": -0.000229,
+     "avg_win": 27624.835374,
+     "avg_loss": -23034.572708,
+     "avg_days": 3.0,
+     "total_pnl": -14342.606903,
+     "months": 59,
+     "monthly_mean": -243.095032,
+     "monthly_median": 0.0,
+     "monthly_std": 155485.029887,
+     "monthly_worst": -353904.419803,
+     "monthly_best": 388475.556243,
+     "positive_months": 0.40678,
+     "active_months": 53,
+     "positive_active_months": 0.45283,
+     "target_months": 0.118644,
+     "tstat": -0.012009,
+     "max_drawdown": 1160170.724175,
+     "max_drawdown_pct": 0.386724,
+     "annual_return_pct": -0.000972,
+     "target_ratio": -0.001215
+    },
+    "full": {
+     "trades": 1351,
+     "win_rate": 0.478164,
+     "profit_factor": 1.057106,
+     "avg_pnl": 710.926867,
+     "avg_ret": 0.001189,
+     "avg_win": 27522.388985,
+     "avg_loss": -23856.73913,
+     "avg_days": 3.007402,
+     "total_pnl": 960462.197255,
+     "months": 155,
+     "monthly_mean": 6196.530305,
+     "monthly_median": 0.0,
+     "monthly_std": 133714.286595,
+     "monthly_worst": -353904.419803,
+     "monthly_best": 388475.556243,
+     "positive_months": 0.406452,
+     "active_months": 130,
+     "positive_active_months": 0.484615,
+     "target_months": 0.090323,
+     "tstat": 0.576948,
+     "max_drawdown": 1363790.047306,
+     "max_drawdown_pct": 0.454597,
+     "annual_return_pct": 0.024786,
+     "target_ratio": 0.030983
+    }
+   },
+   "walk_forward": {
+    "months": 107,
+    "trades": 1105,
+    "monthly_mean": -16318.979891,
+    "profit_factor": 0.874444,
+    "positive_months": 0.383178,
+    "tstat": -1.274096,
+    "positive_years": 4,
+    "years": 9
+   },
+   "note": null
+  },
+  {
+   "family": "breakdown_short",
+   "combos_tested": 48,
+   "params": {
+    "lookback": 60,
+    "vol_ratio": 2.0,
+    "exit_sma": 10,
+    "max_hold": 10,
+    "stop_pct": 0.07,
+    "market": "none"
+   },
+   "gates": [
+    {
+     "core": true,
+     "name": "未使用データでの取引回数",
+     "value": 394,
+     "threshold": 80,
+     "ok": true,
+     "fmt": "int"
+    },
+    {
+     "core": true,
+     "name": "未使用データのプロフィットファクター",
+     "value": 0.635979,
+     "threshold": 1.25,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "未使用データでプラスだった月の割合（取引があった月のうち）",
+     "value": 0.305085,
+     "threshold": 0.55,
+     "ok": false,
+     "fmt": "pct"
+    },
+    {
+     "core": true,
+     "name": "月次損益の t値（全期間）",
+     "value": -2.249346,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": false,
+     "name": "最大ドローダウンが平均年間利益の何年分か",
+     "value": 99.0,
+     "threshold": 2.0,
+     "ok": false,
+     "fmt": "x",
+     "upper": true
+    },
+    {
+     "core": true,
+     "name": "ウォークフォワード通算のプロフィットファクター",
+     "value": 0.743427,
+     "threshold": 1.15,
+     "ok": false,
+     "fmt": "x"
+    },
+    {
+     "core": true,
+     "name": "近傍パラメータが学習期間で黒字だった割合",
+     "value": 0.0,
+     "threshold": 0.6,
+     "ok": false,
+     "fmt": "pct"
+    }
+   ],
+   "evidence": {
+    "is": {
+     "trades": 705,
+     "win_rate": 0.392908,
+     "profit_factor": 0.817862,
+     "avg_pnl": -1641.214544,
+     "avg_ret": -0.003588,
+     "avg_win": 18756.567764,
+     "avg_loss": -14842.582999,
+     "avg_days": 7.234043,
+     "total_pnl": -1157056.253256,
+     "months": 96,
+     "monthly_mean": -11956.747317,
+     "monthly_median": -12257.850098,
+     "monthly_std": 80426.314713,
+     "monthly_worst": -278051.508293,
+     "monthly_best": 226629.708538,
+     "positive_months": 0.385417,
+     "active_months": 94,
+     "positive_active_months": 0.393617,
+     "target_months": 0.020833,
+     "tstat": -1.456634,
+     "max_drawdown": 1367208.387007,
+     "max_drawdown_pct": 0.455736,
+     "annual_return_pct": -0.047827,
+     "target_ratio": -0.059784
+    },
+    "oos": {
+     "trades": 394,
+     "win_rate": 0.347716,
+     "profit_factor": 0.635979,
+     "avg_pnl": -2052.11604,
+     "avg_ret": -0.009651,
+     "avg_win": 10310.836964,
+     "avg_loss": -8642.483984,
+     "avg_days": 6.885787,
+     "total_pnl": -808533.719855,
+     "months": 59,
+     "monthly_mean": -13233.887809,
+     "monthly_median": -13594.459133,
+     "monthly_std": 44697.985891,
+     "monthly_worst": -119088.71216,
+     "monthly_best": 105695.2144,
+     "positive_months": 0.305085,
+     "active_months": 59,
+     "positive_active_months": 0.305085,
+     "target_months": 0.0,
+     "tstat": -2.274183,
+     "max_drawdown": 957859.320028,
+     "max_drawdown_pct": 0.319286,
+     "annual_return_pct": -0.052936,
+     "target_ratio": -0.066169
+    },
+    "full": {
+     "trades": 1099,
+     "win_rate": 0.376706,
+     "profit_factor": 0.770743,
+     "avg_pnl": -1788.525908,
+     "avg_ret": -0.005762,
+     "avg_win": 15961.72448,
+     "avg_loss": -12516.414464,
+     "avg_days": 7.10919,
+     "total_pnl": -1965589.973112,
+     "months": 155,
+     "monthly_mean": -12442.884665,
+     "monthly_median": -13594.459133,
+     "monthly_std": 68870.084223,
+     "monthly_worst": -278051.508293,
+     "monthly_best": 226629.708538,
+     "positive_months": 0.354839,
+     "active_months": 153,
+     "positive_active_months": 0.359477,
+     "target_months": 0.012903,
+     "tstat": -2.249346,
+     "max_drawdown": 2127955.46672,
+     "max_drawdown_pct": 0.709318,
+     "annual_return_pct": -0.049772,
+     "target_ratio": -0.062214
+    }
+   },
+   "walk_forward": {
+    "months": 107,
+    "trades": 714,
+    "monthly_mean": -9814.925601,
+    "profit_factor": 0.743427,
+    "positive_months": 0.308411,
+    "tstat": -1.766145,
+    "positive_years": 3,
+    "years": 9
+   },
+   "note": null
+  }
+ ],
+ "last_research": "2026-11-22",
+ "portfolio": {
+  "label": "採用ルール",
+  "rules": [],
+  "empty": true
+ },
+ "portfolio_watch": {
+  "label": "観察中ルール（仮想売買）",
+  "empty": false,
+  "rules": [
+   "dip_swing",
+   "panic_dip"
+  ],
+  "scale": 0.4,
+  "position_yen": 240000.0,
+  "summary": {
+   "trades": 353,
+   "win_rate": 0.634561,
+   "profit_factor": 1.307087,
+   "avg_pnl": 1186.20701,
+   "avg_ret": 0.00603,
+   "avg_win": 7956.650866,
+   "avg_loss": -10570.222633,
+   "avg_days": 4.983003,
+   "total_pnl": 418731.074393,
+   "months": 155,
+   "monthly_mean": 2701.490803,
+   "monthly_median": 0.0,
+   "monthly_std": 28067.658145,
+   "monthly_worst": -168572.105604,
+   "monthly_best": 89797.491189,
+   "positive_months": 0.470968,
+   "active_months": 111,
+   "positive_active_months": 0.657658,
+   "target_months": 0.0,
+   "tstat": 1.198293,
+   "max_drawdown": 444558.585953,
+   "max_drawdown_pct": 0.148186,
+   "annual_return_pct": 0.010806,
+   "target_ratio": 0.013507
+  },
+  "per_rule": [
+   {
+    "trades": 133,
+    "win_rate": 0.684211,
+    "profit_factor": 2.011604,
+    "avg_pnl": 3193.886288,
+    "avg_ret": 0.015968,
+    "avg_win": 9282.429059,
+    "avg_loss": -9997.956382,
+    "avg_days": 4.601504,
+    "total_pnl": 424786.876325,
+    "id": "dip_swing",
+    "name": "押し目買い",
+    "monthly_mean": 2740.560492
+   },
+   {
+    "trades": 220,
+    "win_rate": 0.604545,
+    "profit_factor": 0.993583,
+    "avg_pnl": -27.526372,
+    "avg_ret": 2.2e-05,
+    "avg_win": 7049.539471,
+    "avg_loss": -10846.489099,
+    "avg_days": 5.213636,
+    "total_pnl": -6055.801933,
+    "id": "panic_dip",
+    "name": "全体急落時のリバウンド狙い",
+    "monthly_mean": -39.06969
+   }
+  ],
+  "yearly": [
+   {
+    "year": 2014,
+    "pnl": 147587.262759,
+    "monthly_mean": 12298.938563,
+    "positive_months": 7,
+    "months": 12,
+    "trades": 28,
+    "win_rate": 0.821429,
+    "profit_factor": 4.860835
+   },
+   {
+    "year": 2015,
+    "pnl": 115716.904246,
+    "monthly_mean": 9643.075354,
+    "positive_months": 4,
+    "months": 12,
+    "trades": 25,
+    "win_rate": 0.72,
+    "profit_factor": 3.959463
+   },
+   {
+    "year": 2016,
+    "pnl": -62191.156947,
+    "monthly_mean": -5182.596412,
+    "positive_months": 4,
+    "months": 12,
+    "trades": 26,
+    "win_rate": 0.576923,
+    "profit_factor": 0.587361
+   },
+   {
+    "year": 2017,
+    "pnl": 73879.265583,
+    "monthly_mean": 6156.605465,
+    "positive_months": 9,
+    "months": 12,
+    "trades": 27,
+    "win_rate": 0.666667,
+    "profit_factor": 2.516228
+   },
+   {
+    "year": 2018,
+    "pnl": 141852.568968,
+    "monthly_mean": 11821.047414,
+    "positive_months": 8,
+    "months": 12,
+    "trades": 37,
+    "win_rate": 0.783784,
+    "profit_factor": 2.053556
+   },
+   {
+    "year": 2019,
+    "pnl": -121729.597581,
+    "monthly_mean": -10144.133132,
+    "positive_months": 2,
+    "months": 12,
+    "trades": 16,
+    "win_rate": 0.375,
+    "profit_factor": 0.164622
+   },
+   {
+    "year": 2020,
+    "pnl": -71819.84979,
+    "monthly_mean": -5984.987483,
+    "positive_months": 6,
+    "months": 12,
+    "trades": 37,
+    "win_rate": 0.567568,
+    "profit_factor": 0.744192
+   },
+   {
+    "year": 2021,
+    "pnl": 129335.440375,
+    "monthly_mean": 10777.953365,
+    "positive_months": 8,
+    "months": 12,
+    "trades": 28,
+    "win_rate": 0.714286,
+    "profit_factor": 3.894226
+   },
+   {
+    "year": 2022,
+    "pnl": 34363.550353,
+    "monthly_mean": 2863.629196,
+    "positive_months": 6,
+    "months": 12,
+    "trades": 28,
+    "win_rate": 0.642857,
+    "profit_factor": 1.474782
+   },
+   {
+    "year": 2023,
+    "pnl": 60408.012974,
+    "monthly_mean": 5034.001081,
+    "positive_months": 5,
+    "months": 12,
+    "trades": 16,
+    "win_rate": 0.5625,
+    "profit_factor": 2.744129
+   },
+   {
+    "year": 2024,
+    "pnl": 23560.053752,
+    "monthly_mean": 1963.337813,
+    "positive_months": 6,
+    "months": 12,
+    "trades": 23,
+    "win_rate": 0.608696,
+    "profit_factor": 1.645808
+   },
+   {
+    "year": 2025,
+    "pnl": -171594.032338,
+    "monthly_mean": -14299.502695,
+    "positive_months": 2,
+    "months": 12,
+    "trades": 18,
+    "win_rate": 0.277778,
+    "profit_factor": 0.168323
+   },
+   {
+    "year": 2026,
+    "pnl": 119362.65204,
+    "monthly_mean": 10851.150185,
+    "positive_months": 6,
+    "months": 11,
+    "trades": 44,
+    "win_rate": 0.636364,
+    "profit_factor": 1.729779
+   }
+  ],
+  "monthly": [
+   {
+    "month": "2014-01",
+    "pnl": -4748.311481
+   },
+   {
+    "month": "2014-02",
+    "pnl": 22332.481105
+   },
+   {
+    "month": "2014-03",
+    "pnl": 19791.381427
+   },
+   {
+    "month": "2014-04",
+    "pnl": 29810.835075
+   },
+   {
+    "month": "2014-05",
+    "pnl": 0.0
+   },
+   {
+    "month": "2014-06",
+    "pnl": 0.0
+   },
+   {
+    "month": "2014-07",
+    "pnl": 5482.673845
+   },
+   {
+    "month": "2014-08",
+    "pnl": 0.0
+   },
+   {
+    "month": "2014-09",
+    "pnl": 12503.173151
+   },
+   {
+    "month": "2014-10",
+    "pnl": 39157.075786
+   },
+   {
+    "month": "2014-11",
+    "pnl": 0.0
+   },
+   {
+    "month": "2014-12",
+    "pnl": 23257.95385
+   },
+   {
+    "month": "2015-01",
+    "pnl": -6856.59151
+   },
+   {
+    "month": "2015-02",
+    "pnl": 0.0
+   },
+   {
+    "month": "2015-03",
+    "pnl": 0.0
+   },
+   {
+    "month": "2015-04",
+    "pnl": 7875.163016
+   },
+   {
+    "month": "2015-05",
+    "pnl": 11114.086437
+   },
+   {
+    "month": "2015-06",
+    "pnl": 0.0
+   },
+   {
+    "month": "2015-07",
+    "pnl": 73994.125707
+   },
+   {
+    "month": "2015-08",
+    "pnl": 29590.120597
+   },
+   {
+    "month": "2015-09",
+    "pnl": 0.0
+   },
+   {
+    "month": "2015-10",
+    "pnl": 0.0
+   },
+   {
+    "month": "2015-11",
+    "pnl": 0.0
+   },
+   {
+    "month": "2015-12",
+    "pnl": 0.0
+   },
+   {
+    "month": "2016-01",
+    "pnl": -74583.154918
+   },
+   {
+    "month": "2016-02",
+    "pnl": -13391.559318
+   },
+   {
+    "month": "2016-03",
+    "pnl": 0.0
+   },
+   {
+    "month": "2016-04",
+    "pnl": 13374.144695
+   },
+   {
+    "month": "2016-05",
+    "pnl": 34871.441493
+   },
+   {
+    "month": "2016-06",
+    "pnl": 5011.864727
+   },
+   {
+    "month": "2016-07",
+    "pnl": -3217.904467
+   },
+   {
+    "month": "2016-08",
+    "pnl": -28743.923114
+   },
+   {
+    "month": "2016-09",
+    "pnl": 0.0
+   },
+   {
+    "month": "2016-10",
+    "pnl": 0.0
+   },
+   {
+    "month": "2016-11",
+    "pnl": 0.0
+   },
+   {
+    "month": "2016-12",
+    "pnl": 4487.933955
+   },
+   {
+    "month": "2017-01",
+    "pnl": 4467.805958
+   },
+   {
+    "month": "2017-02",
+    "pnl": 0.0
+   },
+   {
+    "month": "2017-03",
+    "pnl": 9806.327071
+   },
+   {
+    "month": "2017-04",
+    "pnl": -6312.630518
+   },
+   {
+    "month": "2017-05",
+    "pnl": 18481.486806
+   },
+   {
+    "month": "2017-06",
+    "pnl": 7246.219556
+   },
+   {
+    "month": "2017-07",
+    "pnl": 206.993417
+   },
+   {
+    "month": "2017-08",
+    "pnl": 9614.005794
+   },
+   {
+    "month": "2017-09",
+    "pnl": 0.0
+   },
+   {
+    "month": "2017-10",
+    "pnl": 11105.598721
+   },
+   {
+    "month": "2017-11",
+    "pnl": 1919.805103
+   },
+   {
+    "month": "2017-12",
+    "pnl": 17343.653674
+   },
+   {
+    "month": "2018-01",
+    "pnl": 0.0
+   },
+   {
+    "month": "2018-02",
+    "pnl": 14230.444383
+   },
+   {
+    "month": "2018-03",
+    "pnl": 47921.716055
+   },
+   {
+    "month": "2018-04",
+    "pnl": -1420.983053
+   },
+   {
+    "month": "2018-05",
+    "pnl": 8575.226928
+   },
+   {
+    "month": "2018-06",
+    "pnl": 34558.552401
+   },
+   {
+    "month": "2018-07",
+    "pnl": 24935.266399
+   },
+   {
+    "month": "2018-08",
+    "pnl": -1138.733982
+   },
+   {
+    "month": "2018-09",
+    "pnl": 11031.480823
+   },
+   {
+    "month": "2018-10",
+    "pnl": 38232.714368
+   },
+   {
+    "month": "2018-11",
+    "pnl": -63388.290412
+   },
+   {
+    "month": "2018-12",
+    "pnl": 28315.175058
+   },
+   {
+    "month": "2019-01",
+    "pnl": -6992.784486
+   },
+   {
+    "month": "2019-02",
+    "pnl": 21451.96097
+   },
+   {
+    "month": "2019-03",
+    "pnl": 0.0
+   },
+   {
+    "month": "2019-04",
+    "pnl": 0.0
+   },
+   {
+    "month": "2019-05",
+    "pnl": -95947.74291
+   },
+   {
+    "month": "2019-06",
+    "pnl": 10178.380532
+   },
+   {
+    "month": "2019-07",
+    "pnl": -2671.271541
+   },
+   {
+    "month": "2019-08",
+    "pnl": -47748.140145
+   },
+   {
+    "month": "2019-09",
+    "pnl": 0.0
+   },
+   {
+    "month": "2019-10",
+    "pnl": 0.0
+   },
+   {
+    "month": "2019-11",
+    "pnl": 0.0
+   },
+   {
+    "month": "2019-12",
+    "pnl": 0.0
+   },
+   {
+    "month": "2020-01",
+    "pnl": -12315.333649
+   },
+   {
+    "month": "2020-02",
+    "pnl": -38030.43448
+   },
+   {
+    "month": "2020-03",
+    "pnl": -125950.492928
+   },
+   {
+    "month": "2020-04",
+    "pnl": 14995.191992
+   },
+   {
+    "month": "2020-05",
+    "pnl": 0.0
+   },
+   {
+    "month": "2020-06",
+    "pnl": 31487.837786
+   },
+   {
+    "month": "2020-07",
+    "pnl": -11894.118457
+   },
+   {
+    "month": "2020-08",
+    "pnl": 23172.167146
+   },
+   {
+    "month": "2020-09",
+    "pnl": 0.0
+   },
+   {
+    "month": "2020-10",
+    "pnl": 9164.165211
+   },
+   {
+    "month": "2020-11",
+    "pnl": 36351.166376
+   },
+   {
+    "month": "2020-12",
+    "pnl": 1200.001213
+   },
+   {
+    "month": "2021-01",
+    "pnl": 9749.167626
+   },
+   {
+    "month": "2021-02",
+    "pnl": 17303.560746
+   },
+   {
+    "month": "2021-03",
+    "pnl": 30950.632319
+   },
+   {
+    "month": "2021-04",
+    "pnl": 14281.193279
+   },
+   {
+    "month": "2021-05",
+    "pnl": -13849.397295
+   },
+   {
+    "month": "2021-06",
+    "pnl": 18441.746627
+   },
+   {
+    "month": "2021-07",
+    "pnl": 44514.051933
+   },
+   {
+    "month": "2021-08",
+    "pnl": 5456.193836
+   },
+   {
+    "month": "2021-09",
+    "pnl": 0.0
+   },
+   {
+    "month": "2021-10",
+    "pnl": -4311.471241
+   },
+   {
+    "month": "2021-11",
+    "pnl": 0.0
+   },
+   {
+    "month": "2021-12",
+    "pnl": 6799.762545
+   },
+   {
+    "month": "2022-01",
+    "pnl": 6696.014484
+   },
+   {
+    "month": "2022-02",
+    "pnl": 22380.753226
+   },
+   {
+    "month": "2022-03",
+    "pnl": -33013.336576
+   },
+   {
+    "month": "2022-04",
+    "pnl": 21565.73368
+   },
+   {
+    "month": "2022-05",
+    "pnl": -3321.482936
+   },
+   {
+    "month": "2022-06",
+    "pnl": -8883.860557
+   },
+   {
+    "month": "2022-07",
+    "pnl": 0.0
+   },
+   {
+    "month": "2022-08",
+    "pnl": 0.0
+   },
+   {
+    "month": "2022-09",
+    "pnl": 24020.835696
+   },
+   {
+    "month": "2022-10",
+    "pnl": 0.0
+   },
+   {
+    "month": "2022-11",
+    "pnl": 2507.654547
+   },
+   {
+    "month": "2022-12",
+    "pnl": 2411.23879
+   },
+   {
+    "month": "2023-01",
+    "pnl": -648.726383
+   },
+   {
+    "month": "2023-02",
+    "pnl": 0.0
+   },
+   {
+    "month": "2023-03",
+    "pnl": 27095.517061
+   },
+   {
+    "month": "2023-04",
+    "pnl": 0.0
+   },
+   {
+    "month": "2023-05",
+    "pnl": 0.0
+   },
+   {
+    "month": "2023-06",
+    "pnl": -31142.0452
+   },
+   {
+    "month": "2023-07",
+    "pnl": 10850.944972
+   },
+   {
+    "month": "2023-08",
+    "pnl": 0.0
+   },
+   {
+    "month": "2023-09",
+    "pnl": -6171.17559
+   },
+   {
+    "month": "2023-10",
+    "pnl": 57872.184229
+   },
+   {
+    "month": "2023-11",
+    "pnl": 839.38344
+   },
+   {
+    "month": "2023-12",
+    "pnl": 1711.930446
+   },
+   {
+    "month": "2024-01",
+    "pnl": 3573.052499
+   },
+   {
+    "month": "2024-02",
+    "pnl": 0.0
+   },
+   {
+    "month": "2024-03",
+    "pnl": 0.0
+   },
+   {
+    "month": "2024-04",
+    "pnl": 10040.588623
+   },
+   {
+    "month": "2024-05",
+    "pnl": -370.49751
+   },
+   {
+    "month": "2024-06",
+    "pnl": 443.946486
+   },
+   {
+    "month": "2024-07",
+    "pnl": -10942.809941
+   },
+   {
+    "month": "2024-08",
+    "pnl": 22727.22323
+   },
+   {
+    "month": "2024-09",
+    "pnl": 6297.952161
+   },
+   {
+    "month": "2024-10",
+    "pnl": 0.0
+   },
+   {
+    "month": "2024-11",
+    "pnl": -12657.636425
+   },
+   {
+    "month": "2024-12",
+    "pnl": 4448.234628
+   },
+   {
+    "month": "2025-01",
+    "pnl": 0.0
+   },
+   {
+    "month": "2025-02",
+    "pnl": -10550.991171
+   },
+   {
+    "month": "2025-03",
+    "pnl": 6716.397483
+   },
+   {
+    "month": "2025-04",
+    "pnl": -168572.105604
+   },
+   {
+    "month": "2025-05",
+    "pnl": 0.0
+   },
+   {
+    "month": "2025-06",
+    "pnl": 0.0
+   },
+   {
+    "month": "2025-07",
+    "pnl": 0.0
+   },
+   {
+    "month": "2025-08",
+    "pnl": 0.0
+   },
+   {
+    "month": "2025-09",
+    "pnl": -3621.954842
+   },
+   {
+    "month": "2025-10",
+    "pnl": -814.36119
+   },
+   {
+    "month": "2025-11",
+    "pnl": 5248.982986
+   },
+   {
+    "month": "2025-12",
+    "pnl": 0.0
+   },
+   {
+    "month": "2026-01",
+    "pnl": -1052.472876
+   },
+   {
+    "month": "2026-02",
+    "pnl": 23280.35761
+   },
+   {
+    "month": "2026-03",
+    "pnl": -13171.942831
+   },
+   {
+    "month": "2026-04",
+    "pnl": -4268.072011
+   },
+   {
+    "month": "2026-05",
+    "pnl": 26059.115898
+   },
+   {
+    "month": "2026-06",
+    "pnl": 18532.322838
+   },
+   {
+    "month": "2026-07",
+    "pnl": 89797.491189
+   },
+   {
+    "month": "2026-08",
+    "pnl": -10049.035011
+   },
+   {
+    "month": "2026-09",
+    "pnl": 17510.627772
+   },
+   {
+    "month": "2026-10",
+    "pnl": -71564.693003
+   },
+   {
+    "month": "2026-11",
+    "pnl": 44288.952466
+   }
+  ],
+  "equity": [
+   {
+    "date": "2014-01-10",
+    "value": 0.0
+   },
+   {
+    "date": "2014-01-17",
+    "value": 0.0
+   },
+   {
+    "date": "2014-01-24",
+    "value": 0.0
+   },
+   {
+    "date": "2014-01-31",
+    "value": -4748.311481
+   },
+   {
+    "date": "2014-02-07",
+    "value": -8836.857034
+   },
+   {
+    "date": "2014-02-14",
+    "value": 17584.169624
+   },
+   {
+    "date": "2014-02-21",
+    "value": 17584.169624
+   },
+   {
+    "date": "2014-02-28",
+    "value": 17584.169624
+   },
+   {
+    "date": "2014-03-07",
+    "value": 17584.169624
+   },
+   {
+    "date": "2014-03-14",
+    "value": 17509.193707
+   },
+   {
+    "date": "2014-03-21",
+    "value": 10655.841203
+   },
+   {
+    "date": "2014-03-28",
+    "value": 32875.519015
+   },
+   {
+    "date": "2014-04-04",
+    "value": 35990.604836
+   },
+   {
+    "date": "2014-04-11",
+    "value": 33951.703017
+   },
+   {
+    "date": "2014-04-18",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-04-25",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-05-02",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-05-09",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-05-16",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-05-23",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-05-30",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-06-06",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-06-13",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-06-20",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-06-27",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-07-04",
+    "value": 67186.386127
+   },
+   {
+    "date": "2014-07-11",
+    "value": 68583.386769
+   },
+   {
+    "date": "2014-07-18",
+    "value": 72669.059972
+   },
+   {
+    "date": "2014-07-25",
+    "value": 72669.059972
+   },
+   {
+    "date": "2014-08-01",
+    "value": 72669.059972
+   },
+   {
+    "date": "2014-08-08",
+    "value": 72669.059972
+   },
+   {
+    "date": "2014-08-15",
+    "value": 72669.059972
+   },
+   {
+    "date": "2014-08-22",
+    "value": 72669.059972
+   },
+   {
+    "date": "2014-08-29",
+    "value": 72669.059972
+   },
+   {
+    "date": "2014-09-05",
+    "value": 72669.059972
+   },
+   {
+    "date": "2014-09-12",
+    "value": 74436.072808
+   },
+   {
+    "date": "2014-09-19",
+    "value": 81841.671247
+   },
+   {
+    "date": "2014-09-26",
+    "value": 85172.233123
+   },
+   {
+    "date": "2014-10-03",
+    "value": 85172.233123
+   },
+   {
+    "date": "2014-10-10",
+    "value": 89183.298753
+   },
+   {
+    "date": "2014-10-17",
+    "value": 53655.246654
+   },
+   {
+    "date": "2014-10-24",
+    "value": 124329.308909
+   },
+   {
+    "date": "2014-10-31",
+    "value": 124329.308909
+   },
+   {
+    "date": "2014-11-07",
+    "value": 124329.308909
+   },
+   {
+    "date": "2014-11-14",
+    "value": 124329.308909
+   },
+   {
+    "date": "2014-11-21",
+    "value": 124329.308909
+   },
+   {
+    "date": "2014-11-28",
+    "value": 124329.308909
+   },
+   {
+    "date": "2014-12-05",
+    "value": 124329.308909
+   },
+   {
+    "date": "2014-12-12",
+    "value": 124329.308909
+   },
+   {
+    "date": "2014-12-19",
+    "value": 145194.43063
+   },
+   {
+    "date": "2014-12-26",
+    "value": 147587.262759
+   },
+   {
+    "date": "2015-01-02",
+    "value": 147587.262759
+   },
+   {
+    "date": "2015-01-09",
+    "value": 141926.005547
+   },
+   {
+    "date": "2015-01-16",
+    "value": 136712.852953
+   },
+   {
+    "date": "2015-01-23",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-01-30",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-02-06",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-02-13",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-02-20",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-02-27",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-03-06",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-03-13",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-03-20",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-03-27",
+    "value": 140730.671249
+   },
+   {
+    "date": "2015-04-03",
+    "value": 150064.684159
+   },
+   {
+    "date": "2015-04-10",
+    "value": 148605.834265
+   },
+   {
+    "date": "2015-04-17",
+    "value": 148605.834265
+   },
+   {
+    "date": "2015-04-24",
+    "value": 148605.834265
+   },
+   {
+    "date": "2015-05-01",
+    "value": 153132.239314
+   },
+   {
+    "date": "2015-05-08",
+    "value": 151792.286851
+   },
+   {
+    "date": "2015-05-15",
+    "value": 159719.920702
+   },
+   {
+    "date": "2015-05-22",
+    "value": 159719.920702
+   },
+   {
+    "date": "2015-05-29",
+    "value": 159719.920702
+   },
+   {
+    "date": "2015-06-05",
+    "value": 159719.920702
+   },
+   {
+    "date": "2015-06-12",
+    "value": 159719.920702
+   },
+   {
+    "date": "2015-06-19",
+    "value": 159719.920702
+   },
+   {
+    "date": "2015-06-26",
+    "value": 159719.920702
+   },
+   {
+    "date": "2015-07-03",
+    "value": 159719.920702
+   },
+   {
+    "date": "2015-07-10",
+    "value": 184478.793163
+   },
+   {
+    "date": "2015-07-17",
+    "value": 218912.09548
+   },
+   {
+    "date": "2015-07-24",
+    "value": 218912.09548
+   },
+   {
+    "date": "2015-07-31",
+    "value": 233714.046409
+   },
+   {
+    "date": "2015-08-07",
+    "value": 241250.353175
+   },
+   {
+    "date": "2015-08-14",
+    "value": 237779.327112
+   },
+   {
+    "date": "2015-08-21",
+    "value": 233122.779844
+   },
+   {
+    "date": "2015-08-28",
+    "value": 265675.330729
+   },
+   {
+    "date": "2015-09-04",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-09-11",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-09-18",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-09-25",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-10-02",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-10-09",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-10-16",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-10-23",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-10-30",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-11-06",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-11-13",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-11-20",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-11-27",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-12-04",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-12-11",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-12-18",
+    "value": 263304.167005
+   },
+   {
+    "date": "2015-12-25",
+    "value": 263304.167005
+   },
+   {
+    "date": "2016-01-01",
+    "value": 263304.167005
+   },
+   {
+    "date": "2016-01-08",
+    "value": 240991.624745
+   },
+   {
+    "date": "2016-01-15",
+    "value": 195806.190734
+   },
+   {
+    "date": "2016-01-22",
+    "value": 184966.950203
+   },
+   {
+    "date": "2016-01-29",
+    "value": 188721.012087
+   },
+   {
+    "date": "2016-02-05",
+    "value": 188721.012087
+   },
+   {
+    "date": "2016-02-12",
+    "value": 107503.130751
+   },
+   {
+    "date": "2016-02-19",
+    "value": 175329.45277
+   },
+   {
+    "date": "2016-02-26",
+    "value": 175329.45277
+   },
+   {
+    "date": "2016-03-04",
+    "value": 175329.45277
+   },
+   {
+    "date": "2016-03-11",
+    "value": 175329.45277
+   },
+   {
+    "date": "2016-03-18",
+    "value": 175329.45277
+   },
+   {
+    "date": "2016-03-25",
+    "value": 175329.45277
+   },
+   {
+    "date": "2016-04-01",
+    "value": 174893.365736
+   },
+   {
+    "date": "2016-04-08",
+    "value": 187927.40109
+   },
+   {
+    "date": "2016-04-15",
+    "value": 188703.597465
+   },
+   {
+    "date": "2016-04-22",
+    "value": 188703.597465
+   },
+   {
+    "date": "2016-04-29",
+    "value": 188703.597465
+   },
+   {
+    "date": "2016-05-06",
+    "value": 213765.58248
+   },
+   {
+    "date": "2016-05-13",
+    "value": 223575.038958
+   },
+   {
+    "date": "2016-05-20",
+    "value": 223575.038958
+   },
+   {
+    "date": "2016-05-27",
+    "value": 223575.038958
+   },
+   {
+    "date": "2016-06-03",
+    "value": 223575.038958
+   },
+   {
+    "date": "2016-06-10",
+    "value": 223575.038958
+   },
+   {
+    "date": "2016-06-17",
+    "value": 218070.079755
+   },
+   {
+    "date": "2016-06-24",
+    "value": 228586.903685
+   },
+   {
+    "date": "2016-07-01",
+    "value": 228586.903685
+   },
+   {
+    "date": "2016-07-08",
+    "value": 224584.918241
+   },
+   {
+    "date": "2016-07-15",
+    "value": 228462.99502
+   },
+   {
+    "date": "2016-07-22",
+    "value": 228462.99502
+   },
+   {
+    "date": "2016-07-29",
+    "value": 225368.999218
+   },
+   {
+    "date": "2016-08-05",
+    "value": 212629.91745
+   },
+   {
+    "date": "2016-08-12",
+    "value": 207215.456151
+   },
+   {
+    "date": "2016-08-19",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-08-26",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-09-02",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-09-09",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-09-16",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-09-23",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-09-30",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-10-07",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-10-14",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-10-21",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-10-28",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-11-04",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-11-11",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-11-18",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-11-25",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-12-02",
+    "value": 196625.076104
+   },
+   {
+    "date": "2016-12-09",
+    "value": 200514.092379
+   },
+   {
+    "date": "2016-12-16",
+    "value": 201113.010058
+   },
+   {
+    "date": "2016-12-23",
+    "value": 201113.010058
+   },
+   {
+    "date": "2016-12-30",
+    "value": 201113.010058
+   },
+   {
+    "date": "2017-01-06",
+    "value": 201113.010058
+   },
+   {
+    "date": "2017-01-13",
+    "value": 201113.010058
+   },
+   {
+    "date": "2017-01-20",
+    "value": 201113.010058
+   },
+   {
+    "date": "2017-01-27",
+    "value": 205580.816016
+   },
+   {
+    "date": "2017-02-03",
+    "value": 205580.816016
+   },
+   {
+    "date": "2017-02-10",
+    "value": 205580.816016
+   },
+   {
+    "date": "2017-02-17",
+    "value": 205580.816016
+   },
+   {
+    "date": "2017-02-24",
+    "value": 205580.816016
+   },
+   {
+    "date": "2017-03-03",
+    "value": 205580.816016
+   },
+   {
+    "date": "2017-03-10",
+    "value": 208012.79706
+   },
+   {
+    "date": "2017-03-17",
+    "value": 205261.182758
+   },
+   {
+    "date": "2017-03-24",
+    "value": 211139.150087
+   },
+   {
+    "date": "2017-03-31",
+    "value": 215387.143087
+   },
+   {
+    "date": "2017-04-07",
+    "value": 210777.19541
+   },
+   {
+    "date": "2017-04-14",
+    "value": 224907.627178
+   },
+   {
+    "date": "2017-04-21",
+    "value": 252521.371935
+   },
+   {
+    "date": "2017-04-28",
+    "value": 209074.512569
+   },
+   {
+    "date": "2017-05-05",
+    "value": 209074.512569
+   },
+   {
+    "date": "2017-05-12",
+    "value": 227555.999375
+   },
+   {
+    "date": "2017-05-19",
+    "value": 227555.999375
+   },
+   {
+    "date": "2017-05-26",
+    "value": 227555.999375
+   },
+   {
+    "date": "2017-06-02",
+    "value": 227555.999375
+   },
+   {
+    "date": "2017-06-09",
+    "value": 223210.008788
+   },
+   {
+    "date": "2017-06-16",
+    "value": 227961.09314
+   },
+   {
+    "date": "2017-06-23",
+    "value": 234802.218932
+   },
+   {
+    "date": "2017-06-30",
+    "value": 234802.218932
+   },
+   {
+    "date": "2017-07-07",
+    "value": 234802.218932
+   },
+   {
+    "date": "2017-07-14",
+    "value": 234802.218932
+   },
+   {
+    "date": "2017-07-21",
+    "value": 234802.218932
+   },
+   {
+    "date": "2017-07-28",
+    "value": 235509.216819
+   },
+   {
+    "date": "2017-08-04",
+    "value": 239753.461543
+   },
+   {
+    "date": "2017-08-11",
+    "value": 238903.462746
+   },
+   {
+    "date": "2017-08-18",
+    "value": 244623.218143
+   },
+   {
+    "date": "2017-08-25",
+    "value": 244623.218143
+   },
+   {
+    "date": "2017-09-01",
+    "value": 244623.218143
+   },
+   {
+    "date": "2017-09-08",
+    "value": 244623.218143
+   },
+   {
+    "date": "2017-09-15",
+    "value": 244623.218143
+   },
+   {
+    "date": "2017-09-22",
+    "value": 244623.218143
+   },
+   {
+    "date": "2017-09-29",
+    "value": 244623.218143
+   },
+   {
+    "date": "2017-10-06",
+    "value": 244623.218143
+   },
+   {
+    "date": "2017-10-13",
+    "value": 250458.240383
+   },
+   {
+    "date": "2017-10-20",
+    "value": 255728.816863
+   },
+   {
+    "date": "2017-10-27",
+    "value": 255728.816863
+   },
+   {
+    "date": "2017-11-03",
+    "value": 255728.816863
+   },
+   {
+    "date": "2017-11-10",
+    "value": 255728.816863
+   },
+   {
+    "date": "2017-11-17",
+    "value": 262977.864512
+   },
+   {
+    "date": "2017-11-24",
+    "value": 257382.623688
+   },
+   {
+    "date": "2017-12-01",
+    "value": 257648.621967
+   },
+   {
+    "date": "2017-12-08",
+    "value": 271914.681862
+   },
+   {
+    "date": "2017-12-15",
+    "value": 274992.275641
+   },
+   {
+    "date": "2017-12-22",
+    "value": 274992.275641
+   },
+   {
+    "date": "2017-12-29",
+    "value": 274992.275641
+   },
+   {
+    "date": "2018-01-05",
+    "value": 274992.275641
+   },
+   {
+    "date": "2018-01-12",
+    "value": 274992.275641
+   },
+   {
+    "date": "2018-01-19",
+    "value": 274992.275641
+   },
+   {
+    "date": "2018-01-26",
+    "value": 274992.275641
+   },
+   {
+    "date": "2018-02-02",
+    "value": 274992.275641
+   },
+   {
+    "date": "2018-02-09",
+    "value": 226056.306188
+   },
+   {
+    "date": "2018-02-16",
+    "value": 267379.125326
+   },
+   {
+    "date": "2018-02-23",
+    "value": 289222.720023
+   },
+   {
+    "date": "2018-03-02",
+    "value": 289222.720023
+   },
+   {
+    "date": "2018-03-09",
+    "value": 299028.137611
+   },
+   {
+    "date": "2018-03-16",
+    "value": 299028.137611
+   },
+   {
+    "date": "2018-03-23",
+    "value": 287850.101411
+   },
+   {
+    "date": "2018-03-30",
+    "value": 337144.436078
+   },
+   {
+    "date": "2018-04-06",
+    "value": 335723.453025
+   },
+   {
+    "date": "2018-04-13",
+    "value": 335723.453025
+   },
+   {
+    "date": "2018-04-20",
+    "value": 335723.453025
+   },
+   {
+    "date": "2018-04-27",
+    "value": 335723.453025
+   },
+   {
+    "date": "2018-05-04",
+    "value": 335723.453025
+   },
+   {
+    "date": "2018-05-11",
+    "value": 354567.072412
+   },
+   {
+    "date": "2018-05-18",
+    "value": 347246.631506
+   },
+   {
+    "date": "2018-05-25",
+    "value": 350698.662607
+   },
+   {
+    "date": "2018-06-01",
+    "value": 345698.656358
+   },
+   {
+    "date": "2018-06-08",
+    "value": 349887.087912
+   },
+   {
+    "date": "2018-06-15",
+    "value": 349887.087912
+   },
+   {
+    "date": "2018-06-22",
+    "value": 372093.104025
+   },
+   {
+    "date": "2018-06-29",
+    "value": 378857.232355
+   },
+   {
+    "date": "2018-07-06",
+    "value": 383419.243115
+   },
+   {
+    "date": "2018-07-13",
+    "value": 393915.89468
+   },
+   {
+    "date": "2018-07-20",
+    "value": 393915.89468
+   },
+   {
+    "date": "2018-07-27",
+    "value": 403792.498754
+   },
+   {
+    "date": "2018-08-03",
+    "value": 403792.498754
+   },
+   {
+    "date": "2018-08-10",
+    "value": 403792.498754
+   },
+   {
+    "date": "2018-08-17",
+    "value": 404252.565861
+   },
+   {
+    "date": "2018-08-24",
+    "value": 402653.764772
+   },
+   {
+    "date": "2018-08-31",
+    "value": 402653.764772
+   },
+   {
+    "date": "2018-09-07",
+    "value": 404063.147799
+   },
+   {
+    "date": "2018-09-14",
+    "value": 413685.245595
+   },
+   {
+    "date": "2018-09-21",
+    "value": 413685.245595
+   },
+   {
+    "date": "2018-09-28",
+    "value": 413685.245595
+   },
+   {
+    "date": "2018-10-05",
+    "value": 413685.245595
+   },
+   {
+    "date": "2018-10-12",
+    "value": 413814.279101
+   },
+   {
+    "date": "2018-10-19",
+    "value": 405485.348746
+   },
+   {
+    "date": "2018-10-26",
+    "value": 403697.019926
+   },
+   {
+    "date": "2018-11-02",
+    "value": 408911.515507
+   },
+   {
+    "date": "2018-11-09",
+    "value": 391483.833406
+   },
+   {
+    "date": "2018-11-16",
+    "value": 391483.833406
+   },
+   {
+    "date": "2018-11-23",
+    "value": 385562.848227
+   },
+   {
+    "date": "2018-11-30",
+    "value": 388529.669551
+   },
+   {
+    "date": "2018-12-07",
+    "value": 388529.669551
+   },
+   {
+    "date": "2018-12-14",
+    "value": 388529.669551
+   },
+   {
+    "date": "2018-12-21",
+    "value": 393703.679852
+   },
+   {
+    "date": "2018-12-28",
+    "value": 416844.844609
+   },
+   {
+    "date": "2019-01-04",
+    "value": 417351.113461
+   },
+   {
+    "date": "2019-01-11",
+    "value": 418158.060893
+   },
+   {
+    "date": "2019-01-18",
+    "value": 418158.060893
+   },
+   {
+    "date": "2019-01-25",
+    "value": 418158.060893
+   },
+   {
+    "date": "2019-02-01",
+    "value": 414152.063163
+   },
+   {
+    "date": "2019-02-08",
+    "value": 419582.313005
+   },
+   {
+    "date": "2019-02-15",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-02-22",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-03-01",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-03-08",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-03-15",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-03-22",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-03-29",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-04-05",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-04-12",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-04-19",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-04-26",
+    "value": 431304.021093
+   },
+   {
+    "date": "2019-05-10",
+    "value": 409478.993614
+   },
+   {
+    "date": "2019-05-17",
+    "value": 349101.852997
+   },
+   {
+    "date": "2019-05-24",
+    "value": 334750.929258
+   },
+   {
+    "date": "2019-05-31",
+    "value": 335356.278183
+   },
+   {
+    "date": "2019-06-07",
+    "value": 344909.952109
+   },
+   {
+    "date": "2019-06-14",
+    "value": 344909.952109
+   },
+   {
+    "date": "2019-06-21",
+    "value": 344945.973259
+   },
+   {
+    "date": "2019-06-28",
+    "value": 345534.658714
+   },
+   {
+    "date": "2019-07-05",
+    "value": 345534.658714
+   },
+   {
+    "date": "2019-07-12",
+    "value": 345534.658714
+   },
+   {
+    "date": "2019-07-19",
+    "value": 342822.673764
+   },
+   {
+    "date": "2019-07-26",
+    "value": 342863.387173
+   },
+   {
+    "date": "2019-08-02",
+    "value": 342863.387173
+   },
+   {
+    "date": "2019-08-09",
+    "value": 317047.4362
+   },
+   {
+    "date": "2019-08-16",
+    "value": 283989.751364
+   },
+   {
+    "date": "2019-08-23",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-08-30",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-09-06",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-09-13",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-09-20",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-09-27",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-10-04",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-10-11",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-10-18",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-10-25",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-11-01",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-11-08",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-11-15",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-11-22",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-11-29",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-12-06",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-12-13",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-12-20",
+    "value": 295115.247028
+   },
+   {
+    "date": "2019-12-27",
+    "value": 295115.247028
+   },
+   {
+    "date": "2020-01-03",
+    "value": 295115.247028
+   },
+   {
+    "date": "2020-01-10",
+    "value": 297111.234824
+   },
+   {
+    "date": "2020-01-17",
+    "value": 299862.913379
+   },
+   {
+    "date": "2020-01-24",
+    "value": 302699.913379
+   },
+   {
+    "date": "2020-01-31",
+    "value": 282799.913379
+   },
+   {
+    "date": "2020-02-07",
+    "value": 332704.211731
+   },
+   {
+    "date": "2020-02-14",
+    "value": 332704.211731
+   },
+   {
+    "date": "2020-02-21",
+    "value": 326427.212583
+   },
+   {
+    "date": "2020-02-28",
+    "value": 244769.478899
+   },
+   {
+    "date": "2020-03-06",
+    "value": 234947.743963
+   },
+   {
+    "date": "2020-03-13",
+    "value": 57586.649971
+   },
+   {
+    "date": "2020-03-20",
+    "value": 7359.37401
+   },
+   {
+    "date": "2020-03-27",
+    "value": 118818.985971
+   },
+   {
+    "date": "2020-04-03",
+    "value": 113603.492573
+   },
+   {
+    "date": "2020-04-10",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-04-17",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-04-24",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-05-01",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-05-08",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-05-15",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-05-22",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-05-29",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-06-05",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-06-12",
+    "value": 133814.177963
+   },
+   {
+    "date": "2020-06-19",
+    "value": 165302.015749
+   },
+   {
+    "date": "2020-06-26",
+    "value": 165302.015749
+   },
+   {
+    "date": "2020-07-03",
+    "value": 165302.015749
+   },
+   {
+    "date": "2020-07-10",
+    "value": 165302.015749
+   },
+   {
+    "date": "2020-07-17",
+    "value": 164399.015749
+   },
+   {
+    "date": "2020-07-24",
+    "value": 166999.015749
+   },
+   {
+    "date": "2020-07-31",
+    "value": 153407.897292
+   },
+   {
+    "date": "2020-08-07",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-08-14",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-08-21",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-08-28",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-09-04",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-09-11",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-09-18",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-09-25",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-10-02",
+    "value": 176580.064438
+   },
+   {
+    "date": "2020-10-09",
+    "value": 198477.094706
+   },
+   {
+    "date": "2020-10-16",
+    "value": 204127.243434
+   },
+   {
+    "date": "2020-10-23",
+    "value": 206823.243849
+   },
+   {
+    "date": "2020-10-30",
+    "value": 185744.229648
+   },
+   {
+    "date": "2020-11-06",
+    "value": 220430.390094
+   },
+   {
+    "date": "2020-11-13",
+    "value": 222095.396024
+   },
+   {
+    "date": "2020-11-20",
+    "value": 222095.396024
+   },
+   {
+    "date": "2020-11-27",
+    "value": 222095.396024
+   },
+   {
+    "date": "2020-12-04",
+    "value": 222095.396024
+   },
+   {
+    "date": "2020-12-11",
+    "value": 222095.396024
+   },
+   {
+    "date": "2020-12-18",
+    "value": 222095.396024
+   },
+   {
+    "date": "2020-12-25",
+    "value": 220695.397391
+   },
+   {
+    "date": "2021-01-01",
+    "value": 223295.397237
+   },
+   {
+    "date": "2021-01-08",
+    "value": 231337.081729
+   },
+   {
+    "date": "2021-01-15",
+    "value": 231337.081729
+   },
+   {
+    "date": "2021-01-22",
+    "value": 231337.081729
+   },
+   {
+    "date": "2021-01-29",
+    "value": 233044.564863
+   },
+   {
+    "date": "2021-02-05",
+    "value": 242543.12501
+   },
+   {
+    "date": "2021-02-12",
+    "value": 242543.12501
+   },
+   {
+    "date": "2021-02-19",
+    "value": 237999.089292
+   },
+   {
+    "date": "2021-02-26",
+    "value": 250348.12561
+   },
+   {
+    "date": "2021-03-05",
+    "value": 248105.807472
+   },
+   {
+    "date": "2021-03-12",
+    "value": 248105.807472
+   },
+   {
+    "date": "2021-03-19",
+    "value": 248105.807472
+   },
+   {
+    "date": "2021-03-26",
+    "value": 271107.796254
+   },
+   {
+    "date": "2021-04-02",
+    "value": 281298.757928
+   },
+   {
+    "date": "2021-04-09",
+    "value": 281298.757928
+   },
+   {
+    "date": "2021-04-16",
+    "value": 281298.757928
+   },
+   {
+    "date": "2021-04-23",
+    "value": 289529.720903
+   },
+   {
+    "date": "2021-04-30",
+    "value": 295579.951207
+   },
+   {
+    "date": "2021-05-07",
+    "value": 295579.951207
+   },
+   {
+    "date": "2021-05-14",
+    "value": 282209.960479
+   },
+   {
+    "date": "2021-05-21",
+    "value": 281730.553912
+   },
+   {
+    "date": "2021-05-28",
+    "value": 281730.553912
+   },
+   {
+    "date": "2021-06-04",
+    "value": 281730.553912
+   },
+   {
+    "date": "2021-06-11",
+    "value": 281730.553912
+   },
+   {
+    "date": "2021-06-18",
+    "value": 281730.553912
+   },
+   {
+    "date": "2021-06-25",
+    "value": 300172.300539
+   },
+   {
+    "date": "2021-07-02",
+    "value": 300172.300539
+   },
+   {
+    "date": "2021-07-09",
+    "value": 310090.166693
+   },
+   {
+    "date": "2021-07-16",
+    "value": 339433.757944
+   },
+   {
+    "date": "2021-07-23",
+    "value": 341640.710137
+   },
+   {
+    "date": "2021-07-30",
+    "value": 344686.352472
+   },
+   {
+    "date": "2021-08-06",
+    "value": 344686.352472
+   },
+   {
+    "date": "2021-08-13",
+    "value": 344686.352472
+   },
+   {
+    "date": "2021-08-20",
+    "value": 324657.337971
+   },
+   {
+    "date": "2021-08-27",
+    "value": 350142.546308
+   },
+   {
+    "date": "2021-09-03",
+    "value": 350142.546308
+   },
+   {
+    "date": "2021-09-10",
+    "value": 350142.546308
+   },
+   {
+    "date": "2021-09-17",
+    "value": 350142.546308
+   },
+   {
+    "date": "2021-09-24",
+    "value": 350142.546308
+   },
+   {
+    "date": "2021-10-01",
+    "value": 345695.550134
+   },
+   {
+    "date": "2021-10-08",
+    "value": 336778.91319
+   },
+   {
+    "date": "2021-10-15",
+    "value": 345831.075067
+   },
+   {
+    "date": "2021-10-22",
+    "value": 345831.075067
+   },
+   {
+    "date": "2021-10-29",
+    "value": 345831.075067
+   },
+   {
+    "date": "2021-11-05",
+    "value": 345831.075067
+   },
+   {
+    "date": "2021-11-12",
+    "value": 345831.075067
+   },
+   {
+    "date": "2021-11-19",
+    "value": 345831.075067
+   },
+   {
+    "date": "2021-11-26",
+    "value": 345831.075067
+   },
+   {
+    "date": "2021-12-03",
+    "value": 344552.087067
+   },
+   {
+    "date": "2021-12-10",
+    "value": 352630.837612
+   },
+   {
+    "date": "2021-12-17",
+    "value": 352630.837612
+   },
+   {
+    "date": "2021-12-24",
+    "value": 352630.837612
+   },
+   {
+    "date": "2021-12-31",
+    "value": 352630.837612
+   },
+   {
+    "date": "2022-01-07",
+    "value": 352630.837612
+   },
+   {
+    "date": "2022-01-14",
+    "value": 352630.837612
+   },
+   {
+    "date": "2022-01-21",
+    "value": 352630.837612
+   },
+   {
+    "date": "2022-01-28",
+    "value": 352126.822917
+   },
+   {
+    "date": "2022-02-04",
+    "value": 371089.119112
+   },
+   {
+    "date": "2022-02-11",
+    "value": 371089.119112
+   },
+   {
+    "date": "2022-02-18",
+    "value": 371089.119112
+   },
+   {
+    "date": "2022-02-25",
+    "value": 372157.622577
+   },
+   {
+    "date": "2022-03-04",
+    "value": 364350.403729
+   },
+   {
+    "date": "2022-03-11",
+    "value": 348694.268746
+   },
+   {
+    "date": "2022-03-18",
+    "value": 348694.268746
+   },
+   {
+    "date": "2022-03-25",
+    "value": 348694.268746
+   },
+   {
+    "date": "2022-04-01",
+    "value": 348694.268746
+   },
+   {
+    "date": "2022-04-08",
+    "value": 358240.289555
+   },
+   {
+    "date": "2022-04-15",
+    "value": 370260.002426
+   },
+   {
+    "date": "2022-04-22",
+    "value": 370260.002426
+   },
+   {
+    "date": "2022-04-29",
+    "value": 370260.002426
+   },
+   {
+    "date": "2022-05-06",
+    "value": 370260.002426
+   },
+   {
+    "date": "2022-05-13",
+    "value": 368579.99766
+   },
+   {
+    "date": "2022-05-20",
+    "value": 367060.018719
+   },
+   {
+    "date": "2022-05-27",
+    "value": 366938.519489
+   },
+   {
+    "date": "2022-06-03",
+    "value": 366938.519489
+   },
+   {
+    "date": "2022-06-10",
+    "value": 366938.519489
+   },
+   {
+    "date": "2022-06-17",
+    "value": 344735.547502
+   },
+   {
+    "date": "2022-06-24",
+    "value": 350587.427625
+   },
+   {
+    "date": "2022-07-01",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-07-08",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-07-15",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-07-22",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-07-29",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-08-05",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-08-12",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-08-19",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-08-26",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-09-02",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-09-09",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-09-16",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-09-23",
+    "value": 358054.658932
+   },
+   {
+    "date": "2022-09-30",
+    "value": 382075.494628
+   },
+   {
+    "date": "2022-10-07",
+    "value": 382075.494628
+   },
+   {
+    "date": "2022-10-14",
+    "value": 382075.494628
+   },
+   {
+    "date": "2022-10-21",
+    "value": 382075.494628
+   },
+   {
+    "date": "2022-10-28",
+    "value": 382075.494628
+   },
+   {
+    "date": "2022-11-04",
+    "value": 382075.494628
+   },
+   {
+    "date": "2022-11-11",
+    "value": 382075.494628
+   },
+   {
+    "date": "2022-11-18",
+    "value": 384583.149175
+   },
+   {
+    "date": "2022-11-25",
+    "value": 384583.149175
+   },
+   {
+    "date": "2022-12-02",
+    "value": 384583.149175
+   },
+   {
+    "date": "2022-12-09",
+    "value": 384583.149175
+   },
+   {
+    "date": "2022-12-16",
+    "value": 384583.149175
+   },
+   {
+    "date": "2022-12-23",
+    "value": 372002.093427
+   },
+   {
+    "date": "2022-12-30",
+    "value": 386994.387965
+   },
+   {
+    "date": "2023-01-06",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-01-13",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-01-20",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-01-27",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-02-03",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-02-10",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-02-17",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-02-24",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-03-03",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-03-10",
+    "value": 386345.661581
+   },
+   {
+    "date": "2023-03-17",
+    "value": 407245.647903
+   },
+   {
+    "date": "2023-03-24",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-03-31",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-04-07",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-04-14",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-04-21",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-04-28",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-05-05",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-05-12",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-05-19",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-05-26",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-06-02",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-06-09",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-06-16",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-06-23",
+    "value": 413441.178642
+   },
+   {
+    "date": "2023-06-30",
+    "value": 382299.133442
+   },
+   {
+    "date": "2023-07-07",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-07-14",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-07-21",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-07-28",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-08-04",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-08-11",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-08-18",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-08-25",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-09-01",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-09-08",
+    "value": 393150.078414
+   },
+   {
+    "date": "2023-09-15",
+    "value": 393641.050476
+   },
+   {
+    "date": "2023-09-22",
+    "value": 387641.070044
+   },
+   {
+    "date": "2023-09-29",
+    "value": 386978.902824
+   },
+   {
+    "date": "2023-10-06",
+    "value": 386543.942288
+   },
+   {
+    "date": "2023-10-13",
+    "value": 422589.097546
+   },
+   {
+    "date": "2023-10-20",
+    "value": 422589.097546
+   },
+   {
+    "date": "2023-10-27",
+    "value": 420651.119262
+   },
+   {
+    "date": "2023-11-03",
+    "value": 445690.470493
+   },
+   {
+    "date": "2023-11-10",
+    "value": 445690.470493
+   },
+   {
+    "date": "2023-11-17",
+    "value": 445690.470493
+   },
+   {
+    "date": "2023-11-24",
+    "value": 445690.470493
+   },
+   {
+    "date": "2023-12-01",
+    "value": 445690.470493
+   },
+   {
+    "date": "2023-12-08",
+    "value": 445690.470493
+   },
+   {
+    "date": "2023-12-15",
+    "value": 445690.470493
+   },
+   {
+    "date": "2023-12-22",
+    "value": 445097.470852
+   },
+   {
+    "date": "2023-12-29",
+    "value": 447402.400939
+   },
+   {
+    "date": "2024-01-05",
+    "value": 447402.400939
+   },
+   {
+    "date": "2024-01-12",
+    "value": 447402.400939
+   },
+   {
+    "date": "2024-01-19",
+    "value": 443695.388316
+   },
+   {
+    "date": "2024-01-26",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-02-02",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-02-09",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-02-16",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-02-23",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-03-01",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-03-08",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-03-15",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-03-22",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-03-29",
+    "value": 450975.453438
+   },
+   {
+    "date": "2024-04-05",
+    "value": 451980.440615
+   },
+   {
+    "date": "2024-04-12",
+    "value": 450447.418785
+   },
+   {
+    "date": "2024-04-19",
+    "value": 442106.417779
+   },
+   {
+    "date": "2024-04-26",
+    "value": 461016.042062
+   },
+   {
+    "date": "2024-05-03",
+    "value": 461016.042062
+   },
+   {
+    "date": "2024-05-10",
+    "value": 461016.042062
+   },
+   {
+    "date": "2024-05-17",
+    "value": 458966.027391
+   },
+   {
+    "date": "2024-05-24",
+    "value": 460645.544551
+   },
+   {
+    "date": "2024-05-31",
+    "value": 460645.544551
+   },
+   {
+    "date": "2024-06-07",
+    "value": 460645.544551
+   },
+   {
+    "date": "2024-06-14",
+    "value": 460645.544551
+   },
+   {
+    "date": "2024-06-21",
+    "value": 461288.042548
+   },
+   {
+    "date": "2024-06-28",
+    "value": 461089.491037
+   },
+   {
+    "date": "2024-07-05",
+    "value": 453753.539817
+   },
+   {
+    "date": "2024-07-12",
+    "value": 453034.030752
+   },
+   {
+    "date": "2024-07-19",
+    "value": 453630.037984
+   },
+   {
+    "date": "2024-07-26",
+    "value": 443699.736375
+   },
+   {
+    "date": "2024-08-02",
+    "value": 450146.681096
+   },
+   {
+    "date": "2024-08-09",
+    "value": 470105.146497
+   },
+   {
+    "date": "2024-08-16",
+    "value": 472873.904326
+   },
+   {
+    "date": "2024-08-23",
+    "value": 472873.904326
+   },
+   {
+    "date": "2024-08-30",
+    "value": 472873.904326
+   },
+   {
+    "date": "2024-09-06",
+    "value": 465926.520119
+   },
+   {
+    "date": "2024-09-13",
+    "value": 462469.977401
+   },
+   {
+    "date": "2024-09-20",
+    "value": 479171.856488
+   },
+   {
+    "date": "2024-09-27",
+    "value": 479171.856488
+   },
+   {
+    "date": "2024-10-04",
+    "value": 479171.856488
+   },
+   {
+    "date": "2024-10-11",
+    "value": 479171.856488
+   },
+   {
+    "date": "2024-10-18",
+    "value": 479171.856488
+   },
+   {
+    "date": "2024-10-25",
+    "value": 479171.856488
+   },
+   {
+    "date": "2024-11-01",
+    "value": 479171.856488
+   },
+   {
+    "date": "2024-11-08",
+    "value": 479171.856488
+   },
+   {
+    "date": "2024-11-15",
+    "value": 480091.850928
+   },
+   {
+    "date": "2024-11-22",
+    "value": 469371.845504
+   },
+   {
+    "date": "2024-11-29",
+    "value": 466514.220063
+   },
+   {
+    "date": "2024-12-06",
+    "value": 466514.220063
+   },
+   {
+    "date": "2024-12-13",
+    "value": 466514.220063
+   },
+   {
+    "date": "2024-12-20",
+    "value": 466590.725307
+   },
+   {
+    "date": "2024-12-27",
+    "value": 469560.716287
+   },
+   {
+    "date": "2025-01-03",
+    "value": 470962.454691
+   },
+   {
+    "date": "2025-01-10",
+    "value": 470962.454691
+   },
+   {
+    "date": "2025-01-17",
+    "value": 470962.454691
+   },
+   {
+    "date": "2025-01-24",
+    "value": 470962.454691
+   },
+   {
+    "date": "2025-01-31",
+    "value": 470962.454691
+   },
+   {
+    "date": "2025-02-07",
+    "value": 470962.454691
+   },
+   {
+    "date": "2025-02-14",
+    "value": 470962.454691
+   },
+   {
+    "date": "2025-02-21",
+    "value": 470962.454691
+   },
+   {
+    "date": "2025-02-28",
+    "value": 460411.46352
+   },
+   {
+    "date": "2025-03-07",
+    "value": 475828.124793
+   },
+   {
+    "date": "2025-03-14",
+    "value": 473501.838756
+   },
+   {
+    "date": "2025-03-21",
+    "value": 473501.838756
+   },
+   {
+    "date": "2025-03-28",
+    "value": 473501.838756
+   },
+   {
+    "date": "2025-04-04",
+    "value": 357646.271631
+   },
+   {
+    "date": "2025-04-11",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-04-18",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-04-25",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-05-02",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-05-09",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-05-16",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-05-23",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-05-30",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-06-06",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-06-13",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-06-20",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-06-27",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-07-04",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-07-11",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-07-18",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-07-25",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-08-01",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-08-08",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-08-15",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-08-22",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-08-29",
+    "value": 298555.755399
+   },
+   {
+    "date": "2025-09-05",
+    "value": 296911.769605
+   },
+   {
+    "date": "2025-09-12",
+    "value": 293811.76179
+   },
+   {
+    "date": "2025-09-19",
+    "value": 294933.800557
+   },
+   {
+    "date": "2025-09-26",
+    "value": 294933.800557
+   },
+   {
+    "date": "2025-10-03",
+    "value": 297032.808631
+   },
+   {
+    "date": "2025-10-10",
+    "value": 298240.934942
+   },
+   {
+    "date": "2025-10-17",
+    "value": 298240.934942
+   },
+   {
+    "date": "2025-10-24",
+    "value": 298240.934942
+   },
+   {
+    "date": "2025-10-31",
+    "value": 294119.439367
+   },
+   {
+    "date": "2025-11-07",
+    "value": 293863.798063
+   },
+   {
+    "date": "2025-11-14",
+    "value": 293863.798063
+   },
+   {
+    "date": "2025-11-21",
+    "value": 299368.422352
+   },
+   {
+    "date": "2025-11-28",
+    "value": 299368.422352
+   },
+   {
+    "date": "2025-12-05",
+    "value": 299368.422352
+   },
+   {
+    "date": "2025-12-12",
+    "value": 299368.422352
+   },
+   {
+    "date": "2025-12-19",
+    "value": 299368.422352
+   },
+   {
+    "date": "2025-12-26",
+    "value": 299368.422352
+   },
+   {
+    "date": "2026-01-02",
+    "value": 299368.422352
+   },
+   {
+    "date": "2026-01-09",
+    "value": 299368.422352
+   },
+   {
+    "date": "2026-01-16",
+    "value": 299368.422352
+   },
+   {
+    "date": "2026-01-23",
+    "value": 299368.422352
+   },
+   {
+    "date": "2026-01-30",
+    "value": 298315.949477
+   },
+   {
+    "date": "2026-02-06",
+    "value": 321596.307087
+   },
+   {
+    "date": "2026-02-13",
+    "value": 321596.307087
+   },
+   {
+    "date": "2026-02-20",
+    "value": 321596.307087
+   },
+   {
+    "date": "2026-02-27",
+    "value": 321596.307087
+   },
+   {
+    "date": "2026-03-06",
+    "value": 325663.835412
+   },
+   {
+    "date": "2026-03-13",
+    "value": 308891.23407
+   },
+   {
+    "date": "2026-03-20",
+    "value": 308424.364255
+   },
+   {
+    "date": "2026-03-27",
+    "value": 308424.364255
+   },
+   {
+    "date": "2026-04-03",
+    "value": 308424.364255
+   },
+   {
+    "date": "2026-04-10",
+    "value": 308424.364255
+   },
+   {
+    "date": "2026-04-17",
+    "value": 308424.364255
+   },
+   {
+    "date": "2026-04-24",
+    "value": 309524.366401
+   },
+   {
+    "date": "2026-05-01",
+    "value": 304256.3185
+   },
+   {
+    "date": "2026-05-08",
+    "value": 320600.105062
+   },
+   {
+    "date": "2026-05-15",
+    "value": 320600.105062
+   },
+   {
+    "date": "2026-05-22",
+    "value": 308463.119947
+   },
+   {
+    "date": "2026-05-29",
+    "value": 330215.408142
+   },
+   {
+    "date": "2026-06-05",
+    "value": 363598.77126
+   },
+   {
+    "date": "2026-06-12",
+    "value": 358514.741631
+   },
+   {
+    "date": "2026-06-19",
+    "value": 361169.406797
+   },
+   {
+    "date": "2026-06-26",
+    "value": 351547.723885
+   },
+   {
+    "date": "2026-07-03",
+    "value": 351847.728042
+   },
+   {
+    "date": "2026-07-10",
+    "value": 352735.222169
+   },
+   {
+    "date": "2026-07-17",
+    "value": 352735.222169
+   },
+   {
+    "date": "2026-07-24",
+    "value": 352735.222169
+   },
+   {
+    "date": "2026-07-31",
+    "value": 438545.222169
+   },
+   {
+    "date": "2026-08-07",
+    "value": 428496.187158
+   },
+   {
+    "date": "2026-08-14",
+    "value": 428496.187158
+   },
+   {
+    "date": "2026-08-21",
+    "value": 428496.187158
+   },
+   {
+    "date": "2026-08-28",
+    "value": 428496.187158
+   },
+   {
+    "date": "2026-09-04",
+    "value": 428496.187158
+   },
+   {
+    "date": "2026-09-11",
+    "value": 432454.18418
+   },
+   {
+    "date": "2026-09-18",
+    "value": 446006.81493
+   },
+   {
+    "date": "2026-09-25",
+    "value": 446006.81493
+   },
+   {
+    "date": "2026-10-02",
+    "value": 446006.81493
+   },
+   {
+    "date": "2026-10-09",
+    "value": 446006.81493
+   },
+   {
+    "date": "2026-10-16",
+    "value": 443185.81493
+   },
+   {
+    "date": "2026-10-23",
+    "value": 303830.419752
+   },
+   {
+    "date": "2026-10-30",
+    "value": 374442.121927
+   },
+   {
+    "date": "2026-11-06",
+    "value": 368692.121927
+   },
+   {
+    "date": "2026-11-13",
+    "value": 418731.074393
+   },
+   {
+    "date": "2026-11-20",
+    "value": 418731.074393
+   }
+  ],
+  "since_oos": {
+   "start": "2022-01-01",
+   "monthly_mean": 1120.342996,
+   "positive_months": 0.423729
+  },
+  "last12": {
+   "monthly_mean": 9946.88767,
+   "total": 119362.65204
+  },
+  "exposure": {
+   "avg": 0.034774,
+   "max": 0.605521,
+   "days_invested": 0.242109
+  },
+  "required_capital": 222099590.136412
+ },
+ "config": {
+  "capital": 3000000.0,
+  "monthly_target": 200000.0,
+  "max_leverage": 2.0,
+  "costs": {
+   "slippage_bps": 10.0,
+   "commission_bps": 0.0,
+   "long_interest_annual": 0.028,
+   "short_annual": 0.021
+  },
+  "validation": {
+   "oos_start": "2022-01-01",
+   "wf_train_years": 4,
+   "wf_test_years": 1,
+   "min_trades_oos": 80,
+   "min_profit_factor_oos": 1.25,
+   "min_profit_factor_wf": 1.15,
+   "min_positive_months": 0.55,
+   "max_drawdown_years": 2.0,
+   "min_neighbor_pass": 0.6,
+   "min_tstat": 2.0,
+   "replace_margin": 0.1,
+   "suspend_recent_months": 6,
+   "suspend_profit_factor": 0.9,
+   "suspend_dd_multiple": 1.5
+  },
+  "portfolio": {
+   "max_drawdown_pct": 0.2,
+   "scales": [
+    2.0,
+    1.5,
+    1.25,
+    1.0,
+    0.85,
+    0.75,
+    0.6,
+    0.5,
+    0.4,
+    0.3,
+    0.25
+   ]
+  },
+  "universe_size": 999,
+  "backtest_start": "2014-01-01"
+ }
+}

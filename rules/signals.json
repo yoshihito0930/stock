@@ -1,0 +1,87 @@
+{
+ "generated_at": "2026-11-22",
+ "data_date": "2026-11-20",
+ "active": {
+  "label": "採用ルール",
+  "orders": [],
+  "positions": []
+ },
+ "watch": {
+  "label": "観察中ルール（仮想売買）",
+  "data_date": "2026-11-20",
+  "scale": 0.4,
+  "orders": [
+   {
+    "rule_id": "panic_dip",
+    "rule_name": "全体急落時のリバウンド狙い",
+    "tier": "watch",
+    "code": "6036",
+    "name": "ＫｅｅＰｅｒ技研",
+    "side": "買い",
+    "shares": 100,
+    "ref_close": 1605.0,
+    "order": "指値",
+    "limit_price": 1556.0,
+    "amount": 155600.0,
+    "max_hold": 10
+   },
+   {
+    "rule_id": "panic_dip",
+    "rule_name": "全体急落時のリバウンド狙い",
+    "tier": "watch",
+    "code": "7282",
+    "name": "豊田合成",
+    "side": "買い",
+    "shares": 200,
+    "ref_close": 963.400024,
+    "order": "指値",
+    "limit_price": 934.0,
+    "amount": 186800.0,
+    "max_hold": 10
+   },
+   {
+    "rule_id": "panic_dip",
+    "rule_name": "全体急落時のリバウンド狙い",
+    "tier": "watch",
+    "code": "4202",
+    "name": "ダイセル",
+    "side": "買い",
+    "shares": 100,
+    "ref_close": 1460.0,
+    "order": "指値",
+    "limit_price": 1416.0,
+    "amount": 141600.0,
+    "max_hold": 10
+   },
+   {
+    "rule_id": "panic_dip",
+    "rule_name": "全体急落時のリバウンド狙い",
+    "tier": "watch",
+    "code": "3401",
+    "name": "帝人",
+    "side": "買い",
+    "shares": 100,
+    "ref_close": 1645.5,
+    "order": "指値",
+    "limit_price": 1596.0,
+    "amount": 159600.0,
+    "max_hold": 10
+   },
+   {
+    "rule_id": "panic_dip",
+    "rule_name": "全体急落時のリバウンド狙い",
+    "tier": "watch",
+    "code": "9506",
+    "name": "東北電力",
+    "side": "買い",
+    "shares": 100,
+    "ref_close": 1216.0,
+    "order": "指値",
+    "limit_price": 1179.0,
+    "amount": 117900.0,
+    "max_hold": 10
+   }
+  ],
+  "positions": []
+ }
+}
