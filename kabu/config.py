@@ -72,6 +72,22 @@ class Config:
         return float(self.raw["account"]["max_leverage"])
 
     @property
+    def exposure_cap(self) -> float:
+        """建玉合計の上限（円）。倍率の上限と金額の上限のうち小さい方。"""
+        cap = self.capital * self.max_leverage
+        limit = self.raw["account"].get("max_exposure")
+        return min(cap, float(limit)) if limit else cap
+
+    @property
+    def rule_alloc(self) -> float:
+        """1 ルールに割り当てる建玉枠（資金に対する倍率）。建玉上限を超える枠は意味がないので抑える。"""
+        return min(1.0, self.exposure_cap / self.capital)
+
+    @property
+    def max_positions(self) -> int:
+        return int(self.raw["account"].get("max_positions", 5))
+
+    @property
     def lot_size(self) -> int:
         return int(self.raw["account"]["lot_size"])
 

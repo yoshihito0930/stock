@@ -149,3 +149,15 @@ def test_same_stock_is_not_bought_twice(zero_costs):
     p = make_panel({"A": [FLAT] * 6})
     s = setup_for(p, [(1, 0), (2, 0), (3, 0)], max_hold=10)
     assert len(run(p, s, zero_costs).open_positions) == 1
+
+
+def test_exposure_cap_in_yen(zero_costs):
+    # 建玉合計の上限 30万円: 15万円の建玉は 2 つまで。3 つ目の注文は出ない
+    p = make_panel({c: [(1500, 1510, 1490, 1500)] * 5 for c in "ABC"})
+    s = setup_for(p, [(1, 0), (1, 1), (1, 2)], max_hold=10)
+    res = run_backtest(Arrays.from_panel(p), [s], 1_000_000, 2.0, zero_costs, max_exposure=300_000)
+    assert len(res.open_positions) == 2
+    assert sum(pos.notional for pos in res.open_positions) <= 300_000
+    # 上限なしなら 3 つとも建つ
+    res = run_backtest(Arrays.from_panel(p), [s], 1_000_000, 2.0, zero_costs)
+    assert len(res.open_positions) == 3

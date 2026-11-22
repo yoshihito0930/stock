@@ -82,6 +82,31 @@ def _make_rule(family: str, params: Params, tier: str, ev: dict, gates: list[dic
     }
 
 
+def config_change_events(cfg: Config, state: dict, today: str) -> list[dict]:
+    """前回から資金・目標・建玉上限・保有数の設定が変わっていれば、その旨を履歴に残す。
+
+    設定が変わると同じルールでも採点が変わる。ルールの入れ替えが相場のせいか設定のせいかを後から区別できるようにする。
+    """
+    prev = state.get("config")
+    if not prev:
+        return []
+    man = lambda v: f"{v / 1e4:,.0f}万円"
+    items = [
+        ("運用資金", prev.get("capital"), cfg.capital, man),
+        ("月間目標", prev.get("monthly_target"), cfg.monthly_target, man),
+        ("建玉合計の上限", prev.get("exposure_cap", prev.get("capital", 0) * prev.get("max_leverage", 0)),
+         cfg.exposure_cap, man),
+        ("1 ルールの同時保有数", prev.get("max_positions", 5), cfg.max_positions, lambda v: f"{v:g} 銘柄"),
+    ]
+    details = [f"{name}: {fmt(old)} → {fmt(new)}" for name, old, new, fmt in items
+               if old is not None and abs(float(old) - float(new)) > 1e-9]
+    if not details:
+        return []
+    details.append(f"1 銘柄あたりの金額は約 {man(cfg.capital * cfg.rule_alloc / cfg.max_positions)}。"
+                   "この前提で全ルールを検証し直した。")
+    return [{"date": today, "family": "", "type": "設定変更", "title": "売買の前提（config.yaml）を変更", "details": details}]
+
+
 def update_rules(ctx: Context, state: dict, families: list[str] | None = None,
                  today: str | None = None, workers: int | None = None, log=print) -> tuple[dict, list[dict]]:
     """全ファミリーを探索し直して台帳を更新する（週次）。"""
@@ -90,7 +115,8 @@ def update_rules(ctx: Context, state: dict, families: list[str] | None = None,
     oos_p = pd.Period(cfg.validation["oos_start"][:7], "M")
     current = {r["family"]: r for r in state.get("rules", [])}
     rejected_prev = {r["family"]: r for r in state.get("rejected", [])}
-    new_rules, rejected, events, research_summary = [], [], [], []
+    new_rules, rejected, research_summary = [], [], []
+    events = config_change_events(cfg, state, today)
     keys = families or list(FAMILIES)
 
     for key in FAMILIES:
@@ -226,7 +252,10 @@ def _apply_health(ctx: Context, state: dict, today: str, reevaluate: bool) -> tu
 
 def refresh_rules(ctx: Context, state: dict, today: str | None = None) -> tuple[dict, list[dict]]:
     """日次: 台帳のルールを最新データで採点し直す（探索はしない）。"""
-    return _apply_health(ctx, state, today or date.today().isoformat(), reevaluate=True)
+    today = today or date.today().isoformat()
+    events = config_change_events(ctx.cfg, state, today)
+    state, ev = _apply_health(ctx, state, today, reevaluate=True)
+    return state, events + ev
 
 
 def finalize(ctx: Context, state: dict, events: list[dict], today: str | None = None) -> tuple[dict, dict]:
@@ -243,6 +272,8 @@ def finalize(ctx: Context, state: dict, events: list[dict], today: str | None = 
     state["data_through"] = ctx.panel.dates[-1].strftime("%Y-%m-%d")
     state["config"] = {
         "capital": cfg.capital, "monthly_target": cfg.monthly_target, "max_leverage": cfg.max_leverage,
+        "exposure_cap": cfg.exposure_cap, "rule_exposure": cfg.capital * cfg.rule_alloc,
+        "max_positions": cfg.max_positions,
         "costs": {"slippage_bps": cfg.costs.slippage_bps, "commission_bps": cfg.costs.commission_bps,
                   "long_interest_annual": cfg.costs.long_interest_annual,
                   "short_annual": cfg.costs.short_fee_annual + cfg.costs.short_extra_annual},

@@ -45,7 +45,8 @@ def headline(state: dict) -> list[str]:
     n_act = sum(1 for r in rules if r["status"] == "active")
     n_watch = sum(1 for r in rules if r["status"] == "watch")
     n_sus = sum(1 for r in rules if r["status"] == "suspended")
-    out = [f"- **目標**: 月 {tgt / 1e4:.0f}万円（運用資金 {cap / 1e4:.0f}万円 → 月利 {tgt / cap:.1%}）",
+    out = [f"- **目標**: 月 {tgt / 1e4:.0f}万円（運用資金 {cap / 1e4:.0f}万円・建玉の上限 {cfg['exposure_cap'] / 1e4:.0f}万円 → "
+           f"上限いっぱいに建てても月 {tgt / cfg['exposure_cap']:.0%} の値幅が必要）",
            f"- **ルールの状態**: 採用 {n_act} 本 / 観察中 {n_watch} 本 / 一時停止 {n_sus} 本 / 不採用 {len(state['rejected'])} 本"]
     pf = state.get("portfolio") or {}
     pw = state.get("portfolio_watch") or {}
@@ -98,7 +99,7 @@ def rule_section(state: dict, rule: dict, n: int) -> list[str]:
           f"- 1 銘柄あたり約 {yen_pos / 1e4:.0f}万円（100株単位で、この金額を超えない最大株数）。",
           f"- このルールで同時に持つのは最大 {MAX_POSITIONS} 銘柄。同じ銘柄の買い増し（ナンピン）はしない。",
           "",
-          "**検証結果**（手数料・スリッページ・金利を引いた後。建玉枠 = 資金と同額で計算）", "",
+          f"**検証結果**（手数料・スリッページ・金利を引いた後。このルール単独で建玉 {state['config']['rule_exposure'] / 1e4:.0f}万円まで使う前提）", "",
           "| 期間 | 取引回数 | 勝率 | PF | 1回の平均 | 月平均 | 最大DD |",
           "|---|--:|--:|--:|--:|--:|--:|"]
     for label, key in (("学習期間", "is"), ("未使用データ", "oos"), ("全期間", "full")):

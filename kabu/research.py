@@ -46,13 +46,14 @@ class Context:
         return cls(cfg, panel, feats, Arrays.from_panel(panel), shortable)
 
     def setup(self, family: str, params: Params, rule_id: str | None = None) -> Setup:
-        return build_setup(family, params, self.features, self.shortable, rule_id)
+        s = build_setup(family, params, self.features, self.shortable, rule_id)
+        s.alloc = self.cfg.rule_alloc   # 実際に持てる建玉の大きさで検証する（買える銘柄が変わるため）
+        return s
 
-    def backtest(self, setups: list[Setup], start: str | None = None, end: str | None = None,
-                 max_leverage: float | None = None) -> Result:
+    def backtest(self, setups: list[Setup], start: str | None = None, end: str | None = None) -> Result:
         cfg = self.cfg
-        return run_backtest(self.arr, setups, cfg.capital, max_leverage or cfg.max_leverage, cfg.costs,
-                            cfg.lot_size, start or cfg.data["backtest_start"], end)
+        return run_backtest(self.arr, setups, cfg.capital, cfg.max_leverage, cfg.costs, cfg.lot_size,
+                            start or cfg.data["backtest_start"], end, max_exposure=cfg.exposure_cap)
 
 
 # ----------------------------------------------------------------------

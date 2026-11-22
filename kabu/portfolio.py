@@ -24,7 +24,8 @@ def choose_scale(ctx: Context, rules: list[dict]) -> tuple[float, Result]:
     """過去検証の最大ドローダウンが上限に収まる範囲で、最も大きい建玉倍率を選ぶ。"""
     cfg = ctx.cfg
     limit = float(cfg.portfolio["max_drawdown_pct"])
-    scales = sorted((float(x) for x in cfg.portfolio["scales"]), reverse=True)
+    top = cfg.rule_alloc   # 1 ルールの枠が建玉上限を超えても意味がない
+    scales = sorted({top} | {float(x) for x in cfg.portfolio["scales"] if float(x) < top}, reverse=True)
     res = None
     for k in scales:
         res = _run(ctx, rules, k)

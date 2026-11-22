@@ -15,12 +15,13 @@ from typing import Any, Callable
 
 import numpy as np
 
+from .config import load_config
 from .engine import Setup
 from .indicators import Features
 
 Params = dict[str, Any]
 
-MAX_POSITIONS = 5   # 1 ルールあたりの同時保有銘柄数
+MAX_POSITIONS = load_config().max_positions   # 1 ルールあたりの同時保有銘柄数（config.yaml）
 ALLOC = 1.0         # 1 ルールあたりの建玉枠（資金の何倍まで）
 INDEX_NAME = "日経平均"
 

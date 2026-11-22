@@ -5,7 +5,7 @@
   - 成行は翌日の始値で約定。指値は翌日の安値(高値)が指値を「割り込んだ(超えた)」ときだけ約定。
   - 損切りは逆指値。寄付で既に割り込んでいれば始値で約定（ギャップは不利な側に倒す）。
   - 同じ日に損切りと利確の両方に届いた場合は、損切りが先に付いたとみなす（保守的）。
-  - 株数は単元（100株）単位に切り捨て。建玉合計は 資金×レバレッジ上限 を超えない。
+  - 株数は単元（100株）単位に切り捨て。建玉合計は「資金×レバレッジ上限」と「金額の上限」を超えない。
   - 手数料・スリッページ・信用金利/貸株料を差し引く。
 """
 from __future__ import annotations
@@ -127,11 +127,12 @@ TRADE_COLUMNS = [
 
 class Simulator:
     def __init__(self, arr: Arrays, setups: list[Setup], capital: float, max_leverage: float,
-                 costs: Costs, lot: int = 100):
+                 costs: Costs, lot: int = 100, max_exposure: float | None = None):
         self.a = arr
         self.setups = setups
         self.capital = capital
         self.max_leverage = max_leverage
+        self.max_exposure = max_exposure   # 建玉合計の上限（円）。None なら倍率だけで決まる
         self.costs = costs
         self.lot = lot
         self.positions: list[Position] = []
@@ -174,6 +175,8 @@ class Simulator:
         base = self._base()
         gross = sum(p.notional for p in staying)
         cap = base * self.max_leverage
+        if self.max_exposure is not None:
+            cap = min(cap, self.max_exposure)
         orders: list[Order] = []
         for si, s in enumerate(self.setups):
             free = s.max_positions - sum(1 for p in staying if p.setup_idx == si)
@@ -312,11 +315,12 @@ class Simulator:
 
 
 def run_backtest(arr: Arrays, setups: list[Setup], capital: float, max_leverage: float, costs: Costs,
-                 lot: int = 100, start: str | None = None, end: str | None = None) -> Result:
+                 lot: int = 100, start: str | None = None, end: str | None = None,
+                 max_exposure: float | None = None) -> Result:
     t0 = int(arr.dates.searchsorted(pd.Timestamp(start))) if start else 1
     t0 = max(t0, 1)
     t1 = int(arr.dates.searchsorted(pd.Timestamp(end))) if end else None
-    return Simulator(arr, setups, capital, max_leverage, costs, lot).run(t0, t1)
+    return Simulator(arr, setups, capital, max_leverage, costs, lot, max_exposure).run(t0, t1)
 
 
 def simulate_single(arr: Arrays, setup: Setup, code: str, entry_date: pd.Timestamp, entry_px_yen: float,
