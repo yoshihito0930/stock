@@ -1,7 +1,7 @@
 {
  "schema": 1,
- "updated_at": "2026-11-26",
- "data_through": "2026-11-25",
+ "updated_at": "2026-11-27",
+ "data_through": "2026-11-26",
  "rules": [],
  "rejected": [
   {
@@ -1196,7 +1196,7 @@
     0.25
    ]
   },
-  "universe_size": 999,
+  "universe_size": 1000,
   "backtest_start": "2014-01-01"
  }
 }
