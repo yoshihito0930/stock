@@ -1,6 +1,6 @@
 {
- "run_at": "2026-11-22",
- "data_through": "2026-11-20",
+ "run_at": "2026-11-28",
+ "data_through": "2026-11-27",
  "combos_tested": 1958,
  "families": [
   {
@@ -22,7 +22,7 @@
     {
      "core": true,
      "name": "未使用データでの取引回数",
-     "value": 503,
+     "value": 506,
      "threshold": 80,
      "ok": true,
      "fmt": "int"
@@ -30,7 +30,7 @@
     {
      "core": true,
      "name": "未使用データのプロフィットファクター",
-     "value": 1.340751,
+     "value": 1.337815,
      "threshold": 1.25,
      "ok": true,
      "fmt": "x"
@@ -46,7 +46,7 @@
     {
      "core": true,
      "name": "月次損益の t値（全期間）",
-     "value": 1.716023,
+     "value": 1.742879,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x"
@@ -54,7 +54,7 @@
     {
      "core": false,
      "name": "最大ドローダウンが平均年間利益の何年分か",
-     "value": 9.92093,
+     "value": 9.530848,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x",
@@ -63,7 +63,7 @@
     {
      "core": true,
      "name": "ウォークフォワード通算のプロフィットファクター",
-     "value": 1.25078,
+     "value": 1.202362,
      "threshold": 1.15,
      "ok": true,
      "fmt": "x"
@@ -79,12 +79,12 @@
    ],
    "walk_forward": {
     "months": 107,
-    "trades": 338,
-    "monthly_mean": 3628.397085,
-    "profit_factor": 1.25078,
-    "positive_months": 0.560748,
-    "tstat": 1.23149,
-    "positive_years": 7,
+    "trades": 465,
+    "monthly_mean": 4253.544875,
+    "profit_factor": 1.202362,
+    "positive_months": 0.570093,
+    "tstat": 1.120037,
+    "positive_years": 6,
     "years": 9,
     "folds": [
      {
@@ -95,13 +95,13 @@
        "rsi_n": 3,
        "rsi_th": 5,
        "limit_pct": 0.015,
-       "max_hold": 5,
+       "max_hold": 10,
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": 133697.53306,
-      "trades": 28,
-      "pf": 2.707285
+      "pnl": 117404.324533,
+      "trades": 26,
+      "pf": 3.211789
      },
      {
       "year": 2019,
@@ -115,9 +115,9 @@
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": -22370.163887,
+      "pnl": -22370.403501,
       "trades": 10,
-      "pf": 0.533897
+      "pf": 0.533892
      },
      {
       "year": 2020,
@@ -131,9 +131,9 @@
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": -148851.196318,
+      "pnl": -148851.112573,
       "trades": 26,
-      "pf": 0.481599
+      "pf": 0.4816
      },
      {
       "year": 2021,
@@ -143,13 +143,13 @@
        "rsi_n": 2,
        "rsi_th": 5,
        "limit_pct": 0.015,
-       "max_hold": 5,
+       "max_hold": 10,
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": 79414.93824,
-      "trades": 75,
-      "pf": 1.212614
+      "pnl": 69319.217206,
+      "trades": 70,
+      "pf": 1.157995
      },
      {
       "year": 2022,
@@ -163,25 +163,25 @@
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": 191773.055052,
+      "pnl": 191773.022587,
       "trades": 105,
-      "pf": 1.438857
+      "pf": 1.438856
      },
      {
       "year": 2023,
       "params": {
        "trend": 200,
        "mom": 0.2,
-       "rsi_n": 3,
+       "rsi_n": 2,
        "rsi_th": 5,
        "limit_pct": 0.015,
        "max_hold": 10,
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": 97416.149655,
-      "trades": 19,
-      "pf": 2.719773
+      "pnl": 186265.485561,
+      "trades": 68,
+      "pf": 1.797045
      },
      {
       "year": 2024,
@@ -195,121 +195,121 @@
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": 14046.094189,
+      "pnl": 14046.307609,
       "trades": 22,
-      "pf": 1.193369
+      "pf": 1.193372
      },
      {
       "year": 2025,
       "params": {
        "trend": 200,
        "mom": 0.2,
-       "rsi_n": 3,
+       "rsi_n": 2,
        "rsi_th": 5,
        "limit_pct": 0.015,
        "max_hold": 10,
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": 6775.305507,
-      "trades": 23,
-      "pf": 1.067888
+      "pnl": -97844.140565,
+      "trades": 66,
+      "pf": 0.712264
      },
      {
       "year": 2026,
       "params": {
        "trend": 200,
        "mom": 0.2,
-       "rsi_n": 3,
+       "rsi_n": 2,
        "rsi_th": 5,
        "limit_pct": 0.015,
        "max_hold": 10,
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": 36336.772558,
-      "trades": 30,
-      "pf": 1.310687
+      "pnl": 145386.600756,
+      "trades": 72,
+      "pf": 1.398868
      }
     ]
    },
    "is": {
-    "trades": 797,
-    "win_rate": 0.613551,
-    "profit_factor": 1.087092,
-    "avg_pnl": 435.456361,
-    "avg_ret": 0.001998,
-    "avg_win": 8858.951612,
-    "avg_loss": -12938.2098,
-    "avg_days": 4.984944,
-    "total_pnl": 347058.719711,
+    "trades": 796,
+    "win_rate": 0.610553,
+    "profit_factor": 1.078788,
+    "avg_pnl": 394.500029,
+    "avg_ret": 0.001743,
+    "avg_win": 8847.107417,
+    "avg_loss": -12857.007037,
+    "avg_days": 4.998744,
+    "total_pnl": 314022.023144,
     "months": 96,
-    "monthly_mean": 3588.874797,
-    "monthly_median": 9269.385031,
-    "monthly_std": 48845.660521,
-    "monthly_worst": -202592.239362,
-    "monthly_best": 108423.013341,
-    "positive_months": 0.583333,
+    "monthly_mean": 3244.742737,
+    "monthly_median": 9269.250975,
+    "monthly_std": 48521.521512,
+    "monthly_worst": -202592.048851,
+    "monthly_best": 108423.049636,
+    "positive_months": 0.572917,
     "active_months": 96,
-    "positive_active_months": 0.583333,
+    "positive_active_months": 0.572917,
     "target_months": 0.0,
-    "tstat": 0.719893,
-    "max_drawdown": 798832.00215,
-    "max_drawdown_pct": 0.266277,
-    "annual_return_pct": 0.014355,
-    "target_ratio": 0.017944
+    "tstat": 0.655211,
+    "max_drawdown": 778533.241981,
+    "max_drawdown_pct": 0.259511,
+    "annual_return_pct": 0.012979,
+    "target_ratio": 0.016224
    },
    "oos": {
-    "trades": 503,
-    "win_rate": 0.622266,
-    "profit_factor": 1.340751,
-    "avg_pnl": 1463.512592,
-    "avg_ret": 0.005696,
-    "avg_win": 9254.027845,
-    "avg_loss": -11370.336219,
-    "avg_days": 4.819085,
-    "total_pnl": 736146.833794,
+    "trades": 506,
+    "win_rate": 0.620553,
+    "profit_factor": 1.337815,
+    "avg_pnl": 1453.450431,
+    "avg_ret": 0.005661,
+    "avg_win": 9275.528411,
+    "avg_loss": -11338.906266,
+    "avg_days": 4.822134,
+    "total_pnl": 735445.918007,
     "months": 59,
-    "monthly_mean": 11788.412253,
-    "monthly_median": 11735.906586,
-    "monthly_std": 48396.121023,
+    "monthly_mean": 12603.570142,
+    "monthly_median": 19635.517945,
+    "monthly_std": 48647.034977,
     "monthly_worst": -106915.787533,
-    "monthly_best": 115209.374934,
+    "monthly_best": 115209.425543,
     "positive_months": 0.576271,
     "active_months": 59,
     "positive_active_months": 0.576271,
     "target_months": 0.0,
-    "tstat": 1.870987,
-    "max_drawdown": 249463.847132,
+    "tstat": 1.990046,
+    "max_drawdown": 249463.642371,
     "max_drawdown_pct": 0.083155,
-    "annual_return_pct": 0.047154,
-    "target_ratio": 0.058942
+    "annual_return_pct": 0.050414,
+    "target_ratio": 0.063018
    },
    "full": {
-    "trades": 1300,
-    "win_rate": 0.616923,
-    "profit_factor": 1.176265,
-    "avg_pnl": 833.235041,
-    "avg_ret": 0.003429,
-    "avg_win": 9013.139718,
-    "avg_loss": -12340.025101,
-    "avg_days": 4.920769,
-    "total_pnl": 1083205.553505,
+    "trades": 1302,
+    "win_rate": 0.614439,
+    "profit_factor": 1.170292,
+    "avg_pnl": 806.042966,
+    "avg_ret": 0.003265,
+    "avg_win": 9015.262657,
+    "avg_loss": -12276.378854,
+    "avg_days": 4.930108,
+    "total_pnl": 1049467.941151,
     "months": 155,
-    "monthly_mean": 6709.989055,
-    "monthly_median": 9468.252452,
-    "monthly_std": 48681.569869,
-    "monthly_worst": -202592.239362,
-    "monthly_best": 115209.374934,
-    "positive_months": 0.580645,
+    "monthly_mean": 6807.135104,
+    "monthly_median": 9587.900891,
+    "monthly_std": 48625.37081,
+    "monthly_worst": -202592.048851,
+    "monthly_best": 115209.425543,
+    "positive_months": 0.574194,
     "active_months": 155,
-    "positive_active_months": 0.580645,
+    "positive_active_months": 0.574194,
     "target_months": 0.0,
-    "tstat": 1.716023,
-    "max_drawdown": 798832.00215,
-    "max_drawdown_pct": 0.266277,
-    "annual_return_pct": 0.02684,
-    "target_ratio": 0.03355
+    "tstat": 1.742879,
+    "max_drawdown": 778533.241981,
+    "max_drawdown_pct": 0.259511,
+    "annual_return_pct": 0.027229,
+    "target_ratio": 0.034036
    }
   },
   {
@@ -336,7 +336,7 @@
     {
      "core": true,
      "name": "未使用データのプロフィットファクター",
-     "value": 1.952424,
+     "value": 1.952423,
      "threshold": 1.25,
      "ok": true,
      "fmt": "x"
@@ -352,7 +352,7 @@
     {
      "core": true,
      "name": "月次損益の t値（全期間）",
-     "value": 2.422565,
+     "value": 2.422563,
      "threshold": 2.0,
      "ok": true,
      "fmt": "x"
@@ -360,7 +360,7 @@
     {
      "core": false,
      "name": "最大ドローダウンが平均年間利益の何年分か",
-     "value": 5.762895,
+     "value": 5.7629,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x",
@@ -369,7 +369,7 @@
     {
      "core": true,
      "name": "ウォークフォワード通算のプロフィットファクター",
-     "value": 1.0549,
+     "value": 1.070726,
      "threshold": 1.15,
      "ok": false,
      "fmt": "x"
@@ -385,11 +385,11 @@
    ],
    "walk_forward": {
     "months": 107,
-    "trades": 219,
-    "monthly_mean": 559.372981,
-    "profit_factor": 1.0549,
-    "positive_months": 0.46729,
-    "tstat": 0.204321,
+    "trades": 228,
+    "monthly_mean": 746.254343,
+    "profit_factor": 1.070726,
+    "positive_months": 0.485981,
+    "tstat": 0.268243,
     "positive_years": 5,
     "years": 9,
     "folds": [
@@ -402,9 +402,9 @@
        "limit_pct": 0.015,
        "max_hold": 5
       },
-      "pnl": -82640.679226,
+      "pnl": -82640.881203,
       "trades": 49,
-      "pf": 0.704418
+      "pf": 0.704417
      },
      {
       "year": 2019,
@@ -415,9 +415,9 @@
        "limit_pct": 0.015,
        "max_hold": 10
       },
-      "pnl": -78267.356745,
+      "pnl": -78267.536955,
       "trades": 25,
-      "pf": 0.469356
+      "pf": 0.469355
      },
      {
       "year": 2020,
@@ -428,9 +428,9 @@
        "limit_pct": 0.015,
        "max_hold": 10
       },
-      "pnl": -134978.04439,
+      "pnl": -134978.009243,
       "trades": 30,
-      "pf": 0.554355
+      "pf": 0.554356
      },
      {
       "year": 2021,
@@ -441,9 +441,9 @@
        "limit_pct": 0.015,
        "max_hold": 10
       },
-      "pnl": 70788.572863,
+      "pnl": 70788.417325,
       "trades": 22,
-      "pf": 2.159112
+      "pf": 2.159109
      },
      {
       "year": 2022,
@@ -454,9 +454,9 @@
        "limit_pct": 0.015,
        "max_hold": 10
       },
-      "pnl": 12441.047557,
+      "pnl": 12441.010432,
       "trades": 22,
-      "pf": 1.188877
+      "pf": 1.188876
      },
      {
       "year": 2023,
@@ -467,22 +467,22 @@
        "limit_pct": 0.015,
        "max_hold": 10
       },
-      "pnl": 69676.348688,
+      "pnl": 69676.211448,
       "trades": 13,
-      "pf": 5.711509
+      "pf": 5.711496
      },
      {
       "year": 2024,
       "params": {
-       "index_rsi": 10,
-       "rsi_th": 20,
+       "index_rsi": 20,
+       "rsi_th": 10,
        "trend": 0,
        "limit_pct": 0.015,
        "max_hold": 10
       },
-      "pnl": 148957.790285,
-      "trades": 23,
-      "pf": 4.569662
+      "pnl": 168954.887134,
+      "trades": 32,
+      "pf": 3.09855
      },
      {
       "year": 2025,
@@ -493,9 +493,9 @@
        "limit_pct": 0.015,
        "max_hold": 10
       },
-      "pnl": -52599.058298,
+      "pnl": -52599.1724,
       "trades": 13,
-      "pf": 0.490307
+      "pf": 0.490306
      },
      {
       "year": 2026,
@@ -516,24 +516,24 @@
     "trades": 149,
     "win_rate": 0.671141,
     "profit_factor": 1.457418,
-    "avg_pnl": 1965.716363,
+    "avg_pnl": 1965.713917,
     "avg_ret": 0.008421,
-    "avg_win": 9332.065766,
-    "avg_loss": -13067.649767,
+    "avg_win": 9332.059725,
+    "avg_loss": -13067.644876,
     "avg_days": 4.630872,
-    "total_pnl": 292891.738036,
+    "total_pnl": 292891.373562,
     "months": 96,
-    "monthly_mean": 3050.955605,
+    "monthly_mean": 3050.951808,
     "monthly_median": 0.0,
-    "monthly_std": 18530.323437,
-    "monthly_worst": -58341.819608,
-    "monthly_best": 41807.113395,
+    "monthly_std": 18530.304513,
+    "monthly_worst": -58341.861063,
+    "monthly_best": 41807.047646,
     "positive_months": 0.479167,
     "active_months": 66,
     "positive_active_months": 0.69697,
     "target_months": 0.0,
     "tstat": 1.613201,
-    "max_drawdown": 257809.824824,
+    "max_drawdown": 257809.748766,
     "max_drawdown_pct": 0.085937,
     "annual_return_pct": 0.012204,
     "target_ratio": 0.015255
@@ -541,25 +541,25 @@
    "oos": {
     "trades": 93,
     "win_rate": 0.612903,
-    "profit_factor": 1.952424,
-    "avg_pnl": 3063.982972,
+    "profit_factor": 1.952423,
+    "avg_pnl": 3063.979899,
     "avg_ret": 0.010666,
-    "avg_win": 10247.980117,
-    "avg_loss": -8310.679173,
+    "avg_win": 10247.974898,
+    "avg_loss": -8310.678848,
     "avg_days": 4.645161,
-    "total_pnl": 284950.416442,
+    "total_pnl": 284950.130632,
     "months": 59,
-    "monthly_mean": 4829.668075,
+    "monthly_mean": 4829.663231,
     "monthly_median": 0.0,
-    "monthly_std": 20253.167137,
+    "monthly_std": 20253.174268,
     "monthly_worst": -82855.62411,
     "monthly_best": 80495.953537,
     "positive_months": 0.474576,
     "active_months": 41,
     "positive_active_months": 0.682927,
     "target_months": 0.0,
-    "tstat": 1.831683,
-    "max_drawdown": 236658.503843,
+    "tstat": 1.831681,
+    "max_drawdown": 236658.452858,
     "max_drawdown_pct": 0.078886,
     "annual_return_pct": 0.019319,
     "target_ratio": 0.024148
@@ -568,24 +568,24 @@
     "trades": 242,
     "win_rate": 0.64876,
     "profit_factor": 1.615053,
-    "avg_pnl": 2387.777498,
+    "avg_pnl": 2387.774811,
     "avg_ret": 0.009284,
-    "avg_win": 9664.59518,
-    "avg_loss": -11052.93281,
+    "avg_win": 9664.589437,
+    "avg_loss": -11052.929853,
     "avg_days": 4.636364,
-    "total_pnl": 577842.154478,
+    "total_pnl": 577841.504195,
     "months": 155,
-    "monthly_mean": 3728.0139,
+    "monthly_mean": 3728.009704,
     "monthly_median": 0.0,
-    "monthly_std": 19158.786505,
+    "monthly_std": 19158.778031,
     "monthly_worst": -82855.62411,
     "monthly_best": 80495.953537,
     "positive_months": 0.477419,
     "active_months": 107,
     "positive_active_months": 0.691589,
     "target_months": 0.0,
-    "tstat": 2.422565,
-    "max_drawdown": 257809.824824,
+    "tstat": 2.422563,
+    "max_drawdown": 257809.748766,
     "max_drawdown_pct": 0.085937,
     "annual_return_pct": 0.014912,
     "target_ratio": 0.01864
@@ -598,7 +598,7 @@
    "candidate_params": {
     "trend": 200,
     "rsi_n": 3,
-    "rsi_th": 100,
+    "rsi_th": 20,
     "limit_pct": 0.05,
     "market": "up200"
    },
@@ -607,7 +607,7 @@
     {
      "core": true,
      "name": "未使用データでの取引回数",
-     "value": 101,
+     "value": 92,
      "threshold": 80,
      "ok": true,
      "fmt": "int"
@@ -615,7 +615,7 @@
     {
      "core": true,
      "name": "未使用データのプロフィットファクター",
-     "value": 1.060907,
+     "value": 1.077693,
      "threshold": 1.25,
      "ok": false,
      "fmt": "x"
@@ -623,7 +623,7 @@
     {
      "core": false,
      "name": "未使用データでプラスだった月の割合（取引があった月のうち）",
-     "value": 0.444444,
+     "value": 0.5,
      "threshold": 0.55,
      "ok": false,
      "fmt": "pct"
@@ -631,7 +631,7 @@
     {
      "core": true,
      "name": "月次損益の t値（全期間）",
-     "value": 1.624878,
+     "value": 1.820984,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x"
@@ -639,7 +639,7 @@
     {
      "core": false,
      "name": "最大ドローダウンが平均年間利益の何年分か",
-     "value": 8.795452,
+     "value": 8.013507,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x",
@@ -648,7 +648,7 @@
     {
      "core": true,
      "name": "ウォークフォワード通算のプロフィットファクター",
-     "value": 0.882884,
+     "value": 0.889445,
      "threshold": 1.15,
      "ok": false,
      "fmt": "x"
@@ -656,7 +656,7 @@
     {
      "core": true,
      "name": "近傍パラメータが学習期間で黒字だった割合",
-     "value": 0.833333,
+     "value": 0.714286,
      "threshold": 0.6,
      "ok": true,
      "fmt": "pct"
@@ -664,11 +664,11 @@
    ],
    "walk_forward": {
     "months": 107,
-    "trades": 416,
-    "monthly_mean": -913.725411,
-    "profit_factor": 0.882884,
-    "positive_months": 0.336449,
-    "tstat": -0.883732,
+    "trades": 439,
+    "monthly_mean": -913.057797,
+    "profit_factor": 0.889445,
+    "positive_months": 0.345794,
+    "tstat": -0.879186,
     "positive_years": 3,
     "years": 9,
     "folds": [
@@ -681,9 +681,9 @@
        "limit_pct": 0.02,
        "market": "up200"
       },
-      "pnl": -46106.379327,
+      "pnl": -46106.57018,
       "trades": 122,
-      "pf": 0.827266
+      "pf": 0.827265
      },
      {
       "year": 2019,
@@ -694,7 +694,7 @@
        "limit_pct": 0.05,
        "market": "up200"
       },
-      "pnl": -5761.868432,
+      "pnl": -5761.956089,
       "trades": 5,
       "pf": 0.160685
      },
@@ -703,13 +703,13 @@
       "params": {
        "trend": 200,
        "rsi_n": 3,
-       "rsi_th": 10,
+       "rsi_th": 20,
        "limit_pct": 0.03,
        "market": "up200"
       },
-      "pnl": 41488.893673,
-      "trades": 67,
-      "pf": 1.450558
+      "pnl": 40306.25467,
+      "trades": 92,
+      "pf": 1.283374
      },
      {
       "year": 2021,
@@ -720,7 +720,7 @@
        "limit_pct": 0.03,
        "market": "up200"
       },
-      "pnl": -54823.575454,
+      "pnl": -54823.38343,
       "trades": 79,
       "pf": 0.669086
      },
@@ -729,13 +729,13 @@
       "params": {
        "trend": 200,
        "rsi_n": 3,
-       "rsi_th": 100,
+       "rsi_th": 20,
        "limit_pct": 0.05,
        "market": "up200"
       },
-      "pnl": -11519.210645,
-      "trades": 7,
-      "pf": 0.187342
+      "pnl": -10264.874671,
+      "trades": 5,
+      "pf": 0.205528
      },
      {
       "year": 2023,
@@ -746,9 +746,9 @@
        "limit_pct": 0.05,
        "market": "up200"
       },
-      "pnl": 17224.74148,
+      "pnl": 17224.678041,
       "trades": 14,
-      "pf": 1.736138
+      "pf": 1.736135
      },
      {
       "year": 2024,
@@ -759,7 +759,7 @@
        "limit_pct": 0.03,
        "market": "up200"
       },
-      "pnl": -100873.753638,
+      "pnl": -100873.811361,
       "trades": 59,
       "pf": 0.307854
      },
@@ -772,9 +772,9 @@
        "limit_pct": 0.05,
        "market": "up200"
       },
-      "pnl": -8747.99927,
+      "pnl": -8748.028655,
       "trades": 15,
-      "pf": 0.830324
+      "pf": 0.830323
      },
      {
       "year": 2026,
@@ -785,89 +785,89 @@
        "limit_pct": 0.05,
        "market": "up200"
       },
-      "pnl": 71350.532593,
+      "pnl": 71350.507418,
       "trades": 48,
       "pf": 2.043332
      }
     ]
    },
    "is": {
-    "trades": 128,
-    "win_rate": 0.523438,
-    "profit_factor": 1.661857,
-    "avg_pnl": 1172.338989,
-    "avg_ret": 0.004866,
-    "avg_win": 5623.645536,
-    "avg_loss": -3716.800989,
+    "trades": 123,
+    "win_rate": 0.536585,
+    "profit_factor": 1.755474,
+    "avg_pnl": 1316.919323,
+    "avg_ret": 0.005433,
+    "avg_win": 5702.8919,
+    "avg_loss": -3761.575239,
     "avg_days": 0.0,
-    "total_pnl": 150059.390546,
+    "total_pnl": 161981.076773,
     "months": 96,
-    "monthly_mean": 1563.118652,
+    "monthly_mean": 1687.302883,
     "monthly_median": 0.0,
-    "monthly_std": 8026.869115,
-    "monthly_worst": -24870.480082,
-    "monthly_best": 35485.309102,
-    "positive_months": 0.34375,
-    "active_months": 54,
-    "positive_active_months": 0.611111,
+    "monthly_std": 7877.64716,
+    "monthly_worst": -20019.969571,
+    "monthly_best": 35485.256552,
+    "positive_months": 0.333333,
+    "active_months": 52,
+    "positive_active_months": 0.615385,
     "target_months": 0.0,
-    "tstat": 1.908013,
-    "max_drawdown": 48844.773662,
-    "max_drawdown_pct": 0.016282,
-    "annual_return_pct": 0.006252,
-    "target_ratio": 0.007816
+    "tstat": 2.098612,
+    "max_drawdown": 49238.900456,
+    "max_drawdown_pct": 0.016413,
+    "annual_return_pct": 0.006749,
+    "target_ratio": 0.008437
    },
    "oos": {
-    "trades": 101,
-    "win_rate": 0.475248,
-    "profit_factor": 1.060907,
-    "avg_pnl": 141.399665,
-    "avg_ret": 0.000305,
-    "avg_win": 5182.452353,
-    "avg_loss": -4424.082015,
+    "trades": 92,
+    "win_rate": 0.478261,
+    "profit_factor": 1.077693,
+    "avg_pnl": 183.25721,
+    "avg_ret": 0.000588,
+    "avg_win": 5315.099107,
+    "avg_loss": -4520.931195,
     "avg_days": 0.0,
-    "total_pnl": 14281.366151,
+    "total_pnl": 16859.663317,
     "months": 59,
-    "monthly_mean": 242.057053,
+    "monthly_mean": 285.757005,
     "monthly_median": 0.0,
-    "monthly_std": 8282.400953,
-    "monthly_worst": -26151.219607,
-    "monthly_best": 29069.095082,
-    "positive_months": 0.271186,
+    "monthly_std": 7895.820885,
+    "monthly_worst": -26296.249296,
+    "monthly_best": 22279.163723,
+    "positive_months": 0.305085,
     "active_months": 36,
-    "positive_active_months": 0.444444,
+    "positive_active_months": 0.5,
     "target_months": 0.0,
-    "tstat": 0.224485,
-    "max_drawdown": 77796.148759,
-    "max_drawdown_pct": 0.025932,
-    "annual_return_pct": 0.000968,
-    "target_ratio": 0.00121
+    "tstat": 0.277988,
+    "max_drawdown": 77703.410762,
+    "max_drawdown_pct": 0.025901,
+    "annual_return_pct": 0.001143,
+    "target_ratio": 0.001429
    },
    "full": {
-    "trades": 229,
-    "win_rate": 0.502183,
-    "profit_factor": 1.356332,
-    "avg_pnl": 717.645226,
-    "avg_ret": 0.002854,
-    "avg_win": 5439.495338,
-    "avg_loss": -4045.624624,
+    "trades": 215,
+    "win_rate": 0.511628,
+    "profit_factor": 1.414545,
+    "avg_pnl": 831.817396,
+    "avg_ret": 0.00336,
+    "avg_win": 5547.774783,
+    "avg_loss": -4108.709391,
     "avg_days": 0.0,
-    "total_pnl": 164340.756697,
+    "total_pnl": 178840.74009,
     "months": 155,
-    "monthly_mean": 1060.262946,
+    "monthly_mean": 1153.811226,
     "monthly_median": 0.0,
-    "monthly_std": 8123.789167,
-    "monthly_worst": -26151.219607,
-    "monthly_best": 35485.309102,
-    "positive_months": 0.316129,
-    "active_months": 90,
-    "positive_active_months": 0.544444,
+    "monthly_std": 7888.499593,
+    "monthly_worst": -26296.249296,
+    "monthly_best": 35485.256552,
+    "positive_months": 0.322581,
+    "active_months": 88,
+    "positive_active_months": 0.568182,
     "target_months": 0.0,
-    "tstat": 1.624878,
-    "max_drawdown": 111905.902999,
-    "max_drawdown_pct": 0.037302,
-    "annual_return_pct": 0.004241,
-    "target_ratio": 0.005301
+    "tstat": 1.820984,
+    "max_drawdown": 110952.889852,
+    "max_drawdown_pct": 0.036984,
+    "annual_return_pct": 0.004615,
+    "target_ratio": 0.005769
    }
   },
   {
@@ -888,7 +888,7 @@
     {
      "core": true,
      "name": "未使用データでの取引回数",
-     "value": 81,
+     "value": 82,
      "threshold": 80,
      "ok": true,
      "fmt": "int"
@@ -896,7 +896,7 @@
     {
      "core": true,
      "name": "未使用データのプロフィットファクター",
-     "value": 0.898694,
+     "value": 0.904387,
      "threshold": 1.25,
      "ok": false,
      "fmt": "x"
@@ -912,7 +912,7 @@
     {
      "core": true,
      "name": "月次損益の t値（全期間）",
-     "value": 1.135425,
+     "value": 1.144524,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x"
@@ -920,7 +920,7 @@
     {
      "core": false,
      "name": "最大ドローダウンが平均年間利益の何年分か",
-     "value": 11.406516,
+     "value": 11.274773,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x",
@@ -946,10 +946,10 @@
    "walk_forward": {
     "months": 107,
     "trades": 191,
-    "monthly_mean": -382.700614,
+    "monthly_mean": -382.70536,
     "profit_factor": 0.959404,
     "positive_months": 0.28972,
-    "tstat": -0.236614,
+    "tstat": -0.236617,
     "positive_years": 5,
     "years": 9,
     "folds": [
@@ -964,9 +964,9 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": 33206.472585,
+      "pnl": 33206.497378,
       "trades": 14,
-      "pf": 1.737495
+      "pf": 1.737496
      },
      {
       "year": 2019,
@@ -979,9 +979,9 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": -38269.0765,
+      "pnl": -38268.931486,
       "trades": 27,
-      "pf": 0.658359
+      "pf": 0.65836
      },
      {
       "year": 2020,
@@ -994,9 +994,9 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": 34799.266386,
+      "pnl": 34798.737654,
       "trades": 44,
-      "pf": 1.164163
+      "pf": 1.16416
      },
      {
       "year": 2021,
@@ -1009,7 +1009,7 @@
        "stop_pct": 0.12,
        "market": "none"
       },
-      "pnl": -88023.736864,
+      "pnl": -88023.851613,
       "trades": 34,
       "pf": 0.637364
      },
@@ -1024,9 +1024,9 @@
        "stop_pct": 0.07,
        "market": "down200"
       },
-      "pnl": 30112.094479,
+      "pnl": 30111.913346,
       "trades": 36,
-      "pf": 1.175551
+      "pf": 1.17555
      },
      {
       "year": 2023,
@@ -1039,7 +1039,7 @@
        "stop_pct": 0.07,
        "market": "down200"
       },
-      "pnl": 6671.386988,
+      "pnl": 6671.416224,
       "trades": 1,
       "pf": 9.99
      },
@@ -1054,9 +1054,9 @@
        "stop_pct": 0.07,
        "market": "down200"
       },
-      "pnl": -9729.363683,
+      "pnl": -9729.418028,
       "trades": 8,
-      "pf": 0.735515
+      "pf": 0.735514
      },
      {
       "year": 2025,
@@ -1069,9 +1069,9 @@
        "stop_pct": 0.07,
        "market": "down200"
       },
-      "pnl": -76592.373918,
+      "pnl": -76592.201825,
       "trades": 19,
-      "pf": 0.478353
+      "pf": 0.478354
      },
      {
       "year": 2026,
@@ -1093,80 +1093,80 @@
    "is": {
     "trades": 166,
     "win_rate": 0.548193,
-    "profit_factor": 1.373437,
-    "avg_pnl": 1679.878722,
+    "profit_factor": 1.373436,
+    "avg_pnl": 1679.87508,
     "avg_ret": 0.004468,
-    "avg_win": 11270.306088,
-    "avg_loss": -9956.506483,
+    "avg_win": 11270.304398,
+    "avg_loss": -9956.512493,
     "avg_days": 1.909639,
-    "total_pnl": 278859.867793,
+    "total_pnl": 278859.263271,
     "months": 96,
-    "monthly_mean": 2904.79029,
+    "monthly_mean": 2904.783992,
     "monthly_median": 0.0,
-    "monthly_std": 16855.852638,
-    "monthly_worst": -38740.260324,
-    "monthly_best": 72708.061206,
+    "monthly_std": 16855.853315,
+    "monthly_worst": -38740.198825,
+    "monthly_best": 72707.849064,
     "positive_months": 0.260417,
     "active_months": 42,
     "positive_active_months": 0.595238,
     "target_months": 0.0,
-    "tstat": 1.688495,
-    "max_drawdown": 125298.3902,
+    "tstat": 1.688491,
+    "max_drawdown": 125298.47271,
     "max_drawdown_pct": 0.041766,
     "annual_return_pct": 0.011619,
     "target_ratio": 0.014524
    },
    "oos": {
-    "trades": 81,
-    "win_rate": 0.481481,
-    "profit_factor": 0.898694,
-    "avg_pnl": -592.809339,
-    "avg_ret": -0.00083,
-    "avg_win": 10922.298282,
-    "avg_loss": -11285.409273,
-    "avg_days": 1.851852,
-    "total_pnl": -48017.556454,
+    "trades": 82,
+    "win_rate": 0.487805,
+    "profit_factor": 0.904387,
+    "avg_pnl": -552.677189,
+    "avg_ret": -0.000654,
+    "avg_win": 10716.69227,
+    "avg_loss": -11285.410006,
+    "avg_days": 1.853659,
+    "total_pnl": -45319.529472,
     "months": 59,
-    "monthly_mean": -813.856889,
+    "monthly_mean": -768.127618,
     "monthly_median": 0.0,
-    "monthly_std": 15296.615739,
+    "monthly_std": 15471.501028,
     "monthly_worst": -45957.237964,
-    "monthly_best": 55695.010444,
+    "monthly_best": 58393.125041,
     "positive_months": 0.169492,
     "active_months": 21,
     "positive_active_months": 0.47619,
     "target_months": 0.0,
-    "tstat": -0.408676,
-    "max_drawdown": 203853.408104,
+    "tstat": -0.381353,
+    "max_drawdown": 203853.487339,
     "max_drawdown_pct": 0.067951,
-    "annual_return_pct": -0.003255,
-    "target_ratio": -0.004069
+    "annual_return_pct": -0.003073,
+    "target_ratio": -0.003841
    },
    "full": {
-    "trades": 247,
-    "win_rate": 0.526316,
-    "profit_factor": 1.189103,
-    "avg_pnl": 934.584256,
-    "avg_ret": 0.00273,
-    "avg_win": 11165.903746,
-    "avg_loss": -10433.54851,
-    "avg_days": 1.890688,
-    "total_pnl": 230842.311339,
+    "trades": 248,
+    "win_rate": 0.528226,
+    "profit_factor": 1.191312,
+    "avg_pnl": 941.692475,
+    "avg_ret": 0.002774,
+    "avg_win": 11101.262527,
+    "avg_loss": -10433.552626,
+    "avg_days": 1.891129,
+    "total_pnl": 233539.733799,
     "months": 155,
-    "monthly_mean": 1489.305234,
+    "monthly_mean": 1506.70796,
     "monthly_median": 0.0,
-    "monthly_std": 16330.178112,
+    "monthly_std": 16389.663956,
     "monthly_worst": -45957.237964,
-    "monthly_best": 72708.061206,
+    "monthly_best": 72707.849064,
     "positive_months": 0.225806,
     "active_months": 63,
     "positive_active_months": 0.555556,
     "target_months": 0.0,
-    "tstat": 1.135425,
-    "max_drawdown": 203853.408104,
+    "tstat": 1.144524,
+    "max_drawdown": 203853.487339,
     "max_drawdown_pct": 0.067951,
-    "annual_return_pct": 0.005957,
-    "target_ratio": 0.007447
+    "annual_return_pct": 0.006027,
+    "target_ratio": 0.007534
    }
   },
   {
@@ -1186,7 +1186,7 @@
     {
      "core": true,
      "name": "未使用データでの取引回数",
-     "value": 213,
+     "value": 214,
      "threshold": 80,
      "ok": true,
      "fmt": "int"
@@ -1194,7 +1194,7 @@
     {
      "core": true,
      "name": "未使用データのプロフィットファクター",
-     "value": 1.320778,
+     "value": 1.334059,
      "threshold": 1.25,
      "ok": true,
      "fmt": "x"
@@ -1210,7 +1210,7 @@
     {
      "core": true,
      "name": "月次損益の t値（全期間）",
-     "value": 1.40969,
+     "value": 1.4768,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x"
@@ -1218,7 +1218,7 @@
     {
      "core": false,
      "name": "最大ドローダウンが平均年間利益の何年分か",
-     "value": 5.101715,
+     "value": 4.670958,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x",
@@ -1227,7 +1227,7 @@
     {
      "core": true,
      "name": "ウォークフォワード通算のプロフィットファクター",
-     "value": 1.102803,
+     "value": 1.042247,
      "threshold": 1.15,
      "ok": false,
      "fmt": "x"
@@ -1243,12 +1243,12 @@
    ],
    "walk_forward": {
     "months": 107,
-    "trades": 320,
-    "monthly_mean": 2390.86383,
-    "profit_factor": 1.102803,
-    "positive_months": 0.429907,
-    "tstat": 0.502604,
-    "positive_years": 4,
+    "trades": 300,
+    "monthly_mean": 267.641696,
+    "profit_factor": 1.042247,
+    "positive_months": 0.392523,
+    "tstat": 0.055318,
+    "positive_years": 3,
     "years": 9,
     "folds": [
      {
@@ -1261,7 +1261,7 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": -154051.041425,
+      "pnl": -154050.939893,
       "trades": 52,
       "pf": 0.541456
      },
@@ -1275,9 +1275,9 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": 391.920269,
+      "pnl": 391.669487,
       "trades": 18,
-      "pf": 0.908841
+      "pf": 0.908837
      },
      {
       "year": 2020,
@@ -1285,13 +1285,13 @@
        "lookback": 250,
        "vol_ratio": 3.0,
        "exit_sma": 10,
-       "max_hold": 5,
+       "max_hold": 20,
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": -99157.648491,
-      "trades": 47,
-      "pf": 0.740544
+      "pnl": -130655.291464,
+      "trades": 41,
+      "pf": 0.856415
      },
      {
       "year": 2021,
@@ -1303,9 +1303,9 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": 99484.856009,
+      "pnl": 99484.472808,
       "trades": 29,
-      "pf": 1.132395
+      "pf": 1.132393
      },
      {
       "year": 2022,
@@ -1317,7 +1317,7 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": -118156.947697,
+      "pnl": -118156.976129,
       "trades": 23,
       "pf": 0.459364
      },
@@ -1326,14 +1326,14 @@
       "params": {
        "lookback": 250,
        "vol_ratio": 3.0,
-       "exit_sma": 10,
+       "exit_sma": 20,
        "max_hold": 20,
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": 146105.717792,
-      "trades": 50,
-      "pf": 1.5744
+      "pnl": -49580.729715,
+      "trades": 36,
+      "pf": 0.921985
      },
      {
       "year": 2024,
@@ -1345,7 +1345,7 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": -103794.189462,
+      "pnl": -103794.091104,
       "trades": 41,
       "pf": 0.720949
      },
@@ -1359,9 +1359,9 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": -33.114181,
+      "pnl": -33.265495,
       "trades": 30,
-      "pf": 1.578144
+      "pf": 1.578143
      },
      {
       "year": 2026,
@@ -1373,89 +1373,89 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": 485032.876954,
+      "pnl": 485032.813027,
       "trades": 30,
       "pf": 2.660902
      }
     ]
    },
    "is": {
-    "trades": 294,
-    "win_rate": 0.435374,
-    "profit_factor": 1.180286,
-    "avg_pnl": 1143.936985,
-    "avg_ret": 0.003721,
-    "avg_win": 17201.464654,
-    "avg_loss": -11237.771097,
-    "avg_days": 9.234694,
-    "total_pnl": 336317.473593,
+    "trades": 293,
+    "win_rate": 0.433447,
+    "profit_factor": 1.211422,
+    "avg_pnl": 1338.057225,
+    "avg_ret": 0.004446,
+    "avg_win": 17688.193851,
+    "avg_loss": -11170.782242,
+    "avg_days": 9.293515,
+    "total_pnl": 392050.766848,
     "months": 96,
-    "monthly_mean": 3635.252491,
+    "monthly_mean": 4215.807629,
     "monthly_median": 0.0,
-    "monthly_std": 46148.448866,
-    "monthly_worst": -132058.567176,
-    "monthly_best": 181181.348277,
+    "monthly_std": 47368.265602,
+    "monthly_worst": -132058.496954,
+    "monthly_best": 183970.140131,
     "positive_months": 0.385417,
     "active_months": 77,
     "positive_active_months": 0.480519,
     "target_months": 0.0,
-    "tstat": 0.771815,
-    "max_drawdown": 310475.794554,
+    "tstat": 0.872025,
+    "max_drawdown": 310475.813208,
     "max_drawdown_pct": 0.103492,
-    "annual_return_pct": 0.014541,
-    "target_ratio": 0.018176
+    "annual_return_pct": 0.016863,
+    "target_ratio": 0.021079
    },
    "oos": {
-    "trades": 213,
-    "win_rate": 0.441315,
-    "profit_factor": 1.320778,
-    "avg_pnl": 2407.890363,
-    "avg_ret": 0.009563,
-    "avg_win": 22465.373065,
-    "avg_loss": -13435.835468,
-    "avg_days": 9.342723,
-    "total_pnl": 512880.647408,
+    "trades": 214,
+    "win_rate": 0.443925,
+    "profit_factor": 1.334059,
+    "avg_pnl": 2495.867522,
+    "avg_ret": 0.009979,
+    "avg_win": 22452.423645,
+    "avg_loss": -13435.836946,
+    "avg_days": 9.369159,
+    "total_pnl": 534115.649682,
     "months": 59,
-    "monthly_mean": 8868.625117,
-    "monthly_median": 315.807725,
-    "monthly_std": 55250.269071,
+    "monthly_mean": 8838.116681,
+    "monthly_median": 315.705277,
+    "monthly_std": 55216.679124,
     "monthly_worst": -124701.291563,
-    "monthly_best": 181194.881417,
+    "monthly_best": 181195.014972,
     "positive_months": 0.525424,
     "active_months": 54,
     "positive_active_months": 0.574074,
     "target_months": 0.0,
-    "tstat": 1.232957,
+    "tstat": 1.229463,
     "max_drawdown": 211137.699895,
     "max_drawdown_pct": 0.070379,
-    "annual_return_pct": 0.035475,
-    "target_ratio": 0.044343
+    "annual_return_pct": 0.035352,
+    "target_ratio": 0.044191
    },
    "full": {
     "trades": 507,
     "win_rate": 0.43787,
-    "profit_factor": 1.245126,
-    "avg_pnl": 1674.946984,
-    "avg_ret": 0.006175,
-    "avg_win": 19430.326774,
-    "avg_loss": -12155.559379,
-    "avg_days": 9.280079,
-    "total_pnl": 849198.121,
+    "profit_factor": 1.268204,
+    "avg_pnl": 1826.758218,
+    "avg_ret": 0.006781,
+    "avg_win": 19726.940835,
+    "avg_loss": -12116.541926,
+    "avg_days": 9.325444,
+    "total_pnl": 926166.41653,
     "months": 155,
-    "monthly_mean": 5627.310458,
+    "monthly_mean": 5975.267203,
     "monthly_median": 0.0,
-    "monthly_std": 49698.487233,
-    "monthly_worst": -132058.567176,
-    "monthly_best": 181194.881417,
+    "monthly_std": 50373.435145,
+    "monthly_worst": -132058.496954,
+    "monthly_best": 183970.140131,
     "positive_months": 0.43871,
     "active_months": 131,
     "positive_active_months": 0.519084,
     "target_months": 0.0,
-    "tstat": 1.40969,
-    "max_drawdown": 344507.199857,
-    "max_drawdown_pct": 0.114836,
-    "annual_return_pct": 0.022509,
-    "target_ratio": 0.028137
+    "tstat": 1.4768,
+    "max_drawdown": 334922.63363,
+    "max_drawdown_pct": 0.111641,
+    "annual_return_pct": 0.023901,
+    "target_ratio": 0.029876
    }
   },
   {
@@ -1483,7 +1483,7 @@
     {
      "core": true,
      "name": "未使用データのプロフィットファクター",
-     "value": 0.938068,
+     "value": 0.938067,
      "threshold": 1.25,
      "ok": false,
      "fmt": "x"
@@ -1499,7 +1499,7 @@
     {
      "core": true,
      "name": "月次損益の t値（全期間）",
-     "value": -0.172716,
+     "value": -0.169593,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x"
@@ -1516,7 +1516,7 @@
     {
      "core": true,
      "name": "ウォークフォワード通算のプロフィットファクター",
-     "value": 0.748205,
+     "value": 0.795265,
      "threshold": 1.15,
      "ok": false,
      "fmt": "x"
@@ -1532,11 +1532,11 @@
    ],
    "walk_forward": {
     "months": 107,
-    "trades": 454,
-    "monthly_mean": -5785.19508,
-    "profit_factor": 0.748205,
+    "trades": 477,
+    "monthly_mean": -3380.240125,
+    "profit_factor": 0.795265,
     "positive_months": 0.345794,
-    "tstat": -1.234538,
+    "tstat": -0.572799,
     "positive_years": 3,
     "years": 9,
     "folds": [
@@ -1550,7 +1550,7 @@
        "stop_pct": 0.07,
        "market": "up200"
       },
-      "pnl": -64744.913398,
+      "pnl": -64745.076295,
       "trades": 48,
       "pf": 0.817816
      },
@@ -1564,7 +1564,7 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": -27188.787639,
+      "pnl": -27188.684874,
       "trades": 29,
       "pf": 0.860423
      },
@@ -1578,7 +1578,7 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": 15437.508991,
+      "pnl": 15437.551362,
       "trades": 54,
       "pf": 1.052399
      },
@@ -1590,11 +1590,11 @@
        "trend": 200,
        "max_hold": 3,
        "stop_pct": null,
-       "market": "none"
+       "market": "up200"
       },
-      "pnl": -224173.225402,
-      "trades": 134,
-      "pf": 0.730307
+      "pnl": -220134.431996,
+      "trades": 117,
+      "pf": 0.724806
      },
      {
       "year": 2022,
@@ -1606,7 +1606,7 @@
        "stop_pct": null,
        "market": "up200"
       },
-      "pnl": -383506.423132,
+      "pnl": -383506.518313,
       "trades": 38,
       "pf": 0.153566
      },
@@ -1616,13 +1616,13 @@
        "jump": 0.08,
        "vol_ratio": 4.0,
        "trend": 200,
-       "max_hold": 20,
+       "max_hold": 3,
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": 181955.408634,
-      "trades": 25,
-      "pf": 2.246015
+      "pnl": 28715.176116,
+      "trades": 60,
+      "pf": 1.111476
      },
      {
       "year": 2024,
@@ -1634,9 +1634,9 @@
        "stop_pct": null,
        "market": "none"
       },
-      "pnl": -79452.263149,
-      "trades": 66,
-      "pf": 0.810167
+      "pnl": -22890.089333,
+      "trades": 69,
+      "pf": 0.874779
      },
      {
       "year": 2025,
@@ -1646,11 +1646,11 @@
        "trend": 200,
        "max_hold": 3,
        "stop_pct": null,
-       "market": "none"
+       "market": "up200"
       },
-      "pnl": -158744.688795,
-      "trades": 38,
-      "pf": 0.553488
+      "pnl": -117619.526239,
+      "trades": 29,
+      "pf": 0.568767
      },
      {
       "year": 2026,
@@ -1658,93 +1658,93 @@
        "jump": 0.12,
        "vol_ratio": 4.0,
        "trend": 0,
-       "max_hold": 20,
+       "max_hold": 10,
        "stop_pct": null,
-       "market": "up200"
+       "market": "none"
       },
-      "pnl": 121401.510284,
-      "trades": 22,
-      "pf": 0.586888
+      "pnl": 430245.906163,
+      "trades": 33,
+      "pf": 1.227658
      }
     ]
    },
    "is": {
-    "trades": 443,
-    "win_rate": 0.505643,
-    "profit_factor": 1.016067,
-    "avg_pnl": 114.423363,
-    "avg_ret": 0.001085,
-    "avg_win": 14310.995257,
-    "avg_loss": -14406.271178,
-    "avg_days": 3.013544,
-    "total_pnl": 50689.549665,
+    "trades": 442,
+    "win_rate": 0.506787,
+    "profit_factor": 1.016665,
+    "avg_pnl": 118.881812,
+    "avg_ret": 0.001102,
+    "avg_win": 14310.998406,
+    "avg_loss": -14463.843496,
+    "avg_days": 3.013575,
+    "total_pnl": 52545.760711,
     "months": 96,
-    "monthly_mean": 528.016142,
+    "monthly_mean": 547.351674,
     "monthly_median": 0.0,
-    "monthly_std": 42333.943565,
-    "monthly_worst": -116996.824093,
-    "monthly_best": 132414.173508,
+    "monthly_std": 42353.814182,
+    "monthly_worst": -116996.792495,
+    "monthly_best": 132414.20526,
     "positive_months": 0.395833,
     "active_months": 77,
     "positive_active_months": 0.493506,
     "target_months": 0.0,
-    "tstat": 0.122206,
-    "max_drawdown": 484362.767825,
+    "tstat": 0.126622,
+    "max_drawdown": 484362.100897,
     "max_drawdown_pct": 0.161454,
-    "annual_return_pct": 0.002112,
-    "target_ratio": 0.00264
+    "annual_return_pct": 0.002189,
+    "target_ratio": 0.002737
    },
    "oos": {
     "trades": 381,
     "win_rate": 0.425197,
-    "profit_factor": 0.938068,
-    "avg_pnl": -405.891548,
+    "profit_factor": 0.938067,
+    "avg_pnl": -405.892561,
     "avg_ret": -0.00122,
-    "avg_win": 14458.919461,
-    "avg_loss": -11401.779144,
+    "avg_win": 14458.920446,
+    "avg_loss": -11401.781635,
     "avg_days": 3.0,
-    "total_pnl": -154644.679836,
+    "total_pnl": -154645.065873,
     "months": 59,
-    "monthly_mean": -2621.096268,
-    "monthly_median": -2187.397247,
-    "monthly_std": 57131.442039,
+    "monthly_mean": -2621.102811,
+    "monthly_median": -2187.40994,
+    "monthly_std": 57131.441514,
     "monthly_worst": -149431.46715,
-    "monthly_best": 204124.320936,
+    "monthly_best": 204124.289939,
     "positive_months": 0.355932,
     "active_months": 52,
     "positive_active_months": 0.403846,
     "target_months": 0.016949,
-    "tstat": -0.352398,
-    "max_drawdown": 457916.864526,
+    "tstat": -0.352399,
+    "max_drawdown": 457917.190071,
     "max_drawdown_pct": 0.152639,
     "annual_return_pct": -0.010484,
-    "target_ratio": -0.013105
+    "target_ratio": -0.013106
    },
    "full": {
-    "trades": 824,
-    "win_rate": 0.468447,
-    "profit_factor": 0.981607,
-    "avg_pnl": -126.159139,
-    "avg_ret": 1.9e-05,
-    "avg_win": 14373.077436,
-    "avg_loss": -12904.025161,
-    "avg_days": 3.007282,
-    "total_pnl": -103955.130171,
+    "trades": 823,
+    "win_rate": 0.469016,
+    "profit_factor": 0.98193,
+    "avg_pnl": -124.057479,
+    "avg_ret": 2.7e-05,
+    "avg_win": 14373.079676,
+    "avg_loss": -12929.309062,
+    "avg_days": 3.00729,
+    "total_pnl": -102099.305162,
     "months": 155,
-    "monthly_mean": -670.678259,
+    "monthly_mean": -658.705195,
     "monthly_median": 0.0,
-    "monthly_std": 48344.673203,
+    "monthly_std": 48355.707928,
     "monthly_worst": -149431.46715,
-    "monthly_best": 204124.320936,
+    "monthly_best": 204124.289939,
     "positive_months": 0.380645,
     "active_months": 129,
     "positive_active_months": 0.457364,
     "target_months": 0.006452,
-    "tstat": -0.172716,
-    "max_drawdown": 780334.01836,
+    "tstat": -0.169593,
+    "max_drawdown": 780333.309377,
     "max_drawdown_pct": 0.260111,
-    "annual_return_pct": -0.002683,
-    "target_ratio": -0.003353
+    "annual_return_pct": -0.002635,
+    "target_ratio": -0.003294
    }
   },
   {
@@ -1764,7 +1764,7 @@
     {
      "core": true,
      "name": "未使用データでの取引回数",
-     "value": 350,
+     "value": 351,
      "threshold": 80,
      "ok": true,
      "fmt": "int"
@@ -1772,7 +1772,7 @@
     {
      "core": true,
      "name": "未使用データのプロフィットファクター",
-     "value": 0.596913,
+     "value": 0.595702,
      "threshold": 1.25,
      "ok": false,
      "fmt": "x"
@@ -1788,7 +1788,7 @@
     {
      "core": true,
      "name": "月次損益の t値（全期間）",
-     "value": -2.628118,
+     "value": -2.669672,
      "threshold": 2.0,
      "ok": false,
      "fmt": "x"
@@ -1805,7 +1805,7 @@
     {
      "core": true,
      "name": "ウォークフォワード通算のプロフィットファクター",
-     "value": 0.744169,
+     "value": 0.744791,
      "threshold": 1.15,
      "ok": false,
      "fmt": "x"
@@ -1821,11 +1821,11 @@
    ],
    "walk_forward": {
     "months": 107,
-    "trades": 648,
-    "monthly_mean": -6248.553323,
-    "profit_factor": 0.744169,
-    "positive_months": 0.317757,
-    "tstat": -2.256975,
+    "trades": 575,
+    "monthly_mean": -5923.33898,
+    "profit_factor": 0.744791,
+    "positive_months": 0.280374,
+    "tstat": -2.178398,
     "positive_years": 1,
     "years": 9,
     "folds": [
@@ -1835,13 +1835,13 @@
        "lookback": 60,
        "vol_ratio": 2.0,
        "exit_sma": 5,
-       "max_hold": 3,
+       "max_hold": 5,
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": 106851.919213,
-      "trades": 111,
-      "pf": 1.296906
+      "pnl": 122858.699215,
+      "trades": 98,
+      "pf": 1.356298
      },
      {
       "year": 2019,
@@ -1853,9 +1853,9 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": -6412.004834,
-      "trades": 62,
-      "pf": 0.974364
+      "pnl": -374.240761,
+      "trades": 63,
+      "pf": 0.998471
      },
      {
       "year": 2020,
@@ -1867,9 +1867,9 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": -55197.18199,
+      "pnl": -55196.6476,
       "trades": 63,
-      "pf": 0.830789
+      "pf": 0.83079
      },
      {
       "year": 2021,
@@ -1881,9 +1881,9 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": -142055.708698,
+      "pnl": -142055.331013,
       "trades": 62,
-      "pf": 0.526196
+      "pf": 0.526197
      },
      {
       "year": 2022,
@@ -1895,7 +1895,7 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": -102325.887286,
+      "pnl": -102326.119909,
       "trades": 80,
       "pf": 0.734894
      },
@@ -1909,9 +1909,9 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": -81856.166442,
+      "pnl": -81856.12592,
       "trades": 69,
-      "pf": 0.708218
+      "pf": 0.708219
      },
      {
       "year": 2024,
@@ -1923,7 +1923,7 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": -181792.967646,
+      "pnl": -181792.913823,
       "trades": 71,
       "pf": 0.448782
      },
@@ -1937,7 +1937,7 @@
        "stop_pct": 0.07,
        "market": "none"
       },
-      "pnl": -182495.447647,
+      "pnl": -182495.340949,
       "trades": 64,
       "pf": 0.279836
      },
@@ -1946,94 +1946,94 @@
       "params": {
        "lookback": 60,
        "vol_ratio": 2.0,
-       "exit_sma": 5,
+       "exit_sma": 10,
        "max_hold": 10,
        "stop_pct": 0.07,
-       "market": "none"
+       "market": "down200"
       },
-      "pnl": -23311.760246,
-      "trades": 66,
-      "pf": 0.804986
+      "pnl": -10559.250138,
+      "trades": 5,
+      "pf": 0.640577
      }
     ]
    },
    "is": {
-    "trades": 582,
-    "win_rate": 0.364261,
-    "profit_factor": 0.845819,
-    "avg_pnl": -705.865564,
-    "avg_ret": -0.00266,
-    "avg_win": 10630.571576,
-    "avg_loss": -7201.337655,
-    "avg_days": 4.618557,
-    "total_pnl": -410813.758283,
+    "trades": 581,
+    "win_rate": 0.363167,
+    "profit_factor": 0.84537,
+    "avg_pnl": -709.102289,
+    "avg_ret": -0.002701,
+    "avg_win": 10674.664416,
+    "avg_loss": -7200.926005,
+    "avg_days": 4.619621,
+    "total_pnl": -411988.430006,
     "months": 96,
-    "monthly_mean": -4279.309982,
-    "monthly_median": -5158.714758,
-    "monthly_std": 32302.705589,
-    "monthly_worst": -76225.158628,
-    "monthly_best": 61452.925195,
+    "monthly_mean": -4291.546146,
+    "monthly_median": -5978.256453,
+    "monthly_std": 32405.353789,
+    "monthly_worst": -76225.238427,
+    "monthly_best": 65363.34302,
     "positive_months": 0.427083,
     "active_months": 93,
     "positive_active_months": 0.44086,
     "target_months": 0.0,
-    "tstat": -1.297987,
-    "max_drawdown": 563120.368281,
-    "max_drawdown_pct": 0.187707,
-    "annual_return_pct": -0.017117,
-    "target_ratio": -0.021397
+    "tstat": -1.297575,
+    "max_drawdown": 554725.184969,
+    "max_drawdown_pct": 0.184908,
+    "annual_return_pct": -0.017166,
+    "target_ratio": -0.021458
    },
    "oos": {
-    "trades": 350,
-    "win_rate": 0.34,
-    "profit_factor": 0.596913,
-    "avg_pnl": -1685.634084,
-    "avg_ret": -0.00881,
-    "avg_win": 7341.704659,
-    "avg_loss": -6336.081315,
-    "avg_days": 4.24,
-    "total_pnl": -589971.929267,
+    "trades": 351,
+    "win_rate": 0.339031,
+    "profit_factor": 0.595702,
+    "avg_pnl": -1689.308988,
+    "avg_ret": -0.008853,
+    "avg_win": 7341.703443,
+    "avg_loss": -6321.595536,
+    "avg_days": 4.247863,
+    "total_pnl": -592947.454788,
     "months": 59,
-    "monthly_mean": -9691.224225,
-    "monthly_median": -9565.343332,
-    "monthly_std": 25825.570086,
-    "monthly_worst": -80897.364162,
-    "monthly_best": 69751.046709,
+    "monthly_mean": -9908.656716,
+    "monthly_median": -9565.432672,
+    "monthly_std": 25442.17284,
+    "monthly_worst": -80897.752556,
+    "monthly_best": 69751.033364,
     "positive_months": 0.254237,
     "active_months": 59,
     "positive_active_months": 0.254237,
     "target_months": 0.0,
-    "tstat": -2.882403,
-    "max_drawdown": 709208.4016,
+    "tstat": -2.991483,
+    "max_drawdown": 709208.356017,
     "max_drawdown_pct": 0.236403,
-    "annual_return_pct": -0.038765,
-    "target_ratio": -0.048456
+    "annual_return_pct": -0.039635,
+    "target_ratio": -0.049543
    },
    "full": {
     "trades": 932,
-    "win_rate": 0.35515,
-    "profit_factor": 0.757569,
-    "avg_pnl": -1073.804386,
-    "avg_ret": -0.00497,
-    "avg_win": 9448.16927,
-    "avg_loss": -6868.768246,
-    "avg_days": 4.476395,
-    "total_pnl": -1000785.68755,
+    "win_rate": 0.354077,
+    "profit_factor": 0.75673,
+    "avg_pnl": -1078.257387,
+    "avg_ret": -0.005018,
+    "avg_win": 9472.778489,
+    "avg_loss": -6862.047818,
+    "avg_days": 4.479614,
+    "total_pnl": -1004935.884794,
     "months": 155,
-    "monthly_mean": -6339.328952,
-    "monthly_median": -7519.488493,
-    "monthly_std": 30030.623871,
-    "monthly_worst": -80897.364162,
-    "monthly_best": 69751.046709,
+    "monthly_mean": -6429.672105,
+    "monthly_median": -7540.804371,
+    "monthly_std": 29984.494964,
+    "monthly_worst": -80897.752556,
+    "monthly_best": 69751.033364,
     "positive_months": 0.36129,
     "active_months": 152,
     "positive_active_months": 0.368421,
     "target_months": 0.0,
-    "tstat": -2.628118,
-    "max_drawdown": 1103465.848295,
-    "max_drawdown_pct": 0.367822,
-    "annual_return_pct": -0.025357,
-    "target_ratio": -0.031697
+    "tstat": -2.669672,
+    "max_drawdown": 1104640.740022,
+    "max_drawdown_pct": 0.368214,
+    "annual_return_pct": -0.025719,
+    "target_ratio": -0.032148
    }
   }
  ]
